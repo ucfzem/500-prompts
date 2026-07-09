@@ -1214,6 +1214,13 @@ const allPrompts = [
         // ==================== STATE ====================
         let currentLang = 'fr';
         let currentTheme = 'dark';
+        let arPrompts = [];
+
+        // ==================== LOAD TRANSLATIONS ====================
+        fetch('ar.json').then(r => r.json()).then(d => {
+            arPrompts = d.prompts || d;
+            if (currentLang === 'ar') renderPage();
+        }).catch(() => {});
 
         // ==================== TRANSLATIONS ====================
         const i18n = {
@@ -1406,10 +1413,11 @@ const allPrompts = [
                     let prompts = getPromptsForRange(start, end);
 
                     if (searchTerm) {
-                        prompts = prompts.filter(p =>
-                            p.t.toLowerCase().includes(searchTerm) ||
-                            p.p.toLowerCase().includes(searchTerm)
-                        );
+                        prompts = prompts.filter(p => {
+                            const title = lang === 'ar' && arPrompts[p.n-1] ? (arPrompts[p.n-1].t_ar || p.t) : p.t;
+                            const text = lang === 'ar' && arPrompts[p.n-1] ? (arPrompts[p.n-1].p_ar || p.p) : p.p;
+                            return title.toLowerCase().includes(searchTerm) || text.toLowerCase().includes(searchTerm);
+                        });
                     }
 
                     if (prompts.length === 0 && searchTerm) continue;
@@ -1422,17 +1430,19 @@ const allPrompts = [
 
                     if (prompts.length === 0) {
                         html += `<div class="prompt-card" style="text-align:center;color:var(--text-muted);padding:20px;">
-                            Aucun prompt dans cette catégorie
+                            ${lang === 'ar' && arPrompts.length ? 'لا توجد موجهات في هذه الفئة' : 'Aucun prompt dans cette catégorie'}
                         </div>`;
                     } else {
                         for (const prompt of prompts) {
-                            const safeText = escapeHTML(prompt.p)
+                            const titleText = lang === 'ar' && arPrompts[prompt.n-1] ? (arPrompts[prompt.n-1].t_ar || prompt.t) : prompt.t;
+                            const promptText = lang === 'ar' && arPrompts[prompt.n-1] ? (arPrompts[prompt.n-1].p_ar || prompt.p) : prompt.p;
+                            const safeText = escapeHTML(promptText)
                                 .replace(/'/g, "\\'")
                                 .replace(/"/g, '&quot;');
                             html += `<div class="prompt-card" data-prompt-id="${prompt.n}">
                                 <div class="prompt-number">#${prompt.n}</div>
-                                <div class="prompt-title">${escapeHTML(prompt.t)}</div>
-                                <div class="prompt-text">${highlightVariables(prompt.p)}</div>
+                                <div class="prompt-title">${escapeHTML(titleText)}</div>
+                                <div class="prompt-text">${highlightVariables(promptText)}</div>
                                 <button class="copy-btn" onclick="copyPrompt(this, '${safeText}')">${data.copyBtn}</button>
                             </div>`;
                         }
