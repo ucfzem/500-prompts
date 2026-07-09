@@ -1214,13 +1214,30 @@ const allPrompts = [
         // ==================== STATE ====================
         let currentLang = 'fr';
         let currentTheme = 'dark';
-        let arPrompts = [];
+        let arPrompts = []; // kept for backward compat
 
         // ==================== LOAD TRANSLATIONS ====================
-        fetch('ar.json').then(r => r.json()).then(d => {
-            arPrompts = d.prompts || d;
-            if (currentLang === 'ar') renderPage();
-        }).catch(() => {});
+        const langData = { fr: null, en: null, sp: null, ar: null };
+        const langFiles = { en: 'en.json', sp: 'es.json', ar: 'ar.json' };
+        let langLoads = 0;
+        for (const [code, file] of Object.entries(langFiles)) {
+            fetch(file).then(r => r.json()).then(d => {
+                langData[code] = d.prompts || d;
+                langLoads++;
+                if (langLoads === 3 && currentLang !== 'fr') renderPage();
+            }).catch(() => { langLoads++; });
+        }
+        function getPromptLang(prompt, lang) {
+            if (lang === 'fr' || !langData[lang]) return null;
+            const idx = prompt.n - 1;
+            const d = langData[lang][idx];
+            if (!d) return null;
+            const keyT = 't_' + (lang === 'sp' ? 'es' : lang);
+            const keyP = 'p_' + (lang === 'sp' ? 'es' : lang);
+            const t = d[keyT];
+            const p = d[keyP];
+            return (t || p) ? { t, p } : null;
+        }
 
         // ==================== TRANSLATIONS ====================
         const i18n = {
@@ -1414,8 +1431,9 @@ const allPrompts = [
 
                     if (searchTerm) {
                         prompts = prompts.filter(p => {
-                            const title = lang === 'ar' && arPrompts[p.n-1] ? (arPrompts[p.n-1].t_ar || p.t) : p.t;
-                            const text = lang === 'ar' && arPrompts[p.n-1] ? (arPrompts[p.n-1].p_ar || p.p) : p.p;
+                            const pl = getPromptLang(p, lang);
+                            const title = pl ? (pl.t || p.t) : p.t;
+                            const text = pl ? (pl.p || p.p) : p.p;
                             return title.toLowerCase().includes(searchTerm) || text.toLowerCase().includes(searchTerm);
                         });
                     }
@@ -1429,13 +1447,15 @@ const allPrompts = [
                         </h3>`;
 
                     if (prompts.length === 0) {
+                        const emptyMsg = { fr: 'Aucun prompt dans cette catégorie', en: 'No prompts in this category', sp: 'No hay prompts en esta categoría', ar: 'لا توجد موجهات في هذه الفئة' };
                         html += `<div class="prompt-card" style="text-align:center;color:var(--text-muted);padding:20px;">
-                            ${lang === 'ar' && arPrompts.length ? 'لا توجد موجهات في هذه الفئة' : 'Aucun prompt dans cette catégorie'}
+                            ${emptyMsg[lang] || emptyMsg.fr}
                         </div>`;
                     } else {
                         for (const prompt of prompts) {
-                            const titleText = lang === 'ar' && arPrompts[prompt.n-1] ? (arPrompts[prompt.n-1].t_ar || prompt.t) : prompt.t;
-                            const promptText = lang === 'ar' && arPrompts[prompt.n-1] ? (arPrompts[prompt.n-1].p_ar || prompt.p) : prompt.p;
+                            const pl = getPromptLang(prompt, lang);
+                            const titleText = pl ? (pl.t || prompt.t) : prompt.t;
+                            const promptText = pl ? (pl.p || prompt.p) : prompt.p;
                             const safeText = escapeHTML(promptText)
                                 .replace(/'/g, "\\'")
                                 .replace(/"/g, '&quot;');

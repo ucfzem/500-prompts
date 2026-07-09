@@ -1,0 +1,2504 @@
+{
+  "prompts": [
+    {
+      "n": 1,
+      "t_es": "Generar una API REST con Node.js y Express",
+      "p_es": "Crea una API REST con Node.js y Express para administrar [entidad]. Incluye rutas CRUD, validación con Joi y conexión MongoDB. Utiliza una arquitectura MVC. Agrega middleware de error genérico. Proporcione el código completo y explicado."
+    },
+    {
+      "n": 2,
+      "t_es": "Cree un componente React TodoList con ganchos",
+      "p_es": "Escriba un componente de React funcional llamado [ComponentName] usando los ganchos useState y useEffect para administrar una lista de tareas (agregar, eliminar, alternar completadas). El estilo debe realizarse con [Módulos CSS / Tailwind]. Asegúrese de que el código esté escrito con TypeScript."
+    },
+    {
+      "n": 3,
+      "t_es": "Panel MVP con Next.js y Prisma",
+      "p_es": "Genera el código inicial para un panel usando Next.js 14 (App Router), Prisma para la base [PostgreSQL], NextAuth para autenticación. Páginas: inicio de sesión, panel de control, edición de perfil. Utiliza CSS de viento de cola."
+    },
+    {
+      "n": 4,
+      "t_es": "Bot de Discord en Python para moderación",
+      "p_es": "Escriba un bot de Discord en Python con discord.py capaz de expulsar/prohibir a un miembro, eliminar mensajes en masa y enviar un mensaje de bienvenida personalizado en un canal [nombre-canal]."
+    },
+    {
+      "n": 5,
+      "t_es": "Script Python para web scraping de anuncios inmobiliarios",
+      "p_es": "Cree una secuencia de comandos de Python utilizando BeautifulSoup y solicitudes para extraer anuncios de [sitio inmobiliario] de acuerdo con [criterios]. Extrae el título, precio, zona y enlace. Guardar como CSV con paginación."
+    },
+    {
+      "n": 6,
+      "t_es": "Función AWS Lambda para cambiar el tamaño de las imágenes",
+      "p_es": "Escriba una función AWS Lambda en Node.js que se active al cargar S3 [mi-bucket]. Cambie el tamaño de la imagen a [ancho]x[alto] con Sharp y guárdela en /thumbnails."
+    },
+    {
+      "n": 7,
+      "t_es": "Formulario de contacto con validación de JavaScript vainilla",
+      "p_es": "Código HTML, CSS y JS para un formulario de contacto con validación en tiempo real: nombre, correo electrónico, mensaje. Muestra errores debajo de cada campo. Enviar mediante recuperación al punto final [URL]."
+    },
+    {
+      "n": 8,
+      "t_es": "Aplicación CLI para gestionar notas en Go",
+      "p_es": "Desarrollé una aplicación CLI en Go para administrar notas almacenadas en JSON. Utiliza el paquete [cobra] para comandos (agregar, enumerar, eliminar, editar). Manejo robusto de errores."
+    },
+    {
+      "n": 9,
+      "t_es": "Extensión de Chrome para bloquear sitios web",
+      "p_es": "Genera el manifiesto y el código para una extensión de Chrome (Manifest V3) que bloquea el acceso a los dominios [domain-array]. Página de advertencia personalizada y ventana emergente de activación/desactivación."
+    },
+    {
+      "n": 10,
+      "t_es": "Sistema de inicio de sesión JWT con Flask",
+      "p_es": "Escriba una API de Flask con /register y /login. Utiliza Flask-JWT-Extended para tokens. Almacena usuarios en SQLite a través de SQLAlchemy. Decorador para proteger las carreteras."
+    },
+    {
+      "n": 11,
+      "t_es": "Microservicio de notificaciones con RabbitMQ",
+      "p_es": "Crea un microservicio Node.js que consume una cola RabbitMQ [nombre-cola] que envía correos electrónicos a través de [SendGrid/Mailgun]. Gestión de letras muertas."
+    },
+    {
+      "n": 12,
+      "t_es": "Contador de tiempo de lectura de artículos en JavaScript",
+      "p_es": "Función JS que toma un texto [contenido] y devuelve el tiempo de lectura estimado en función de [palabras por minuto]. Muestra el resultado dinámicamente."
+    },
+    {
+      "n": 13,
+      "t_es": "Sistema de chat en tiempo real con Socket.io",
+      "p_es": "Código de servidor Node.js y cliente HTML/JS para chat en tiempo real con Socket.io. Gestiona apodos, envío de mensajes y lista de personas conectadas. Estilo de arranque."
+    },
+    {
+      "n": 14,
+      "t_es": "Genere un archivo .gitignore completo para [tipo de proyecto]",
+      "p_es": "Crea un .gitignore adecuado para un proyecto [tipo: Node, Python, React...] que incluye node_modules, archivos de entorno, artefactos de compilación y elementos confidenciales."
+    },
+    {
+      "n": 15,
+      "t_es": "Script Bash de automatización de implementación",
+      "p_es": "Script Bash para implementar [nombre de la aplicación] en un servidor remoto a través de SSH: Git pull, instalación de dependencia, compilación, reinicio de PM2. Verificaciones y registros."
+    },
+    {
+      "n": 16,
+      "t_es": "Algoritmo de clasificación genérico en TypeScript",
+      "p_es": "Implementa una función de clasificación genérica en TypeScript capaz de ordenar una matriz de objetos por [clave] en orden ascendente/descendente. Utiliza el patrón Comparador."
+    },
+    {
+      "n": 17,
+      "t_es": "Cree un webhook de Discord para monitorear alertas",
+      "p_es": "Script de Python que verifica la disponibilidad de [URL] cada 5 minutos y envía una notificación a través del webhook de Discord si el sitio no funciona. Incrustar color verde/rojo."
+    },
+    {
+      "n": 18,
+      "t_es": "Formulario de varios pasos con React Hook Form",
+      "p_es": "Componente de formulario React en 3 pasos (información personal, dirección, confirmación) con React Hook Form y Zod. Navegación, estado de persistencia, resumen antes del envío."
+    },
+    {
+      "n": 19,
+      "t_es": "Script Python para cambiar el nombre de archivos en masa",
+      "p_es": "Script de Python que recorre [ruta-carpeta] y cambia el nombre de todos los archivos según [prefijo][contador].extensión. Gestiona conflictos y subcarpetas."
+    },
+    {
+      "n": 20,
+      "t_es": "Código para una animación CSS de carga",
+      "p_es": "Crea código CSS para un control giratorio de carga con [número] puntos que rebotan, color [color]. Incluye HTML y fotogramas clave animados."
+    },
+    {
+      "n": 21,
+      "t_es": "Implementar la autenticación OAuth2 con Google",
+      "p_es": "Ejemplo completo de Node.js (Express) con Passport.js y estrategia Google OAuth2. Recupera el perfil y almacena al usuario en la sesión."
+    },
+    {
+      "n": 22,
+      "t_es": "Genera datos falsos con Faker.js",
+      "p_es": "Script de Node.js que utiliza @faker-js/faker para generar [número] usuarios con nombre, correo electrónico, dirección y teléfono. Guardar en JSON. Local configurable [fr, en]."
+    },
+    {
+      "n": 23,
+      "t_es": "Calculadora de calorías diarias en JavaScript",
+      "p_es": "Calculadora web que pregunta por edad, sexo, peso, altura, actividad. Calcula el metabolismo basal (Mifflin-St Jeor) y las necesidades calóricas. Visualización dinámica."
+    },
+    {
+      "n": 24,
+      "t_es": "Script de copia de seguridad básico de PostgreSQL",
+      "p_es": "Script Bash que realiza un pg_dump de [nombre-base], compresión gzip, denominación con fecha, envío a almacenamiento remoto [S3/rsync]. Rotación de copias de seguridad antiguas."
+    },
+    {
+      "n": 25,
+      "t_es": "Aplicación para tomar notas Markdown con Electron",
+      "p_es": "Código para una aplicación de Electron con editor CodeMirror y vista previa de Markdown en vivo. Guardando el archivo .md localmente."
+    },
+    {
+      "n": 26,
+      "t_es": "Sistema de comentarios con Firebase Realtime Database",
+      "p_es": "Código JavaScript para un sistema de comentarios en tiempo real vinculado al artículo [id-artículo]. Almacenamiento y visualización de Firebase. Campo de apodo y mensaje."
+    },
+    {
+      "n": 27,
+      "t_es": "Convierta un archivo CSV a JSON en una línea de Python",
+      "p_es": "Script de Python que usa csv y json para transformar [archivo.csv] en [archivo.json]. Maneja codificación UTF-8 y conversión digital."
+    },
+    {
+      "n": 28,
+      "t_es": "Genere un sitemap.xml dinámico para Next.js",
+      "p_es": "Ruta API Next.js que genera un sitemap.xml que incluye todas las páginas [tipo de contenido] de una API/base de datos. Fecha de priorización y modificación."
+    },
+    {
+      "n": 29,
+      "t_es": "Ejemplo de uso de Docker Compose para LAMP",
+      "p_es": "Archivo docker-compose.yml para el entorno LAMP (Apache, MySQL, PHP) con phpMyAdmin. Volumen para código fuente [./src] y red personalizada."
+    },
+    {
+      "n": 30,
+      "t_es": "Script para enviar SMS vía Twilio",
+      "p_es": "Script de Node.js que utiliza la biblioteca Twilio para enviar un SMS a [número] con un mensaje personalizado [mensaje]. Maneja errores y muestra el SID."
+    },
+    {
+      "n": 31,
+      "t_es": "Crea un conmutador de modo oscuro con React y Context",
+      "p_es": "Reacciona el contexto para gestionar el tema oscuro/claro con persistencia de almacenamiento local. Clase CSS global [oscura] en el cuerpo. Componente Proveedor y Alternancia."
+    },
+    {
+      "n": 32,
+      "t_es": "Analizar registros de Apache con Python",
+      "p_es": "Script de Python que lee un archivo [access.log] y extrae las IP, códigos HTTP y URL más solicitados. Informe de consola y resumen CSV."
+    },
+    {
+      "n": 33,
+      "t_es": "Integrar Stripe Checkout en una página web",
+      "p_es": "Frontend HTML/JS y código backend Node.js para integrar un pago Stripe Checkout. Compra de [producto/precio]. Creación de sesiones del lado del servidor."
+    },
+    {
+      "n": 34,
+      "t_es": "Función de barra de cadena PHP",
+      "p_es": "Función PHP slugify(string $str): cadena que transforma una cadena en un slug URL: minúsculas, eliminación de acentos, caracteres especiales, espacios entre guiones."
+    },
+    {
+      "n": 35,
+      "t_es": "Genere una plantilla de proyecto Python con cookiecutter",
+      "p_es": "Archivo cookiecutter.json y estructura estándar del proyecto Python: Poetry, Pytest, flake8, Makefile para comandos comunes."
+    },
+    {
+      "n": 36,
+      "t_es": "Script de PowerShell para enumerar archivos grandes",
+      "p_es": "El script de PowerShell escanea [objetivo] y muestra 10 archivos más grandes con ruta y tamaño. Ajustes de profundidad y extensión."
+    },
+    {
+      "n": 37,
+      "t_es": "Mini motor de búsqueda de texto completo en SQLite",
+      "p_es": "Esquema SQL y consulta para una búsqueda de texto completo FTS5 en una tabla de artículos. Ejemplo de clasificación de consultas por relevancia."
+    },
+    {
+      "n": 38,
+      "t_es": "Configurar un proxy inverso de Nginx para un backend de Node",
+      "p_es": "Configurar Nginx para servir una interfaz estática y redirigir /api/* a un servidor Node.js en el puerto [puerto]. Soporte para encabezados WebSocket y proxy."
+    },
+    {
+      "n": 39,
+      "t_es": "Aplicación móvil React Native Shopping List",
+      "p_es": "Código de una aplicación React Native (Expo) con adición de artículo, lista con casillas de verificación, eliminación. Almacenamiento local AsyncStorage."
+    },
+    {
+      "n": 40,
+      "t_es": "Analizar la complejidad de un algoritmo determinado.",
+      "p_es": "Analiza la complejidad temporal y espacial del siguiente algoritmo [pseudocódigo]. Explique cada paso y ofrezca una versión optimizada si es posible."
+    },
+    {
+      "n": 41,
+      "t_es": "Depurar un error 'indefinido no es una función'",
+      "p_es": "Explica paso a paso cómo diagnosticar este error en JavaScript. Ejemplos de causas comunes (error tipográfico, tiempo, alcance) y resolución con console.trace."
+    },
+    {
+      "n": 42,
+      "t_es": "Reparar una pérdida de memoria en una aplicación React",
+      "p_es": "Lista de verificación para identificar y reparar una pérdida de memoria en un componente de React. Oyentes, temporizadores y uso sin limpiarLimpieza de efectos. Ejemplo de corrección."
+    },
+    {
+      "n": 43,
+      "t_es": "Refactorizar un bloque complejo if/else en un objeto de mapeo",
+      "p_es": "Transforma el siguiente código usando una cadena larga if/else en un objeto de mapeo y una función de búsqueda. Explique los beneficios."
+    },
+    {
+      "n": 44,
+      "t_es": "Optimice una consulta SQL lenta con EXPLAIN",
+      "p_es": "Explica cómo utilizar EXPLAIN ANALYZE en la consulta [consulta]. Interpreta los resultados y sugiere los índices a crear."
+    },
+    {
+      "n": 45,
+      "t_es": "Convertir una función síncrona en asíncrona en Python",
+      "p_es": "Muestra cómo convertir una función de bloqueo de Python [función] a una versión asíncrona/en espera con aiohttp. Código antes/después y errores a evitar."
+    },
+    {
+      "n": 46,
+      "t_es": "Seguimiento de un error de regresión con Git bisect",
+      "p_es": "Cómo usar git bisect para encontrar la confirmación de errores donde [función] ya no funciona. Comandos y script de prueba."
+    },
+    {
+      "n": 47,
+      "t_es": "Refactorizar un componente monolítico de React",
+      "p_es": "Plan de refactorización para el componente [NombreComponente] de [número] líneas. Corte en componentes/envases de presentación, extracción de ganchos."
+    },
+    {
+      "n": 48,
+      "t_es": "Detectar y corregir vulnerabilidades de auditoría de NPM",
+      "p_es": "Cómo utilizar la auditoría npm para identificar vulnerabilidades en un proyecto [Nodo]. Estrategias de remediación: actualizaciones, reemplazo, resolución manual."
+    },
+    {
+      "n": 49,
+      "t_es": "Reemplazar una devolución de llamada con una promesa (promisificar)",
+      "p_es": "Función de utilidad genérica en Node.js que transforma cualquier función basada en devolución de llamada en una promesa. Aplicación en fs.readFile."
+    },
+    {
+      "n": 50,
+      "t_es": "Mejore el rendimiento de Angular con ChangeDetectionStrategy",
+      "p_es": "Cambiar la detección predeterminada a OnPush en un componente Angular. Requisitos previos: inmutabilidad de entrada, observables asíncronos. Ejemplo concreto."
+    },
+    {
+      "n": 51,
+      "t_es": "Analizar un registro de fallos de Android y proponer una solución",
+      "p_es": "Interprete el siguiente registro de fallos [log]. Identifica la causa raíz (NullPointerException, ANR) y sugiere una solución Java/Kotlin."
+    },
+    {
+      "n": 52,
+      "t_es": "Estandarice el código con ESLint y Prettier",
+      "p_es": "Configurando ESLint y Prettier para un proyecto de React. Archivos mínimos .eslintrc.js y .prettierrc. Integración en gancho de precompromiso."
+    },
+    {
+      "n": 53,
+      "t_es": "Arreglar un flujo de datos incorrecto en Redux",
+      "p_es": "Diagnostica un problema en el que el estado de Redux no se actualiza después de la acción [acción]. Comprobaciones: tipo de acción, inmersión, mutación accidental. Corrección."
+    },
+    {
+      "n": 54,
+      "t_es": "Migrar una base de código JavaScript a TypeScript",
+      "p_es": "Plan de 5 pasos para migrar un proyecto [nombre] a TypeScript: tsconfig, cambiar el nombre, corregir errores estrictos y agregar tipificaciones gradualmente."
+    },
+    {
+      "n": 55,
+      "t_es": "Agregue registros estructurados para facilitar la depuración",
+      "p_es": "Integración de un sistema de registro estructurado con [winston/bunyan] en una aplicación Node.js. Niveles de registro, formato JSON, transportes de archivos/consola."
+    },
+    {
+      "n": 56,
+      "t_es": "Solucionar un problema de simultaneidad de bases de datos",
+      "p_es": "Resuelve una condición de carrera en un contador de base. Bloqueo optimista con columna de versión, o SELECCIONAR...PARA ACTUALIZAR. Código SQL y aplicación."
+    },
+    {
+      "n": 57,
+      "t_es": "Transformar un bucle for en un método funcional",
+      "p_es": "Vuelva a escribir el siguiente código [for loop] filtrando y transformando una matriz usando filter, map y reduce. Compara legibilidad y rendimiento."
+    },
+    {
+      "n": 58,
+      "t_es": "Eliminar el código muerto y las importaciones no utilizadas",
+      "p_es": "Cómo utilizar herramientas como eslint-plugin-unused-imports y Webpack tree shake para detectar y eliminar código muerto. Ejemplos de configuración."
+    },
+    {
+      "n": 59,
+      "t_es": "Adapte el patrón del repositorio para obtener un código más limpio",
+      "p_es": "Refactorice un servicio [servicio] de Node.js mezclando llamadas a bases de datos y lógica de negocios introduciendo un patrón de repositorio. Código antes/después."
+    },
+    {
+      "n": 60,
+      "t_es": "Resolver un conflicto complejo de fusión de Git",
+      "p_es": "Estrategia para resolver un conflicto en el que dos ramas han modificado en gran medida el mismo archivo [archivo]. Usando una herramienta de combinación visual."
+    },
+    {
+      "n": 61,
+      "t_es": "Mejorar la coherencia de los nombres en un proyecto",
+      "p_es": "Convención de nomenclatura coherente para variables, funciones, clases y constantes en un proyecto [idioma]. Refactorizando un fragmento inconsistente."
+    },
+    {
+      "n": 62,
+      "t_es": "Detectar antipatrones en una solicitud de extracción",
+      "p_es": "Lista de verificación para detectar antipatrones comunes en un PR: clases de Dios, código espagueti, números mágicos, duplicación. Ejemplo de retroalimentación constructiva."
+    },
+    {
+      "n": 63,
+      "t_es": "Corregir un error de división de fechas en JavaScript",
+      "p_es": "Analiza por qué la nueva Fecha ('2025-02-31') produce un resultado inesperado y proporciona un análisis sólido con date-fns o moment.js. Corrección."
+    },
+    {
+      "n": 64,
+      "t_es": "Optimice la representación del lado del servidor (SSR) de una página Next.js",
+      "p_es": "Técnicas para reducir el TTFB de una página Next.js: caché getServerSideProps, reducción de la dependencia del servidor, transmisión HTML. Ejemplo de práctica."
+    },
+    {
+      "n": 65,
+      "t_es": "Reemplace las llamadas API redundantes con caché",
+      "p_es": "En el código, los mismos datos se obtienen varias veces. Implementa una capa de caché en memoria con vida útil (Mapa o caché de nodo)."
+    },
+    {
+      "n": 66,
+      "t_es": "Simplificar una expresión regular compleja",
+      "p_es": "La expresión regular [regex] es difícil de mantener. Sepárelo en subpartes comentadas o vuelva a escribirlo con nombres de captura. Explica cada parte."
+    },
+    {
+      "n": 67,
+      "t_es": "Hacer que un componente sea configurable usando accesorios",
+      "p_es": "Refactorice un componente de React [Componente] con valores codificados para que sea reutilizable mediante accesorios. Defina propTypes o interfaz TS."
+    },
+    {
+      "n": 68,
+      "t_es": "Implementar un disyuntor para llamadas externas",
+      "p_es": "Agrega un patrón de disyuntor a Node.js para proteger una llamada API externa [servicio]. Utilice zarigüeya. Se abre después de [número] fallas."
+    },
+    {
+      "n": 69,
+      "t_es": "Generar un diagrama de clases a partir del código.",
+      "p_es": "A partir del código fuente [código Java/C#], genera un diagrama de clases UML en PlantUML. Identifica herencia, implementación y composición."
+    },
+    {
+      "n": 70,
+      "t_es": "Reparar un componente que no actualiza la interfaz de usuario",
+      "p_es": "Explica el peligro de la mutación de estado en React (state push) y muestra cómo arreglar [componente] usando la inmutabilidad (spread o map)."
+    },
+    {
+      "n": 71,
+      "t_es": "Utilice herramientas de creación de perfiles para un cuello de botella",
+      "p_es": "Cómo utilizar el perfilador Chrome DevTools o Node.js (--inspect) para identificar una función lenta. Pasos de captura y análisis."
+    },
+    {
+      "n": 72,
+      "t_es": "Reducir la deuda técnica relacionada con las pruebas.",
+      "p_es": "Enumera los 5 archivos menos cubiertos según un informe de cobertura. Estrategia para escribir pruebas críticas primero. Ejemplo de [función]."
+    },
+    {
+      "n": 73,
+      "t_es": "Transforma un guión de espagueti en módulos",
+      "p_es": "Tome este script [script] de 500 líneas y proponga una división en módulos distintos (configuración, utilidades, servicios, aplicación). Estructura de carpetas."
+    },
+    {
+      "n": 74,
+      "t_es": "Detectar y prevenir inyecciones SQL",
+      "p_es": "Analiza el código [código PHP] e identifica una vulnerabilidad de inyección SQL. Correcciones con consultas preparadas por PDO. Por qué los simples escapes no son suficientes."
+    },
+    {
+      "n": 75,
+      "t_es": "Aplicar principios SOLID a una clase existente",
+      "p_es": "Elija una clase [clase] que viole el principio de responsabilidad única. Vuelva a escribirlo utilizando los principios SÓLIDOS apropiados, justificando cada cambio."
+    },
+    {
+      "n": 76,
+      "t_es": "Reemplace 'var' con 'let'/'const' en el código heredado",
+      "p_es": "Pasos para reemplazar de forma segura todas las declaraciones var con let/const en un proyecto JavaScript antiguo. Problemas de alcance y elevación."
+    },
+    {
+      "n": 77,
+      "t_es": "Mejorar la accesibilidad de un componente modal.",
+      "p_es": "Audita el código HTML/React de un [código] modal para determinar su accesibilidad: trampa de enfoque, tecla de escape, aria-modal, contraste. Correcciones."
+    },
+    {
+      "n": 78,
+      "t_es": "Corregir un error de conversión de moneda con flotadores",
+      "p_es": "Por qué la flotación monetaria provoca errores de redondeo. Reescribe el código [código] para manejar cantidades en centavos o con decimal.js."
+    },
+    {
+      "n": 79,
+      "t_es": "Refactorizar un reductor Redux con Redux Toolkit",
+      "p_es": "Migración de un reductor Redux clásico con interruptor/caja para createSlice desde Redux Toolkit. Simplificación y uso de immer."
+    },
+    {
+      "n": 80,
+      "t_es": "Eliminar dependencias innecesarias de un paquete.json",
+      "p_es": "Cómo utilizar depcheck para enumerar las dependencias no utilizadas en un proyecto. Ejemplo de eliminación segura y verificación de impacto."
+    },
+    {
+      "n": 81,
+      "t_es": "Automatice la publicación de publicaciones de WordPress a través de la API REST",
+      "p_es": "Script de Python que utiliza la API REST de WordPress para crear una publicación con título [título], contenido [contenido] y categorías [categorías]. Autenticación Autenticación básica."
+    },
+    {
+      "n": 82,
+      "t_es": "Elimina las reseñas de Google Maps de un establecimiento",
+      "p_es": "Script Puppeteer (Node.js) para recuperar las últimas [número] reseñas de Google Maps de una ubicación [url]. Extrae nombre, nota, texto y fecha. Copia de seguridad CSV."
+    },
+    {
+      "n": 83,
+      "t_es": "Integración de API OpenAI para responder a correos electrónicos",
+      "p_es": "Función de Node.js utilizando la API de OpenAI (chat/compleciones) para generar una respuesta a un correo electrónico [cuerpo] con contexto [contexto]. Temperatura y modelo configurables."
+    },
+    {
+      "n": 84,
+      "t_es": "Cambiar script de detección en un sitio web",
+      "p_es": "El script Bash/Python descarga periódicamente la página [url], calcula un hash del contenido y envía una alerta por correo electrónico/webhook si hay un cambio."
+    },
+    {
+      "n": 85,
+      "t_es": "Automatizar la creación de cuentas de Active Directory",
+      "p_es": "Script de PowerShell que lee un CSV con [apellido, nombre, departamento] y crea usuarios de AD con contraseña aleatoria, activación y UPN."
+    },
+    {
+      "n": 86,
+      "t_es": "Programación de tareas con Celery y RabbitMQ en Django",
+      "p_es": "Configuración para integrar Celery con RabbitMQ en un proyecto Django. Tarea de ejemplo de envío de un correo electrónico de bienvenida en segundo plano."
+    },
+    {
+      "n": 87,
+      "t_es": "Extraer datos de un PDF con Python",
+      "p_es": "Secuencia de comandos de Python que utiliza pdfplomber para extraer texto de cada página de un PDF [archivo .pdf] y buscar apariciones de un patrón [regex]. Exportación JSON."
+    },
+    {
+      "n": 88,
+      "t_es": "Interfaz de gestión de suscriptores de Mailchimp vía API",
+      "p_es": "Clase PHP (o módulo Node) para interactuar con la API de Mailchimp Marketing: agregar un suscriptor a la lista [list-id], cancelar la suscripción, recuperar listas."
+    },
+    {
+      "n": 89,
+      "t_es": "Generar un feed RSS desde un sitio sin RSS",
+      "p_es": "Script de Node.js que extrae la página de inicio [url] de un sitio de noticias y genera una fuente RSS 2.0 válida con los últimos artículos."
+    },
+    {
+      "n": 90,
+      "t_es": "Automatizar la copia de seguridad de fotos de Instagram",
+      "p_es": "Script de Python con instaloader que descarga las últimas [número] publicaciones de la cuenta [cuenta] con sus títulos en una carpeta con fecha."
+    },
+    {
+      "n": 91,
+      "t_es": "Acciones de GitHub de canalización de CI/CD para la implementación de FTP",
+      "p_es": ".github/workflows/deploy.yml que, con cada inserción en main, usa lftp para transferir archivos desde la carpeta [build] a un servidor FTP."
+    },
+    {
+      "n": 92,
+      "t_es": "Script para fusionar múltiples archivos CSV",
+      "p_es": "Script de Python que toma una carpeta [carpeta] de archivos CSV con la misma estructura y los concatena en un solo archivo [output.csv] con la columna de origen."
+    },
+    {
+      "n": 93,
+      "t_es": "Monitorear el espacio en disco y enviar alertas",
+      "p_es": "Script Bash para colocar en cron verificando el uso del disco en [montar]. Si hay espacio disponible < [umbral]%, envíe un correo electrónico a [admin@example.com]."
+    },
+    {
+      "n": 94,
+      "t_es": "Automatiza el llenado de formularios web con Playwright",
+      "p_es": "Script de dramaturgo (Node.js) que se conecta a [sitio] con [correo electrónico/mdp], completa un formulario de [tipo] con datos [datos] y envía."
+    },
+    {
+      "n": 95,
+      "t_es": "Bot de Twitter retuiteando tweets con una palabra clave",
+      "p_es": "El bot de Node.js usa twitter-api-v2 para seguir un flujo de tweets que contienen [#word] y retuitearlos. Cheque antiduplicados y límite diario."
+    },
+    {
+      "n": 96,
+      "t_es": "Convertir un documento Markdown a HTML con estilo",
+      "p_es": "Script Node.js que lee [archivo .md], lo transforma en HTML con marcado y aplica una plantilla HTML/CSS basada en [plantilla]. Respaldo."
+    },
+    {
+      "n": 97,
+      "t_es": "Script de importación de Google Sheets a una base de datos MySQL",
+      "p_es": "Secuencia de comandos de Python que utiliza gspread para leer Google Sheets [url] e insertar cada fila en una tabla MySQL [tabla] con mapeo y inserción."
+    },
+    {
+      "n": 98,
+      "t_es": "Crear un webhook entrante para Slack",
+      "p_es": "La función AWS Lambda/Node.js recibe un HTTP POST, valida un token secreto y envía un mensaje formateado a Slack a través del webhook entrante."
+    },
+    {
+      "n": 99,
+      "t_es": "Automatizar la generación de miniaturas para un sitio.",
+      "p_es": "Script de Python (Pillow) explorando una carpeta de imágenes [fuente] y creando una miniatura de [ancho]x[alto] en [destino] manteniendo la proporción."
+    },
+    {
+      "n": 100,
+      "t_es": "Implementar un sistema de colas asíncrono en Node.js",
+      "p_es": "Cola en memoria con gestión de concurrencia: async.queue o bull para procesar tareas de procesamiento de imágenes con 3 trabajadores."
+    },
+    {
+      "n": 101,
+      "t_es": "Recuperar el tipo de cambio de una API y almacenarlo",
+      "p_es": "Trabajo cron de Node.js que consulta la API [exchangerate-api] cada hora para conocer la tasa [EUR/USD] y la guarda en Redis con TTL las 24 horas. Ruta API."
+    },
+    {
+      "n": 102,
+      "t_es": "Raspe los detalles del producto de Amazon",
+      "p_es": "Script de Python con Scrapy para extraer los primeros [número] resultados de Amazon para la palabra clave [palabra clave]: título, precio, número de reseñas, enlace."
+    },
+    {
+      "n": 103,
+      "t_es": "Automatiza el cambio de tamaño y la carga en Cloudinary",
+      "p_es": "Script que monitorea una [carpeta de observación], cambia el tamaño de las nuevas imágenes a [tamaño] y las carga en Cloudinary. Eliminando el original."
+    },
+    {
+      "n": 104,
+      "t_es": "Integre una API de reconocimiento de voz para la transcripción",
+      "p_es": "Código Python para utilizar la API OpenAI Whisper para transcribir un archivo de audio [archivo .mp3] a texto. Gestión de archivos de gran tamaño mediante corte."
+    },
+    {
+      "n": 105,
+      "t_es": "Programe un informe semanal automático en PDF",
+      "p_es": "Script Python que genera un informe en PDF con ReportLab recopilando estadísticas de ventas. Envío por correo electrónico a [destinatario] todos los lunes vía cron."
+    },
+    {
+      "n": 106,
+      "t_es": "Guión de auditoría SEO en la página",
+      "p_es": "Script Python (solicitudes, BeautifulSoup) analizando una URL [url] y verificando: etiqueta de título, meta descripción, H1, atributos alt, presencia en el mapa del sitio. Informe."
+    },
+    {
+      "n": 107,
+      "t_es": "Automatiza el envío de mensajes de WhatsApp a través de Twilio",
+      "p_es": "Ejemplo de Node.js para enviar un mensaje de WhatsApp a [número] con plantilla [plantilla]. Configuración de Sandbox y plantilla aprobada."
+    },
+    {
+      "n": 108,
+      "t_es": "Cree un acortador de URL con funciones de Netlify",
+      "p_es": "Función sin servidor de Netlify que redirige (301) desde un slug [corto] a la URL completa almacenada en una variable de entorno o archivo JSON."
+    },
+    {
+      "n": 109,
+      "t_es": "Monitorear el estado de un certificado SSL",
+      "p_es": "Script Bash/Python que verifica la fecha de vencimiento del certificado SSL de un dominio [dominio] y alerta si es < [días]. Utiliza openssl s_client."
+    },
+    {
+      "n": 110,
+      "t_es": "Agregue múltiples fuentes de API meteorológicas en una sola",
+      "p_es": "Microservicio de Node.js que consulta 2 API meteorológicas ([api1], [api2]) para una ciudad [ciudad], combina los datos y devuelve una respuesta unificada."
+    },
+    {
+      "n": 111,
+      "t_es": "Herramienta CLI de gestión de tareas con fecha límite",
+      "p_es": "Script de Python con argparse para administrar una lista de tareas pendientes de CLI: agregue una tarea con fecha límite [DD/MM], enumere por prioridad, marque como terminada. JSON."
+    },
+    {
+      "n": 112,
+      "t_es": "Script de archivo de registros automático",
+      "p_es": "Script Bash que comprime archivos de registro (tar.gz) con más de [número] días en [registros], los mueve a un archivo y elimina los originales."
+    },
+    {
+      "n": 113,
+      "t_es": "Recuperar estadísticas del canal de YouTube",
+      "p_es": "Secuencia de comandos de Python con YouTube Data API v3 para obtener la cantidad de suscriptores, vistas y los últimos 5 videos para el canal [channel-id]. CSV con marca de tiempo."
+    },
+    {
+      "n": 114,
+      "t_es": "Cree un raspador web que maneje la paginación infinita",
+      "p_es": "El script Puppeteer desplaza automáticamente la página [url] hasta que se agota el contenido nuevo y luego extrae los elementos [selector]."
+    },
+    {
+      "n": 115,
+      "t_es": "Automatiza publicaciones en LinkedIn con la API",
+      "p_es": "Código Node.js para publicar una publicación en un perfil de LinkedIn con el texto [contenido]. Requisitos previos de autenticación OAuth2 y alcances necesarios."
+    },
+    {
+      "n": 116,
+      "t_es": "Integración de un chatbot simple en un sitio web",
+      "p_es": "Código HTML/JS para integrar un widget de chatbot basado en la API OpenAI. Tono [tono], base de conocimientos de avisos del sistema, historial de conversaciones."
+    },
+    {
+      "n": 117,
+      "t_es": "Genere etiquetas de dirección en PDF desde CSV",
+      "p_es": "Script Python que lee un CSV con [nombre, dirección, código postal, ciudad] y genera una página PDF de etiquetas alineadas listas para imprimir."
+    },
+    {
+      "n": 118,
+      "t_es": "Automatiza la creación de tareas de Asana a partir de correos electrónicos",
+      "p_es": "Script de Python que lee correos electrónicos no leídos desde un buzón de Gmail a través de IMAP, filtra por remitente [remitente] y crea una tarea de Asana con el asunto como título."
+    },
+    {
+      "n": 119,
+      "t_es": "Script de monitoreo del rendimiento web con Lighthouse",
+      "p_es": "Script de Node.js que utiliza lighthouse en modo programa para auditar la URL [url], extraer la puntuación de rendimiento y registrarla/enviarla a Datadog."
+    },
+    {
+      "n": 120,
+      "t_es": "Implementar un proxy API simple con caché",
+      "p_es": "Servidor Node.js (Express) que actúa como proxy para la API [target-api]. Almacenamiento en caché de respuestas GET con TTL [ttl] en Redis."
+    },
+    {
+      "n": 121,
+      "t_es": "Generar pruebas unitarias con Jest para una función",
+      "p_es": "Escriba un conjunto de pruebas unitarias de Jest para la función [función] exportada desde [utils.js]. Cubre casos nominales, límites y excepciones. describirlo."
+    },
+    {
+      "n": 122,
+      "t_es": "Escriba pruebas de un extremo a otro con Cypress para un flujo de autenticación",
+      "p_es": "Código para una prueba de Cypress que verifica la ruta de conexión completa en [url-login]: entrada, envío, redirección del panel, mensaje de bienvenida."
+    },
+    {
+      "n": 123,
+      "t_es": "Documentar una API REST con Swagger/OpenAPI",
+      "p_es": "Desde el código del controlador [código Express], agregue comentarios JSDoc para generar documentación Swagger con swagger-jsdoc. Diagramas incluidos."
+    },
+    {
+      "n": 124,
+      "t_es": "Prueba de carga simple con k6",
+      "p_es": "Script k6 (JavaScript) para probar la escalabilidad de GET [api/endpoint]. Escenario: 0 a 50 usuarios en 2 min, espera 3 min. Error <1%."
+    },
+    {
+      "n": 125,
+      "t_es": "Genere un archivo README.md completo para un proyecto de GitHub",
+      "p_es": "Plantilla README.md estructurada para un proyecto de código abierto [nombre]: insignias, descripción, instalación, uso, contribución, licencia."
+    },
+    {
+      "n": 126,
+      "t_es": "Prueba de integración con Supertest para una API Express",
+      "p_es": "Prueba de integración (Jest + Supertest) para la API de creación de artículos. Comprueba el código 201, presencia de una identificación, registro en la base de datos de prueba."
+    },
+    {
+      "n": 127,
+      "t_es": "Configurar un plan de prueba para una aplicación de comercio electrónico",
+      "p_es": "Plan de pruebas general para una aplicación [nombre]: pruebas unitarias, integración, de extremo a extremo, rendimiento. Herramientas y cobertura de objetivos."
+    },
+    {
+      "n": 128,
+      "t_es": "Documentar un componente de React con Storybook",
+      "p_es": "Historia para el componente [Botón] en Storybook, que muestra las variantes: primaria, secundaria, deshabilitada. Controles para jugar con accesorios."
+    },
+    {
+      "n": 129,
+      "t_es": "Unidad de prueba de un gancho de React con la biblioteca de pruebas de React",
+      "p_es": "Código de prueba para un gancho personalizado [useWindowSize] que devuelve ancho/alto. Simula el cambio de tamaño y comprueba la actualización."
+    },
+    {
+      "n": 130,
+      "t_es": "Configurar la cobertura de código con Jest",
+      "p_es": "Cómo configurar la cobertura de código en un proyecto de React con Jest (jest.config.js) y establecer un umbral general de [porcentaje]%."
+    },
+    {
+      "n": 131,
+      "t_es": "Escribir una instantánea de prueba para un componente",
+      "p_es": "Prueba de instantánea de Jest para el componente [Componente]. Mejores prácticas: evite instantáneas excesivamente grandes, cuándo actualizarlas."
+    },
+    {
+      "n": 132,
+      "t_es": "Documentar la arquitectura hexagonal de un proyecto.",
+      "p_es": "Documentación concisa de Markdown que explica la arquitectura hexagonal del proyecto [proyecto]. Dominio, aplicación, capas de infraestructura. Diagrama PlantUML."
+    },
+    {
+      "n": 133,
+      "t_es": "Generar documentación técnica para un modelo de BD",
+      "p_es": "A partir de un esquema SQL [esquema], genera documentación de Markdown que enumera cada tabla, columnas con tipos, restricciones y relaciones."
+    },
+    {
+      "n": 134,
+      "t_es": "Pruebas de mutación con Stryker para un módulo JavaScript",
+      "p_es": "Cómo configurar y ejecutar Stryker en un proyecto JavaScript para evaluar la calidad de las pruebas. Interpretación de un informe de mutación."
+    },
+    {
+      "n": 135,
+      "t_es": "Escribir una guía de contribución (CONTRIBUTING.md)",
+      "p_es": "Archivo CONTRIBUTING.md genérico para un proyecto de GitHub: código de conducta, informar un error, proponer una característica, entorno, relaciones públicas."
+    },
+    {
+      "n": 136,
+      "t_es": "Pruebe una API GraphQL con Apollo Server Testing",
+      "p_es": "Prueba de integración con Apollo Server y ejecución de operación para una mutación createUser. Verifica la creación y el token devuelto."
+    },
+    {
+      "n": 137,
+      "t_es": "Decisiones arquitectónicas de documentos (ADR)",
+      "p_es": "Plantilla de Registro de Decisión de Arquitectura en Markdown para documentar la elección de utilizar [tecnología] para [contexto]. Título, contexto, decisión, consecuencias."
+    },
+    {
+      "n": 138,
+      "t_es": "Prueba de componentes con Vue Test Utils",
+      "p_es": "Prueba unitaria para un componente de Vue 3 ([MyComponent]) que emite un evento al hacer clic. @vue/test-utils: montar, hacer clic, verificar."
+    },
+    {
+      "n": 139,
+      "t_es": "Implementación de una estrategia de versionado semántico.",
+      "p_es": "Cómo configurar la liberación semántica para un proyecto Node.js alojado en GitHub. Generación automática de versiones y CHANGELOG."
+    },
+    {
+      "n": 140,
+      "t_es": "Escriba pruebas basadas en propiedades con Fast-Check",
+      "p_es": "Ejemplo de prueba de propiedades en JavaScript con verificación rápida de una función [sortParInsertion]. Verifica que la matriz ordenada todavía esté ordenada."
+    },
+    {
+      "n": 141,
+      "t_es": "Analizar la seguridad de una función de autenticación",
+      "p_es": "Código de auditoría [código] para las 10 principales vulnerabilidades de OWASP (inyección, sesión, almacenamiento de contraseñas). Sugiere correcciones."
+    },
+    {
+      "n": 142,
+      "t_es": "Generar datos de prueba con factory_bot",
+      "p_es": "Escriba una fábrica (en Ruby/JS) para crear instancias de la entidad [Entidad] con atributos realistas y aleatorios, listas para probar."
+    },
+    {
+      "n": 143,
+      "t_es": "Configurar un linter para la documentación (Vale)",
+      "p_es": "Cómo instalar y configurar Vale, un linter en prosa, para comprobar la coherencia de la documentación de Markdown. Estilo personalizado."
+    },
+    {
+      "n": 144,
+      "t_es": "Escribir un documento de arquitectura del sistema.",
+      "p_es": "Plantilla para un documento de arquitectura: objetivos, limitaciones, diagrama de contexto, vista de componentes, flujo de datos, opciones tecnológicas, riesgos."
+    },
+    {
+      "n": 145,
+      "t_es": "Prueba visual de no regresión con Percy o Chromatic",
+      "p_es": "Flujo de trabajo para integrar pruebas de regresión visual en un proyecto de Storybook con Chromatic. Interpretación y aprobación de cambios."
+    },
+    {
+      "n": 146,
+      "t_es": "Configurar la simulación de API con MSW (Mock Service Worker)",
+      "p_es": "Configuración de MSW para interceptar llamadas de red en pruebas de React. Simule un punto final GET [api/usuario] y devuelva un usuario ficticio."
+    },
+    {
+      "n": 147,
+      "t_es": "Escribir una especificación de característica técnica.",
+      "p_es": "Especificaciones técnicas para la función [nombre-función]: alcance, historias de usuarios, modelos, puntos finales de API, modelo de datos, casos de error."
+    },
+    {
+      "n": 148,
+      "t_es": "Analizar la cobertura del código e identificar brechas",
+      "p_es": "Cómo generar un informe de cobertura con Estambul/Nueva York e interpretar las sucursales descubiertas para mejorar las pruebas en [archivo]."
+    },
+    {
+      "n": 149,
+      "t_es": "Escribir pruebas para una máquina de estados XState",
+      "p_es": "Ejemplo de prueba para una máquina de estados XState que gestiona un reproductor de vídeo (en pausa, reproduciendo, detenido). Comprueba transiciones válidas e inválidas."
+    },
+    {
+      "n": 150,
+      "t_es": "Generar un glosario técnico del proyecto.",
+      "p_es": "Glosario de términos técnicos utilizados en el proyecto [proyecto] en Markdown. Para cada término, definición simple y enlace a la documentación."
+    },
+    {
+      "n": 151,
+      "t_es": "Escribe una publicación de blog de SEO sobre [tema]",
+      "p_es": "Escriba un artículo de 1500 palabras sobre '[tema]'. Utiliza las palabras clave '[palabra clave1]', '[palabra clave2]' y variantes semánticas. Estructura con H2, H3, introducción pegadiza, conclusión con CTA. Meta descripción <160 caracteres."
+    },
+    {
+      "n": 152,
+      "t_es": "Plan de malla interna para un grupo de contenido",
+      "p_es": "Estrategia de enlaces internos para 5 artículos: [URL1], [URL2]... sobre el tema '[tema]'. Para cada artículo, 2 enlaces entrantes y 2 salientes con texto ancla."
+    },
+    {
+      "n": 153,
+      "t_es": "Resumen editorial para un editor sobre [tema]",
+      "p_es": "Resumen editorial completo para un escritor independiente: personalidad, intención de búsqueda, palabra clave principal, volumen de búsqueda, esqueleto, fuentes, tono."
+    },
+    {
+      "n": 154,
+      "t_es": "Optimizar un artículo antiguo para SEO (reescritura)",
+      "p_es": "Analiza el artículo en la URL [url] y proporciona una versión reescrita. Mejora el primer semestre con '[palabra clave]', se expande en un 30%, agrega 2 subtítulos, preguntas frecuentes, estadísticas de 2025."
+    },
+    {
+      "n": 155,
+      "t_es": "Ideas de títulos de artículos dignos de hacer clic",
+      "p_es": "Ofrece 10 ideas para títulos atractivos sobre '[temática]'. Mezcla de listas, \"cómo hacer\", \"guía definitiva\" y preguntas. Integra cifras y promesas."
+    },
+    {
+      "n": 156,
+      "t_es": "Escribe una publicación de invitado para [sitio]",
+      "p_es": "Publicación invitada de 1000 palabras para el blog [nombre-blog] en '[asunto]'. Público: [público objetivo]. Tono autoritario accesible, 3 consejos, anécdota, biografía con enlace."
+    },
+    {
+      "n": 157,
+      "t_es": "Contenido para una página pilar \"¿Qué es [concepto]?\"",
+      "p_es": "Página principal completa sobre '[concepto]' orientada a la palabra clave '[concepto]'. Estructura: definición, importancia, funcionamiento, beneficios, casos de estudio, preguntas frecuentes. 3000 palabras."
+    },
+    {
+      "n": 158,
+      "t_es": "Generar un calendario editorial mensual",
+      "p_es": "Calendario editorial para [mes] [año] en nicho [nicho]. 8 artículos con título, palabra clave principal, intención de búsqueda, persona y fechas sugeridas."
+    },
+    {
+      "n": 159,
+      "t_es": "Meta descripción optimizada para un artículo",
+      "p_es": "3 variaciones de meta descripción (máximo 155 caracteres) para una página orientada a '[palabra clave]'. Cada variación incluye un incentivo para hacer clic y refleja el contenido."
+    },
+    {
+      "n": 160,
+      "t_es": "Transforme el contenido del podcast en un artículo",
+      "p_es": "Tome la transcripción [transcripción] y conviértala en un artículo de 1200 palabras. Elimina tics, estructura de párrafos, agrega introducción y conclusión."
+    },
+    {
+      "n": 161,
+      "t_es": "Resumen para un artículo comparativo [Producto A] vs [Producto B]",
+      "p_es": "Plano detallado de un artículo comparativo entre [Producto A] y [Producto B]. Tabla comparativa, pruebas, ventajas/desventajas, relación calidad-precio, recomendación."
+    },
+    {
+      "n": 162,
+      "t_es": "Atractivo artículo 'Listicle'",
+      "p_es": "Escriba un artículo 'Los 10 [elementos] principales para [objetivo] en [año]'. Cada elemento: título atractivo, descripción de 100 palabras, consejo único. Introducción y conclusión."
+    },
+    {
+      "n": 163,
+      "t_es": "Escribir una respuesta a una objeción en un artículo.",
+      "p_es": "En un artículo sobre [tema], escribe una sección respondiendo a la objeción '[objeción]'. Reformulación, empatía, contraargumento sustentado, transición a la solución."
+    },
+    {
+      "n": 164,
+      "t_es": "Contenido para una página 'Acerca de' orientada a SEO",
+      "p_es": "Escribe contenido para la página \"Acerca de\" de [marca]. Misión, historia, equipo, valores, logros. Integra discretamente la palabra clave '[palabra clave]'."
+    },
+    {
+      "n": 165,
+      "t_es": "Convierta un estudio de caso en una publicación de blog",
+      "p_es": "Basado en el estudio de caso, escriba un artículo narrativo: historia del cliente, problema inicial, solución proporcionada, resultados cuantificados."
+    },
+    {
+      "n": 166,
+      "t_es": "Cree un resumen con anclajes HTML para un artículo extenso",
+      "p_es": "Código HTML para un resumen en el que se puede hacer clic para un artículo dividido en secciones con ID [sección1], [sección2]... Lista ordenada con enlaces suaves. CSS para darle estilo."
+    },
+    {
+      "n": 167,
+      "t_es": "Ideas de artículos de 'La gente también pregunta'",
+      "p_es": "Escanea el SERP en busca de '[consulta]' y extrae 5 preguntas de la sección 'La gente también pregunta'. Escribe una respuesta detallada a cada pregunta."
+    },
+    {
+      "n": 168,
+      "t_es": "Genere fragmentos optimizados para la posición cero",
+      "p_es": "Escriba un párrafo de 50 palabras que responda de manera concisa '[pregunta]' y pueda mostrarse en la posición cero. Formato de definición, paso o lista."
+    },
+    {
+      "n": 169,
+      "t_es": "Contenido imperecedero actualizado para [año]",
+      "p_es": "Vuelva a leer el artículo [url] y sugiera una actualización para [año]. Actualiza estadísticas, elimina obsoletas, agrega tendencias recientes, cambia fecha."
+    },
+    {
+      "n": 170,
+      "t_es": "Escriba un artículo de la 'Guía para principiantes' sobre [tema]",
+      "p_es": "Guía completa para principiantes sobre [tema]. Lenguaje sencillo, analogías, capturas de pantalla descritas, pasos numerados. Consejos para evitar errores comunes."
+    },
+    {
+      "n": 171,
+      "t_es": "Crear un glosario de términos [de la industria]",
+      "p_es": "Glosario de 20 términos esenciales de la industria [industria]. Para cada uno: término, definición en lenguaje sencillo, ejemplo de uso. Optimizado para búsqueda por voz."
+    },
+    {
+      "n": 172,
+      "t_es": "Generar un artículo a partir de un vídeo de YouTube",
+      "p_es": "Transcripción de un vídeo de YouTube sobre [tema]. Conviértalo en una publicación de blog estructurada de 1000 palabras. Título, introducción, intertítulos, resumen. Mantén el tono."
+    },
+    {
+      "n": 173,
+      "t_es": "Escribe una sección de preguntas frecuentes para un artículo.",
+      "p_es": "Para el artículo sobre [tema], escriba una sección de preguntas frecuentes con cinco preguntas y respuestas basadas en investigaciones relacionadas. Respuestas concisas e informativas."
+    },
+    {
+      "n": 174,
+      "t_es": "Escribe un artículo/declaración de posición controvertidos.",
+      "p_es": "Artículo de opinión sobre [tema controvertido]. Presenta ambas partes, adopta una posición clara sustentada en argumentos sólidos. Termine con una pregunta abierta."
+    },
+    {
+      "n": 175,
+      "t_es": "Transforme los puntos clave en un artículo fluido",
+      "p_es": "A partir de esta lista de puntos clave [lista], desarrolle un artículo de 800 palabras con transiciones fluidas, hilo lógico, introducción y conclusión."
+    },
+    {
+      "n": 176,
+      "t_es": "Escribe un artículo invitado 'Guía definitiva'",
+      "p_es": "Guía definitiva sobre [tema] destinada a [público]. Apunta a 4000 palabras. Tabla de contenidos, capítulos, listas de verificación, recursos descargables, resumen."
+    },
+    {
+      "n": 177,
+      "t_es": "Crear un artículo basado en datos",
+      "p_es": "Investiga 5 estadísticas recientes sobre [tema] y escribe un artículo interpretándolas. Contexto, fuente, implicación concreta. Gráficos descritos textualmente."
+    },
+    {
+      "n": 178,
+      "t_es": "Optimice la densidad de palabras clave sin sobreoptimización",
+      "p_es": "En texto [texto], analiza la densidad de palabras clave. Reescribe oraciones para incluir naturalmente variaciones de '[palabra clave]' y co-ocurrencias."
+    },
+    {
+      "n": 179,
+      "t_es": "Genere un mensaje de artículo para IA en el marco AIDA",
+      "p_es": "Meta-prompt destinado a escribir un artículo de blog sobre [tema] siguiendo la estructura AIDA. Incorpora la palabra clave principal, persona y tono."
+    },
+    {
+      "n": 180,
+      "t_es": "Escribe un artículo sobre las tendencias futuras en [industria]",
+      "p_es": "Artículo prospectivo sobre 5 tendencias que marcarán la industria [industria] en los próximos 5 años. Basado en informes de Gartner, McKinsey, etc."
+    },
+    {
+      "n": 181,
+      "t_es": "Títulos de artículos con gancho emocional.",
+      "p_es": "15 títulos de artículos para un blog sobre [tema] que utilizan ganchos emocionales: miedo, curiosidad, deseo, urgencia. Ej: 'No cometas [error] antes de leer esto'."
+    },
+    {
+      "n": 182,
+      "t_es": "Brief para crear una infografía a partir de un artículo",
+      "p_es": "Transforma el contenido del artículo [url] en un resumen para un diseñador gráfico: 8 puntos de datos clave, flujo narrativo, elementos visuales por sección. Tamaño 800x2000 píxeles."
+    },
+    {
+      "n": 183,
+      "t_es": "Artículo 'Mito vs Realidad'",
+      "p_es": "Artículo que desmitifica 5 ideas preconcebidas sobre [tema]. Estructura: cada mito en el título, creencia generalizada, realidad explicada, prueba científica."
+    },
+    {
+      "n": 184,
+      "t_es": "Contenido para una página de servicio de SEO local",
+      "p_es": "Página de servicio para [tipo de negocio] en [ciudad]. Destino '[servicio] en [ciudad]'. Área de influencia, testimonios locales, llamado a la acción para cotizaciones."
+    },
+    {
+      "n": 185,
+      "t_es": "Generar ideas de contenido desde foros.",
+      "p_es": "Explore las discusiones en [foro/reddit] sobre [tema] y proponga 10 ideas de artículos basadas en preguntas recurrentes y problemas no resueltos."
+    },
+    {
+      "n": 186,
+      "t_es": "Escribe un artículo sobre un \"día típico\" escrito por un experto.",
+      "p_es": "Artículo 'Un día en la vida de [persona]' que describe narrativamente rutinas, herramientas y desafíos. Integra discretamente productos/servicios."
+    },
+    {
+      "n": 187,
+      "t_es": "Parafrasear un artículo existente para evitar contenido duplicado",
+      "p_es": "Vuelva a escribir el artículo [texto] completo conservando el significado pero cambiando la estructura de la oración, el vocabulario y los ejemplos. Texto único."
+    },
+    {
+      "n": 188,
+      "t_es": "Cree un resumen del boletín a partir de los últimos artículos.",
+      "p_es": "Resumen de un boletín semanal para un blog de tecnología. Artículos de la semana: [títulos y resúmenes]. Para cada uno, un adelanto de 2 oraciones."
+    },
+    {
+      "n": 189,
+      "t_es": "Breve para un artículo con storytelling.",
+      "p_es": "Esquema de un artículo sobre [tema] utilizando la narración: gancho narrativo (historia personal/de cliente), transición al problema, solución, conclusión moral."
+    },
+    {
+      "n": 190,
+      "t_es": "Escribe una publicación de invitado para un blog de alta autoridad.",
+      "p_es": "Artículo de 2000 palabras para el blog [nombre] (DR 70+). Tema nítido y original. Nuevo ángulo. Citas de estudios recientes, opiniones de expertos, formateadas según directrices."
+    },
+    {
+      "n": 191,
+      "t_es": "Guión teaser para vídeo de YouTube sobre [tema]",
+      "p_es": "Escribe un guión para los primeros 15 segundos de un vídeo de YouTube sobre [tema]. Gancho poderoso: pregunta provocativa, estadística impactante, declaración audaz."
+    },
+    {
+      "n": 192,
+      "t_es": "Guión completo para un vídeo tutorial de 10 minutos.",
+      "p_es": "Guión minuto a minuto de un tutorial de YouTube sobre [tema]. Duración 10 min: gancho (0-0:30), presentación, pasos (1:00-8:30), demostración, CTA final."
+    },
+    {
+      "n": 193,
+      "t_es": "Ideas de vídeos de TikTok para [nicho]",
+      "p_es": "10 conceptos de vídeos de TikTok originales para una marca en [nicho]. Para cada concepto: guión de 30 segundos, sonido de tendencia, idea de gancho visual."
+    },
+    {
+      "n": 194,
+      "t_es": "Guión storytelling para un vídeo de marca",
+      "p_es": "Guión de un vídeo corto (60 segundos) que cuenta la historia de [marca]. Problema inicial, detonante, recorrido, éxito. Emoción: inspiración."
+    },
+    {
+      "n": 195,
+      "t_es": "Estructura de un Reel de Instagram para promocionar un producto",
+      "p_es": "Toma de un reel de 30 segundos para promocionar [producto]. Gancho de 0-5 segundos, demostración de 5-20 segundos, CTA de 20-30 segundos. Audio de tendencia, hashtags."
+    },
+    {
+      "n": 196,
+      "t_es": "Texto locutor para un vídeo explicativo (exlainer)",
+      "p_es": "Voz en off para un vídeo animado de 90 segundos que explica [concepto complejo]. Tono sencillo, didáctico y entusiasta. Instrucciones visuales correspondientes."
+    },
+    {
+      "n": 197,
+      "t_es": "Guión de preguntas para una videoentrevista con un experto",
+      "p_es": "15 preguntas para una entrevista en video con un experto en [dominio]. Alterna preguntas en profundidad, anécdotas personales, consejos prácticos. Posibles reinicios."
+    },
+    {
+      "n": 198,
+      "t_es": "Anotaciones para cortos de YouTube/TikTok que convierten",
+      "p_es": "5 guiones teaser de menos de 5 segundos para vídeos cortos sobre [tema]. Curiosidad o fuerte promesa. Ej: 'Deja de hacer [acción] si quieres [resultado]'."
+    },
+    {
+      "n": 199,
+      "t_es": "Guión para un vídeo testimonial de un cliente",
+      "p_es": "Guía de entrevista para recopilar un testimonio de cliente en vídeo. 5 preguntas: situación anterior, problema, por qué nuestra solución, resultados, consejos. Notas de encuadre."
+    },
+    {
+      "n": 200,
+      "t_es": "Genere un título de video de YouTube SEO y en el que se pueda hacer clic",
+      "p_es": "10 títulos de vídeos de YouTube sobre '[asunto]' optimizados para SEO y tasas de clics. Mezcla de números, palabras poderosas, promesa de beneficio inmediato. Ej: 'Cómo [resultado] en [número] pasos'."
+    },
+    {
+      "n": 201,
+      "t_es": "Script de inicio para una transmisión en vivo",
+      "p_es": "Guión de los primeros 5 minutos de un directo en [plataforma] en [tema]. Inicio, presentación del tema, programa, recordatorio de suscripción, rompehielos."
+    },
+    {
+      "n": 202,
+      "t_es": "Estructura de un vídeo de demostración de software",
+      "p_es": "Toma de un vídeo de demostración de 8 minutos para el software [nombre]. Problema de 0 a 1 minuto, demostración de 1 a 7 minutos de 3 funciones clave, resumen y oferta de 7 a 8 minutos."
+    },
+    {
+      "n": 203,
+      "t_es": "Ideas de vídeos virales para un producto físico",
+      "p_es": "5 conceptos de videos virales para promocionar [producto físico] sin presupuesto. Prueba de resistencia, antes/después, comparación inesperada, unboxing de ASMR."
+    },
+    {
+      "n": 204,
+      "t_es": "Guión para un anuncio de vídeo de Facebook Ads de 15 segundos",
+      "p_es": "Guión publicitario de vídeo de 15 segundos para [producto]. 3 segundos para captar la atención (pregunta/problema), 10 segundos para solución/beneficios, 2 segundos para borrar CTA."
+    },
+    {
+      "n": 205,
+      "t_es": "Genere ideas de contenido de video corto basadas en tendencias",
+      "p_es": "Basado en las tendencias actuales en [TikTok/Instagram] en el nicho [nicho], sugiere 7 ideas de videos cortos adaptables a la marca [marca]."
+    },
+    {
+      "n": 206,
+      "t_es": "Guión para un sketch de comedia en vídeo",
+      "p_es": "Miniguión de 45 segundos para un sketch humorístico sobre [situación relacionada con un nicho]. Dos personajes A y B. Problema frecuente, caída divertida."
+    },
+    {
+      "n": 207,
+      "t_es": "Escribe un mensaje para el final de la pantalla de vídeo (outro)",
+      "p_es": "Texto para el final de un vídeo de YouTube: llama para suscribirte, mira el vídeo sugerido [título], descarga la guía gratuita [enlace]. Texto superpuesto."
+    },
+    {
+      "n": 208,
+      "t_es": "Guión para un evento en vivo (webinar)",
+      "p_es": "Hilo principal de un seminario web de 45 minutos sobre [tema]. 5min bienvenida, 10min problema, 20min método, 7min testimonios, 3min oferta y preguntas."
+    },
+    {
+      "n": 209,
+      "t_es": "Texto para un cliente vídeo de agradecimiento",
+      "p_es": "Mensaje cálido para leer frente a la cámara para agradecer a los clientes por participar en [evento/compra]. Nota de humor, sutil anuncio del próximo lanzamiento."
+    },
+    {
+      "n": 210,
+      "t_es": "Guión para unboxing y primera reseña del producto.",
+      "p_es": "Guión para un vídeo unboxing de [producto]. Introducción emocionante, descubrimiento del empaque, primera impresión, detalles de accesorios, prueba rápida, veredicto. 3-5 minutos."
+    },
+    {
+      "n": 211,
+      "t_es": "Generar una serie de 5 videos temáticos",
+      "p_es": "Serie de 5 vídeos de YouTube sobre el tema [tema principal]. Para cada episodio: título, objetivo educativo, resumen, articulación con otros. Minicurso gratuito."
+    },
+    {
+      "n": 212,
+      "t_es": "Adaptar una publicación de blog a un guión de video",
+      "p_es": "Transforma el artículo [url] en un guión de vídeo de 6 minutos. Elimina contenido textual, agrega metáforas visuales, instrucciones del editor (material adicional, animaciones), gancho contundente."
+    },
+    {
+      "n": 213,
+      "t_es": "Guión para un reel 'Consejo del día'",
+      "p_es": "Guión de un Reel de 30 segundos sobre asesoramiento de expertos en [dominio]. Comience: \"Si está haciendo esto, deténgase de inmediato\". Medio: buen consejo. Finalizando: \"Sígueme para más consejos\"."
+    },
+    {
+      "n": 214,
+      "t_es": "Ideas de desafíos en vídeo para involucrar a la comunidad",
+      "p_es": "3 retos de vídeo que la marca [marca] podría lanzar en redes sociales para generar UGC. Concepto, reglas, hashtags, recompensas."
+    },
+    {
+      "n": 215,
+      "t_es": "Texto para un vídeo de presentación del equipo.",
+      "p_es": "Cálida voz en off para un vídeo de 2 minutos que presenta al equipo de [empresa]. Cada miembro tiene una secuencia corta. Cultura y pasión comunes."
+    },
+    {
+      "n": 216,
+      "t_es": "Generar un título y una miniatura para un vídeo de YouTube",
+      "p_es": "Idea para una miniatura y un título llamativos para un vídeo sobre [tema]. Rostro con expresión [sorprendida/seria], texto grande, fondo contrastante."
+    },
+    {
+      "n": 217,
+      "t_es": "Guión para un vídeo de lanzamiento de producto SaaS",
+      "p_es": "Guión completo de un vídeo de lanzamiento de SaaS [nombre]. Problema, solución, características, prueba social, oferta introductoria. Duración: 2 minutos."
+    },
+    {
+      "n": 218,
+      "t_es": "Ideas de vídeos ASMR para una marca",
+      "p_es": "3 ideas de vídeos ASMR para promocionar [producto] de forma original. Configuración, ruidos a capturar, tono de voz en off susurrada."
+    },
+    {
+      "n": 219,
+      "t_es": "Guión para un vídeo de 'antes/después'",
+      "p_es": "Planifique un vídeo de antes/después de la transformación: problema inicial, proceso, revelación del resultado. Testimonios o texto en pantalla."
+    },
+    {
+      "n": 220,
+      "t_es": "Escriba un mensaje para un generador de videos de IA",
+      "p_es": "Solicitud detallada para que una herramienta de generación de videos de IA (Synthesia) produzca un video de 60 segundos sobre [tema]. Guión, avatar, tono, fondos."
+    },
+    {
+      "n": 221,
+      "t_es": "Boletín de bienvenida para nuevos suscriptores",
+      "p_es": "Escriba un boletín de bienvenida para los nuevos suscriptores de [marca]. Asunto: '¡Bienvenido a [nombre de la comunidad]!'. Gracias, presentación, contenido popular."
+    },
+    {
+      "n": 222,
+      "t_es": "Escenario para una secuencia de 5 correos electrónicos enriquecedores",
+      "p_es": "Secuencia de correo electrónico de 5 días para convertir un cliente potencial frío en uno atractivo para la oferta [oferta]. Correo electrónico 1: valor, 2: narración, 3: caso de cliente, 4: objeción, 5: oferta."
+    },
+    {
+      "n": 223,
+      "t_es": "Newsletter semanal con curación de contenidos",
+      "p_es": "Boletín para la comunidad [sector]. Introducción personal, 3 enlaces externos comentados, 1 consejo práctico, promoción discreta del producto. Tu [tono]."
+    },
+    {
+      "n": 224,
+      "t_es": "Correo electrónico de seguimiento después de un seminario web",
+      "p_es": "Correo electrónico de seguimiento enviado 1 hora después de un seminario web sobre [tema]. Repetición, resumen de puntos clave, enlace a la oferta especial (24 horas), cuestión de compromiso."
+    },
+    {
+      "n": 225,
+      "t_es": "Correo electrónico para reactivar suscriptores inactivos",
+      "p_es": "Correo electrónico de reactivación para suscriptores que han estado inactivos durante 3 meses. Artículo llamativo. Recordatorio de valor, imán de clientes potenciales ofrecido, enlace para cancelar la suscripción visible."
+    },
+    {
+      "n": 226,
+      "t_es": "Estrategia de email marketing para el lanzamiento de un producto en 3 fases",
+      "p_es": "Estrategia de contenidos para un lanzamiento en 3 fases: prelanzamiento (7 días), lanzamiento (3 días), postlanzamiento (2 días). Objetivo de cada email, tipo de contenido, CTA."
+    },
+    {
+      "n": 227,
+      "t_es": "Tipo de newsletter 'Historia personal'",
+      "p_es": "Newsletter basado en una historia personal relacionada con [tema de marca]. La historia enseña una lección e introduce un recurso/producto. Escritura narrativa."
+    },
+    {
+      "n": 228,
+      "t_es": "Encuesta por correo electrónico para conocer las necesidades de los suscriptores",
+      "p_es": "Envíe un correo electrónico preguntando a los suscriptores cuál es su mayor desafío con respecto a [tema]. Breve, personal, fomentando una respuesta directa. Objeto que despierta curiosidad."
+    },
+    {
+      "n": 229,
+      "t_es": "Autoresponder para formación gratuita en 7 días",
+      "p_es": "Autoresponder de 7 correos electrónicos entregando capacitación gratuita sobre [tema]. Cada correo electrónico: lección breve, ejercicio práctico, adelanto para el día siguiente. Último: oferta premium."
+    },
+    {
+      "n": 230,
+      "t_es": "Correo electrónico promocionando una publicación de blog.",
+      "p_es": "Correo electrónico breve para promocionar el artículo '[título]'. Muestra el contenido sin revelarlo, beneficio para el lector, botón CTA grande \"Leer el artículo\"."
+    },
+    {
+      "n": 231,
+      "t_es": "Campaña de correo electrónico navideña/festiva",
+      "p_es": "3 campañas de email para Navidad. Email 1: guía de los mejores regalos. Correo electrónico 2: oferta especial de última hora. Correo electrónico 3: deseos y agradecimientos."
+    },
+    {
+      "n": 232,
+      "t_es": "Boletín 'Detrás de escena'",
+      "p_es": "Boletín que muestra el detrás de escena de [empresa]: altibajos, cifras mensuales, proyectos actuales. Transparencia para fortalecer la conexión."
+    },
+    {
+      "n": 233,
+      "t_es": "Correo electrónico de abandono de navegación (retargeting)",
+      "p_es": "Correo electrónico para alguien que visitó la página de ventas de [producto] sin realizar ninguna compra. Recordatorio de ganancias, levantamiento de objeciones, prueba social, descuento limitado del [X]%."
+    },
+    {
+      "n": 234,
+      "t_es": "Newsletter para anunciar un evento o desafío",
+      "p_es": "Boletín que anuncia un desafío gratuito de [número] día sobre [tema]. Qué ganarán, planificación, inscripción, urgencia (plazas limitadas)."
+    },
+    {
+      "n": 235,
+      "t_es": "Correo electrónico de solicitud de testimonio/revisión",
+      "p_es": "Envíe un correo electrónico a un cliente satisfecho para solicitar un testimonio o una reseña en [plataforma]. Lo hace más fácil con un enlace directo y 2 o 3 preguntas guía. Gratitud."
+    },
+    {
+      "n": 236,
+      "t_es": "Estrategia de segmentación para una newsletter",
+      "p_es": "Estrategia de segmentación de la lista de correo electrónico de [empresa] basada en comportamiento e intereses. 4 segmentos diferentes con el tipo de contenido adecuado."
+    },
+    {
+      "n": 237,
+      "t_es": "Correo electrónico para actualizar usuarios gratuitos a usuarios pagos",
+      "p_es": "Correo electrónico para usuarios del plan gratuito de [producto SaaS]. Limitaciones encontradas, beneficios del plan premium, testimonio de clientes, oferta de prueba a [precio]."
+    },
+    {
+      "n": 238,
+      "t_es": "Escriba una serie de correos electrónicos de bienvenida automatizados",
+      "p_es": "Serie de 4 correos electrónicos de bienvenida para [plataforma]. Correo electrónico 1: confirmación y entregable. 2: historia de la marca. 3: mejor contenido. 4: oferta de primer pedido."
+    },
+    {
+      "n": 239,
+      "t_es": "Disculpa por correo electrónico por error técnico",
+      "p_es": "Correo electrónico de disculpa después de un error (varios correos electrónicos enviados, corte de acceso). Asume responsabilidad, explica, presenta medidas correctivas, gesto comercial."
+    },
+    {
+      "n": 240,
+      "t_es": "Solicitar un asunto de correo electrónico con una alta tasa de apertura",
+      "p_es": "Diez ideas de asuntos de correo electrónico para un boletín informativo sobre [asunto]. Mezcla de personalización, curiosidad, urgencia, listas. Utilice emojis con moderación."
+    },
+    {
+      "n": 241,
+      "t_es": "Escribe la página de 'Venta cruzada' por correo electrónico",
+      "p_es": "Correo electrónico posterior a la compra recomendando productos complementarios a [producto adquirido]. Por qué van juntos, paquete."
+    },
+    {
+      "n": 242,
+      "t_es": "Correo electrónico de patrocinio (recomendación)",
+      "p_es": "Correo electrónico animando a los clientes a recomendar amigos. Programa: 'Recomienda a un amigo, ambos reciben [recompensa]'. Enlace de referencia único."
+    },
+    {
+      "n": 243,
+      "t_es": "Transforme un correo electrónico en una página web de boletín informativo",
+      "p_es": "Adapta el contenido del correo electrónico [correo electrónico] para una versión en línea (página de archivo del boletín) con los mismos textos e imágenes, formateados en HTML independiente."
+    },
+    {
+      "n": 244,
+      "t_es": "Brief para un diseñador gráfico para la cabecera de una newsletter",
+      "p_es": "Breve para crear una imagen de encabezado de boletín sobre [tema]. Dimensiones 600px de ancho. Título, subtítulo, colores, estilo visual deseado."
+    },
+    {
+      "n": 245,
+      "t_es": "Boletín interactivo con encuesta o cuestionario.",
+      "p_es": "Boletín que incluye un minitest de 3 preguntas sobre [tema] con retroalimentación inmediata. Objetivo: educar recogiendo preferencias."
+    },
+    {
+      "n": 246,
+      "t_es": "Correo electrónico de última oportunidad antes de cerrar una oferta",
+      "p_es": "Correo electrónico enviado 2 horas antes del final de una promoción. Tema alarmante, recordatorio de lo que están perdiendo, prueba social, gran botón de acción."
+    },
+    {
+      "n": 247,
+      "t_es": "Serie de correos electrónicos para un programa de afiliados",
+      "p_es": "Serie de 3 correos electrónicos para reclutar afiliados para [producto]. 1: presentación y comisiones. 2: recursos proporcionados. 3: Éxito del afiliado."
+    },
+    {
+      "n": 248,
+      "t_es": "Correo electrónico para compartir en redes sociales después de una compra",
+      "p_es": "Correo electrónico de agradecimiento posterior a la compra animando al cliente a compartir su compra en las redes sociales con [#hashtag]. Mensaje escrito previamente."
+    },
+    {
+      "n": 249,
+      "t_es": "Correo electrónico de prospección B2B para un servicio",
+      "p_es": "Correo electrónico de prospección en frío para vender [servicio] a un [puesto]. Artículo personalizado. Mención de novedades de la empresa. Paso. Solicitud de llamada 15min."
+    },
+    {
+      "n": 250,
+      "t_es": "Serie de incorporación de correo electrónico para una aplicación móvil",
+      "p_es": "Correo electrónico de incorporación para la aplicación móvil de [nombre]. 5 correos electrónicos: instalación, primera conexión, característica clave n.º 1, n.º 2, llamada para recibir comentarios. GIF/capturas."
+    },
+    {
+      "n": 251,
+      "t_es": "Escribir un boletín con la historia de un cliente.",
+      "p_es": "Newsletter en torno a un caso de éxito de un cliente. Estructura: antes, solución, después. Llamada a la acción para descubrir el servicio. Tono inspirador."
+    },
+    {
+      "n": 252,
+      "t_es": "Correo electrónico de agradecimiento después de una compra importante",
+      "p_es": "Sincero correo electrónico de agradecimiento después de una primera compra de [marca]. Tono cálido, recordatorio de la misión, enlace a una guía de usuario."
+    },
+    {
+      "n": 253,
+      "t_es": "Email de cumpleaños del suscriptor con sorpresa",
+      "p_es": "Correo electrónico de cumpleaños enviado el gran día (mediante formulario). Desea un feliz cumpleaños, ofrece un pequeño obsequio (descuento, contenido exclusivo)."
+    },
+    {
+      "n": 254,
+      "t_es": "Correo electrónico teaser para un nuevo producto",
+      "p_es": "Correo electrónico misterioso anunciando un nuevo producto en [fecha límite]. Cuenta regresiva, señales visuales, invitación para registrarse en una lista VIP."
+    },
+    {
+      "n": 255,
+      "t_es": "Estrategia de contenido para un boletín pago",
+      "p_es": "Línea editorial para newsletter de pago en el nicho [nicho]. Contenido exclusivo que justifica el precio: análisis, entrevistas, herramientas, estudios de casos."
+    },
+    {
+      "n": 256,
+      "t_es": "Correo electrónico de felicitación por un hito de cliente",
+      "p_es": "Correo electrónico automático cuando el usuario alcanza un umbral de uso (por ejemplo: tarea número 100). Felicitar, compartir un uso avanzado, pedir un testimonio."
+    },
+    {
+      "n": 257,
+      "t_es": "'¿Sabías?' hoja informativa",
+      "p_es": "Boletín educativo con 3 datos sorprendentes sobre [tema]. Cada hecho explicado de forma sencilla con una fuente. Termina con un enlace a un artículo."
+    },
+    {
+      "n": 258,
+      "t_es": "Correo electrónico para recopilar opiniones en Trustpilot/Google",
+      "p_es": "Correo electrónico posterior a la compra para solicitar una revisión de Google. Explica la importancia, facilita la tarea y posiblemente ofrece un vale como agradecimiento."
+    },
+    {
+      "n": 259,
+      "t_es": "Correo electrónico de venta cruzada basado en el historial de compras",
+      "p_es": "Plantilla de correo electrónico basada en la última compra de [producto] para recomendar un accesorio o capacitación adicional. Oración de transición lógica."
+    },
+    {
+      "n": 260,
+      "t_es": "Escribe un boletín estilo 'diario'",
+      "p_es": "Estilo muy personal, como una carta a un amigo, compartiendo pensamientos, errores, aprendizajes. Enlaces sutiles de productos. Tono vulnerable y auténtico."
+    },
+    {
+      "n": 261,
+      "t_es": "Escenario de correo electrónico para una campaña de crowdfunding",
+      "p_es": "Secuencia de correo electrónico para una campaña de Kickstarter: 1) precampaña, 2) lanzamiento del día D, 3) objetivo ambicioso, 4) últimas 48 horas, 5) gracias."
+    },
+    {
+      "n": 262,
+      "t_es": "Correo electrónico para enviar cuando un cliente potencial descarga un imán de clientes potenciales",
+      "p_es": "Correo electrónico de entrega de lead magnet: '¡Su guía [título] está lista!'. Enlace de descarga, qué aprenderá, sugerencia para el siguiente paso."
+    },
+    {
+      "n": 263,
+      "t_es": "Newsletter para promocionar un episodio de podcast",
+      "p_es": "Correo electrónico anunciando el lanzamiento de un nuevo episodio de podcast con [invitado]. Temas cubiertos, puntos clave, enlace de escucha. Cita poderosa."
+    },
+    {
+      "n": 264,
+      "t_es": "Correo electrónico de retención después de la cancelación de la suscripción",
+      "p_es": "Correo electrónico después de la cancelación de la suscripción. Pregunte el motivo, ofrezca un descanso en lugar de cancelación u ofrezca un plan más económico. Empático."
+    },
+    {
+      "n": 265,
+      "t_es": "Correo electrónico de venta flash para una oferta limitada",
+      "p_es": "Correo electrónico promocional para una venta flash de 24 horas en [productos]. Rareza (stock limitado), emergencia (temporizador). Diseño limpio, centrado en la reducción y el beneficio."
+    },
+    {
+      "n": 266,
+      "t_es": "Publicación de LinkedIn: lección aprendida del fracaso",
+      "p_es": "Publicación de LinkedIn que relata un fracaso profesional importante, lo que aprendiste y cómo te ayudó a tener éxito. Termine con una pregunta. Emojis y saltos de línea."
+    },
+    {
+      "n": 267,
+      "t_es": "Publicación de Instagram del carrusel educativo",
+      "p_es": "Contenido de un carrusel de Instagram de 10 diapositivas sobre '[asunto]'. Diapositiva 1: título atractivo; diapositivas 2 a 9: un consejo por diapositiva; diapositiva 10: CTA y enlace en biografía."
+    },
+    {
+      "n": 268,
+      "t_es": "Post X (Twitter) golpea para iniciar un debate",
+      "p_es": "Publicación de 280 caracteres X que adopta una posición controvertida (pero defendible) en [dominio] para obtener respuestas. Pregunta retórica, hashtag."
+    },
+    {
+      "n": 269,
+      "t_es": "Avance de AIDA para un anuncio de Facebook",
+      "p_es": "Texto principal de un anuncio de Facebook que utiliza la estructura AIDA para [producto/servicio]. Título (Atención), texto (Interés, Deseo), CTA (Acción)."
+    },
+    {
+      "n": 270,
+      "t_es": "Éxito del cliente compartiendo publicación de LinkedIn",
+      "p_es": "Publicación narrativa en LinkedIn que comparte el éxito de un cliente después de usar [servicio/producto]. Cifras, cotización del cliente, conclusión sobre el valor."
+    },
+    {
+      "n": 271,
+      "t_es": "Guión para un TikTok de 'cámara facial' con consejos",
+      "p_es": "Guión de un TikTok frente a cámara que brinda consejos rápidos sobre [tema]. Gancho: 'Deja de cometer [error]'. Consejo: 'En su lugar, haga [buenas prácticas]'. Sigue la llamada a la acción."
+    },
+    {
+      "n": 272,
+      "t_es": "Tweet para promover un hilo viral",
+      "p_es": "Primer tweet de un hilo sobre [tema] diseñado para maximizar las acciones. Promesa de valor loca, figura, anuncio del contenido de los siguientes tweets. '⤵️Hilo'."
+    },
+    {
+      "n": 273,
+      "t_es": "Publicación de Facebook para una comunidad grupal",
+      "p_es": "Publicar para un grupo de Facebook [nicho] haciendo una pregunta interesante: \"¿Cuál es tu mayor desafío con [tema] en este momento?\" Fomenta los comentarios."
+    },
+    {
+      "n": 274,
+      "t_es": "Ideas de contenido de LinkedIn para [trabajo] durante 30 días",
+      "p_es": "Calendario de 30 ideas de publicaciones en LinkedIn para un [trabajo/consultor]. Mezcla de estudios de casos, lecciones, opiniones, consejos, detrás de escena. Tema por día."
+    },
+    {
+      "n": 275,
+      "t_es": "Título de Instagram con cebo para comentarios",
+      "p_es": "El título de Instagram de una foto de [descripción] fomenta fuertemente la participación. Pregunta abierta, CTA 'Cuéntame en los comentarios...', 5 hashtags específicos."
+    },
+    {
+      "n": 276,
+      "t_es": "Publicación de LinkedIn para reclutar un empleado",
+      "p_es": "Publicación de LinkedIn que anuncia la apertura de un puesto para [título] en [nombre]. Misión, perfil deseado, cultura, cómo postularse. Llame para darle me gusta y compartir."
+    },
+    {
+      "n": 277,
+      "t_es": "Hilo educativo de Twitter sobre un concepto complejo",
+      "p_es": "Hilo de 8 tweets que simplemente explican [concepto complejo]. Desglosado en 8 pasos con metáforas. Primer tweet pegadizo, último resumen visual."
+    },
+    {
+      "n": 278,
+      "t_es": "Publicación de Instagram antes/después de la transformación",
+      "p_es": "Leyenda de una publicación de antes/después que muestra los resultados de [servicio]. Describe el estado inicial, el proceso, el resultado. Testimonio de cliente. Consulta de CTA."
+    },
+    {
+      "n": 279,
+      "t_es": "Mensaje de prospección de LinkedIn para una cita.",
+      "p_es": "Mensaje de prospección de LinkedIn (300 caracteres máximo) para contactar a un [cliente potencial ideal]. Personalización, valor inmediato, sugerencia de llamada de 15 minutos."
+    },
+    {
+      "n": 280,
+      "t_es": "Publicaciones de Instagram para lanzar un podcast",
+      "p_es": "Serie de 3 publicaciones de Instagram que anuncian el lanzamiento del podcast de [nombre]. Publicación 1: adelanto con pregunta. Publicación 2: invitado destacado. Publicación 3: enlace de escucha y CTA de suscripción."
+    },
+    {
+      "n": 281,
+      "t_es": "Involucrar el estado de LinkedIn en una estadística de la industria",
+      "p_es": "Publicación de LinkedIn sobre una estadística sorprendente: '[estadística]'. Su análisis sobre lo que esto significa para el futuro del sector requiere opinión."
+    },
+    {
+      "n": 282,
+      "t_es": "Descripción de un vídeo de YouTube (SEO)",
+      "p_es": "Descripción optimizada de un vídeo de YouTube sobre '[tema]'. Resumen 2 oraciones, enlaces de recursos, códigos de tiempo, suscripción, 3 hashtags. Palabra clave al principio."
+    },
+    {
+      "n": 283,
+      "t_es": "Publicación en Facebook para vender un producto físico.",
+      "p_es": "Publicación de Facebook personal y convincente para vender [producto]. Tu experiencia, por qué te gusta, enlace de compra. Tu recomendación genuina."
+    },
+    {
+      "n": 284,
+      "t_es": "Carrusel de LinkedIn 'Errores a evitar'",
+      "p_es": "Contenido de un carrusel PDF de LinkedIn de 8 diapositivas: 'Los 7 errores que [profesión] comete y cómo evitarlos'. Cada diapositiva: error + corrección."
+    },
+    {
+      "n": 285,
+      "t_es": "Plantilla de respuesta a comentarios de LinkedIn",
+      "p_es": "10 plantillas de respuesta personalizadas para comentarios en tus publicaciones de LinkedIn (gracias, acuerdo, desacuerdo constructivo, pregunta). Tu profesional."
+    },
+    {
+      "n": 286,
+      "t_es": "Tuitea para compartir un recurso gratuito",
+      "p_es": "Tuitea compartiendo un recurso gratuito (guía, plantilla). Describe el contenido, el beneficio, proporciona el enlace. Agrega un objeto visual (descrito). 'Ojalá tuviera eso...'"
+    },
+    {
+      "n": 287,
+      "t_es": "Idea del reel de Instagram 'Un día en mi vida'",
+      "p_es": "Guión de un carrete de 30 segundos que muestre la productiva rutina matutina de una [profesión]. Toma de cada clip, texto superpuesto, música de moda."
+    },
+    {
+      "n": 288,
+      "t_es": "Publicación de LinkedIn para anunciar un nuevo servicio",
+      "p_es": "Publicación para el lanzamiento oficial de su nuevo servicio [servicio]. ¿Por qué lo creó, qué problema aborda, para quién y cómo obtener más información?"
+    },
+    {
+      "n": 289,
+      "t_es": "Gancho para el gancho de un Carrete",
+      "p_es": "15 ganchos de texto impactantes para carretes en el nicho. Ej: 'El secreto que nadie te cuenta de [sujeto]'."
+    },
+    {
+      "n": 290,
+      "t_es": "Publicación de concientización sobre un tema actual.",
+      "p_es": "Publicación de LinkedIn sobre el tema actual [tema] relacionado con su industria. Demuestra tu experiencia con una iluminación única y respetuosa. Termine con una pregunta."
+    },
+    {
+      "n": 291,
+      "t_es": "Título de Instagram para una cita inspiradora",
+      "p_es": "Título de una imagen de cotización: '[cita]'. Desarrollo personal, por qué resuena esta cita, anímate a etiquetar a alguien que necesite escucharla."
+    },
+    {
+      "n": 292,
+      "t_es": "Tipo de tweet viral 'Opinión impopular'",
+      "p_es": "Tuitea que comience con 'Opinión impopular:' sobre [tema relacionado con tu industria]. Opinión discutible que probablemente genere debate."
+    },
+    {
+      "n": 293,
+      "t_es": "Publicación en Facebook para promocionar un evento en vivo",
+      "p_es": "Publicación en Facebook invitando a un live sobre [tema] con fecha y hora. Sentido de urgencia (\"No te pierdas esto\"), solicitud de registro para una devolución de llamada."
+    },
+    {
+      "n": 294,
+      "t_es": "Publicación de Storytelling en LinkedIn: de 0 a [resultado] en [duración]",
+      "p_es": "Publicación que relata el viaje de [yo/cliente] desde [situación inicial] hasta [éxito] en [duración]. Pasos, dificultades, lección principal, pregunta interesante."
+    },
+    {
+      "n": 295,
+      "t_es": "Cuadrícula de hashtag de Instagram por tema",
+      "p_es": "3 grupos de 10 hashtags para el nicho: grupo de amplio alcance, grupo de nicho específico, grupo comunitario local. Lista para copiar y pegar."
+    },
+    {
+      "n": 296,
+      "t_es": "Publicación de LinkedIn sobre un amargo fracaso y la lección",
+      "p_es": "Publicación vulnerable sobre un amargo fracaso experimentado en los negocios. Historia, impacto emocional, poderosa lección que surgió de ella."
+    },
+    {
+      "n": 297,
+      "t_es": "Contenido para una publicación de Pinterest (Pin de idea)",
+      "p_es": "Fijar contenido Idea de Pinterest para una publicación de blog sobre [tema]. 5 diapositivas: portada, 3 diapositivas de consejos, última diapositiva de CTA. Superposición de texto y palabras clave."
+    },
+    {
+      "n": 298,
+      "t_es": "Publicaciones para una serie 'Mito vs Realidad' en LinkedIn",
+      "p_es": "Serie de 3 publicaciones de LinkedIn, cada una de las cuales desacredita un mito común en la industria [industria]. Formato: 'A menudo escuchamos que... La realidad es...'. Evidencia."
+    },
+    {
+      "n": 299,
+      "t_es": "Texto para una publicación de celebración del aniversario de la empresa.",
+      "p_es": "Publicación en movimiento para celebrar el [número] aniversario de [empresa]. Gracias clientes, equipo, comparte visión de futuro. Comentario CTA sobre un recuerdo."
+    },
+    {
+      "n": 300,
+      "t_es": "Idea de publicación de TikTok con un dúo/puntada",
+      "p_es": "Guión de Stitch TikTok en el que reaccionas a un vídeo popular que dice [idea falsa]. Proporciona corrección en 30 segundos con un tono enérgico."
+    },
+    {
+      "n": 301,
+      "t_es": "Página de ventas en el marco PAS",
+      "p_es": "Estructura de texto completa para una página de ventas de [producto] basada en el marco PAS (Problema-Agitación-Solución). Títulos, subtítulos, CTA potente."
+    },
+    {
+      "n": 302,
+      "t_es": "Página de ventas de AIDA para un infoproducto",
+      "p_es": "Redacción de una página de ventas para la formación de [nombre de la formación] utilizando AIDA: Atención (titular de impacto), Interés (estadísticas), Deseo (testimonios), Acción (CTA y garantía)."
+    },
+    {
+      "n": 303,
+      "t_es": "Titular de una página de ventas (5 variaciones)",
+      "p_es": "5 titulares atractivos para una página de ventas de [producto]. Promesas de transformación, preguntas retóricas, fórmulas de 'Cómo... sin...'. Explicación."
+    },
+    {
+      "n": 304,
+      "t_es": "Sección '¿Quién soy yo?' para una pagina de ventas",
+      "p_es": "Sección 'Acerca del autor' para una página de ventas de formación. Viaje en 3 párrafos: fracaso inicial, descubrimiento del método, resultados. Frase inspiradora."
+    },
+    {
+      "n": 305,
+      "t_es": "Página de ventas basada en Storytelling (Brand Story)",
+      "p_es": "Historia completa detrás de la creación de [producto/servicio] para una página de destino. Estructura del viaje del héroe. CTA al final."
+    },
+    {
+      "n": 306,
+      "t_es": "Imán de plomo irresistible",
+      "p_es": "Gancho de ventas para un lead magnet gratuito sobre [asunto]. Título que promete resultados rápidos, puntos clave, imagen del lead magnet (descrito), forma simplificada."
+    },
+    {
+      "n": 307,
+      "t_es": "Sección de preguntas frecuentes para una página de ventas",
+      "p_es": "6 Preguntas frecuentes y respuestas para la página de ventas de [producto]. Aborda las objeciones clásicas: precio, tiempo, garantía, requisitos previos, público objetivo. Tono tranquilizador."
+    },
+    {
+      "n": 308,
+      "t_es": "Testimonio de cliente transformado en una sección de ventas",
+      "p_es": "Transforma el testimonio crudo en un bloque de prueba social. Antes/después, resultados numéricos, cita impactante, nombre y foto (descritos)."
+    },
+    {
+      "n": 309,
+      "t_es": "Página de ventas para un servicio de coaching.",
+      "p_es": "Página de ventas para un programa de coaching [duración] sobre [tema]. Promesa, módulos detallados, bonos, precios, plan de pago, garantía de devolución de dinero."
+    },
+    {
+      "n": 310,
+      "t_es": "Página de ventas para un SaaS con prueba gratuita",
+      "p_es": "Estructura de la página de destino para el software [nombre]: héroe con vídeo de demostración, beneficios en 3 columnas, 'Cómo funciona' en 3 pasos, tabla de precios, preguntas frecuentes. CTA de prueba gratuita."
+    },
+    {
+      "n": 311,
+      "t_es": "Página de ventas 'Carta de ventas larga' (Carta de ventas)",
+      "p_es": "Esquema detallado de una carta de ventas larga (10.000 palabras) para un producto de desarrollo personal. Todas las secciones: preencabezado, titular, historia, evidencia, oferta, etc."
+    },
+    {
+      "n": 312,
+      "t_es": "Capturar página para un seminario web",
+      "p_es": "Contenido de una página de registro para un seminario web gratuito sobre [tema]. Título, promesa, fecha/hora, párrafo breve sobre el facilitador, formulario. Emergencia 'Plazas limitadas'."
+    },
+    {
+      "n": 313,
+      "t_es": "Página de venta de un producto físico con venta cruzada",
+      "p_es": "Página de producto para [producto físico] en Shopify. Descripción de ventajas, especificaciones, opiniones de clientes, apartado 'Comprados juntos frecuentemente' a precio reducido."
+    },
+    {
+      "n": 314,
+      "t_es": "La página '¿Quién soy yo?' transformada en una página de ventas suaves",
+      "p_es": "La página \"Acerca de\" se lee como una carta personal pero sutilmente dirige a los servicios de [consultor]. Valores, misión, cómo puedes ayudar. Formulario de contacto."
+    },
+    {
+      "n": 315,
+      "t_es": "Marco para una página de ventas con video de ventas (VSL)",
+      "p_es": "Guión de un VSL de 5 minutos y la página de destino que lo rodea. Reproductor de vídeo en la parte superior, resumen de puntos, testimonios, botón de compra debajo del vídeo."
+    },
+    {
+      "n": 316,
+      "t_es": "Página de destino para un lead magnet pago (Tripwire)",
+      "p_es": "Página de ventas de un producto líder (tripwire) a [bajo precio] después de descargar un lead magnet gratuito. Valor excepcional, oferta única, garantizada."
+    },
+    {
+      "n": 317,
+      "t_es": "Página de ventas con calculadora de ROI",
+      "p_es": "Integre una calculadora de ROI en la página de ventas de [servicio B2B]. Texto que lo acompaña: 'Descubre cuánto puedes ahorrar'. Aportes y promesa."
+    },
+    {
+      "n": 318,
+      "t_es": "Página de ventas minimalista para un producto único.",
+      "p_es": "Limpiar página de ventas tipo 'Tienda de un producto'. Imagen destacada del producto, un título poderoso, 3 beneficios, botón de compra, sección de testimonios. Sin navegación."
+    },
+    {
+      "n": 319,
+      "t_es": "Oferta de lanzamiento con cuenta atrás",
+      "p_es": "Bloqueo de emergencia para una página de ventas: 'La oferta finaliza en [temporizador]'. Texto sobre los bonos ofrecidos solo durante el lanzamiento, aumento de precio después."
+    },
+    {
+      "n": 320,
+      "t_es": "Página de ventas con comparación de planes.",
+      "p_es": "Tabla comparativa de 3 paquetes para [servicio]: Básico, Pro, Premium. Características, precio y paquete recomendado resaltados. CTA separada por plan."
+    },
+    {
+      "n": 321,
+      "t_es": "Página de ventas tipo 'Squeeze Page'",
+      "p_es": "Texto de una página de compresión agresiva cuyo único propósito es capturar el correo electrónico. Titular prometiendo regalo, sin menú ni enlaces salientes, formulario y botón."
+    },
+    {
+      "n": 322,
+      "t_es": "Venta adicional (upsell) después del carrito de compras",
+      "p_es": "Copiar para una página de ventas adicionales (aumento de pedido) que se muestra después de agregarlo al carrito. Producto principal: [producto]. Venta adicional: [complemento]. Descuento exclusivo."
+    },
+    {
+      "n": 323,
+      "t_es": "Página de ventas para un evento en persona",
+      "p_es": "Página de ventas para una conferencia/cerebro. Tema, fecha, ubicación, ponentes (fotos descritas), programa, testimonios de ediciones anteriores, madrugadores."
+    },
+    {
+      "n": 324,
+      "t_es": "Página 'Conviértete en afiliado'",
+      "p_es": "Página de ventas para reclutar afiliados para su producto. Producto, tasa de comisión, recursos proporcionados, proceso de registro. Por qué es fácil de vender."
+    },
+    {
+      "n": 325,
+      "t_es": "Página de agradecimiento después de la compra (venta adicional 2)",
+      "p_es": "Página de agradecimiento que confirma el pedido Y ofrece una oferta especial de ventas adicionales con un solo clic. Mensaje de agradecimiento y presentación de la oferta adicional."
+    },
+    {
+      "n": 326,
+      "t_es": "Página de ventas con garantía 'Satisfecho o Reembolsado'",
+      "p_es": "Certificado de garantía de devolución del 100% del dinero durante [duración]. Comprometer texto que aumenta el riesgo. Procedimiento de reembolso sencillo."
+    },
+    {
+      "n": 327,
+      "t_es": "Página de ventas para formación con programa detallado.",
+      "p_es": "Para la capacitación de [nombre], describa cada módulo con un título de ventas y 3 puntos clave. Tabla de contenido. Sección de bonificación para aumentar el valor percibido."
+    },
+    {
+      "n": 328,
+      "t_es": "Testimonios en vídeo descritos para la página de ventas.",
+      "p_es": "Sección 'Probaron y aprobaron' con 3 testimonios ficticios pero creíbles, citas con fotografías descritas y resultados cuantificados. Se adapta al producto [producto]."
+    },
+    {
+      "n": 329,
+      "t_es": "Llamado a la acción (CTA) para las diferentes etapas del túnel",
+      "p_es": "7 variaciones de botones CTA para un embudo de ventas: 'Quiero mi local', 'Sí, envíame la guía', 'Añadir al carrito', etc. Contexto de uso."
+    },
+    {
+      "n": 330,
+      "t_es": "Brand Storytelling para una página 'Nuestra Historia'",
+      "p_es": "Mover la página 'Nuestra historia' para [marca] y terminar con una llamada para unirse a la aventura (comprar). Utiliza el arquetipo de marca [por ejemplo: Explorer]."
+    },
+    {
+      "n": 331,
+      "t_es": "Página de ventas para un servicio \"Hecho para usted\"",
+      "p_es": "Página de ventas de servicio llave en mano: 'Hacemos [tarea] por usted'. Puntos débiles, por qué está mal hacerlo usted mismo, proceso, llamada a la acción (CTA)."
+    },
+    {
+      "n": 332,
+      "t_es": "Página de ventas para una plantilla/kit digital",
+      "p_es": "Vender una plantilla [tipo, ej: Notion] en una página. Capturas de pantalla descritas, funciones, beneficios de la organización y vista previa del video. Precio y compra inmediata."
+    },
+    {
+      "n": 333,
+      "t_es": "Página de destino posterior al clic para una campaña de Google Ads",
+      "p_es": "Página de destino ultraorientada para palabra clave [palabra clave] y anuncio [texto]. Mensaje perfectamente alineado. Elementos de confianza, CTA único, formato breve."
+    },
+    {
+      "n": 334,
+      "t_es": "Página de ventas emergente para un producto de temporada.",
+      "p_es": "Página de ventas con un diseño que evoque [temporada], por ejemplo Navidad. Título festivo, sección 'Por qué es el regalo perfecto', entrega garantizada antes del [fecha]."
+    },
+    {
+      "n": 335,
+      "t_es": "Página de venta de suscripciones recurrentes",
+      "p_es": "Vender una suscripción mensual a [servicio]. Valor continuo, contenido nuevo cada mes, flexibilidad para cancelar, comparación de costos anuales versus mensuales."
+    },
+    {
+      "n": 336,
+      "t_es": "Página de pago optimizada con tranquilidad",
+      "p_es": "Elementos de reaseguro para colocar junto al formulario de pago: iconos de seguridad, breve testimonio, garantía, recordatorio de beneficios, preguntas frecuentes de última hora."
+    },
+    {
+      "n": 337,
+      "t_es": "Página típica de ventas B2B 'White Paper'",
+      "p_es": "Página de inicio para descargar un documento técnico sobre [tema técnico]. Experiencia de la empresa, temas cubiertos, datos de propiedad. Formulario (nombre, correo electrónico, empresa)."
+    },
+    {
+      "n": 338,
+      "t_es": "Página de venta de formación online con acceso vitalicio.",
+      "p_es": "Página de formación con acceso de por vida. Aprovecha el miedo a perderse una actualización futura. Programa, bono, premio con pago a plazos."
+    },
+    {
+      "n": 339,
+      "t_es": "Marco solo para una página de venta de videos",
+      "p_es": "Página de ventas que contiene sólo un vídeo, un título y un botón. El vídeo hace todo el trabajo de ventas. Texto de introducción alrededor del reproductor de vídeo."
+    },
+    {
+      "n": 340,
+      "t_es": "Página de ventas para un cerebro de alto nivel",
+      "p_es": "Vender un genio a [alto precio] con una página sencilla. Carta del fundador, perfil de participantes buscados, proceso de postulación, testimonios."
+    },
+    {
+      "n": 341,
+      "t_es": "Secuencia de correo electrónico de lanzamiento de producto (PLF)",
+      "p_es": "Secuencia completa de 12 correos electrónicos para un lanzamiento utilizando el método Fórmula de lanzamiento de producto. Desglose prelanzamiento (4), lanzamiento (5), postlanzamiento (3)."
+    },
+    {
+      "n": 342,
+      "t_es": "Correo electrónico de abandono del carrito 1 (1 hora después)",
+      "p_es": "Primer correo electrónico de recordatorio de carrito abandonado, enviado 1 hora después. Recordatorio del producto con su imagen, tono ligero y servicial, enlace directo a la cesta."
+    },
+    {
+      "n": 343,
+      "t_es": "Correo electrónico de abandono del carrito 2 con prueba social (24 h)",
+      "p_es": "Segundo correo electrónico de seguimiento (24 horas después). Testimonio de clientes sobre calidad, sección de preguntas frecuentes (entrega, devoluciones). Ligero sentido de urgencia."
+    },
+    {
+      "n": 344,
+      "t_es": "Email de abandono del carrito 3 con oferta (48h)",
+      "p_es": "Último correo electrónico (48 horas después) que ofrece un código de descuento del [X] % o envío gratuito. 'Realmente nos gustaría que probaras este producto'. Límite de duración de la oferta."
+    },
+    {
+      "n": 345,
+      "t_es": "Secuencia de emails para un lanzamiento sorpresa (Flash Launch)",
+      "p_es": "Sequence of 3 emails over 24 hours for a lightning launch. 1: anuncio de oferta exclusiva. 2: resultados de un probador beta. 3: últimas horas y contador."
+    },
+    {
+      "n": 346,
+      "t_es": "Correo electrónico de carrito abandonado por un producto caro",
+      "p_es": "Secuencia para un producto de alta gama. Correo electrónico 1: ofrece una llamada telefónica. Correo electrónico 2: estudio de caso detallado. Correo electrónico 3: plan de financiación."
+    },
+    {
+      "n": 347,
+      "t_es": "Secuencia de ventas para un servicio de consultoría.",
+      "p_es": "5 correos electrónicos para convertir un prospecto en un cliente de consultoría. 1: caso de cliente. 2: artículo en profundidad. 3: invitación al seminario web. 4: llamada de descubrimiento. 5: último seguimiento."
+    },
+    {
+      "n": 348,
+      "t_es": "Correo electrónico de recordatorio de un pago rechazado",
+      "p_es": "Correo electrónico automático informando al cliente que su pago ha sido rechazado (tarjeta caducada). Texto cortés y útil, enlace para actualizar la información de facturación."
+    },
+    {
+      "n": 349,
+      "t_es": "Secuencia de ventas adicionales posteriores a la compra por correo electrónico",
+      "p_es": "3 correos electrónicos en la semana siguiente a una compra para ofrecer productos complementarios. 1: gracias + guía. 2: producto complementario. 3: pack con reducción."
+    },
+    {
+      "n": 350,
+      "t_es": "Correo electrónico para un lanzamiento con una lista de alertas (lista de espera)",
+      "p_es": "Envíe un correo electrónico a las personas en la lista de espera, anunciándoles que las puertas están abiertas y que tienen acceso temprano. Enlace con código especial. Excitación."
+    },
+    {
+      "n": 351,
+      "t_es": "Secuencia de reactivación de carrito abandonado durante 7 días",
+      "p_es": "Relanzamiento más agresivo después de 7 días. Le recuerda lo que están perdiendo, agrega prueba social ('Unirse a X clientes'), enlace directo al pago."
+    },
+    {
+      "n": 352,
+      "t_es": "Lanzamiento del email 'Las puertas se cierran'",
+      "p_es": "Último correo electrónico de una secuencia de lanzamiento, anunciando el cierre inminente de inscripciones. Tono urgente, cuenta atrás, miedo a perderse el bono."
+    },
+    {
+      "n": 353,
+      "t_es": "Secuencia de bienvenida orientada a las ventas para un lead magnet",
+      "p_es": "Minisecuencia de venta de un producto estrella. Email 1: entrega del lead magnet. Correo electrónico 2: historia + problema. Correo electrónico 3: oferta trampa."
+    },
+    {
+      "n": 354,
+      "t_es": "Correo electrónico de lanzamiento 'El método detrás del producto'",
+      "p_es": "Narración por correo electrónico para una secuencia de lanzamiento que explique la génesis y el método único detrás del producto. Demuestra experiencia e investigación."
+    },
+    {
+      "n": 355,
+      "t_es": "Recordatorio de carrito abandonado vía SMS (texto)",
+      "p_es": "Contenido de un SMS de recordatorio de carrito abandonado. Breve, con el nombre del producto, un enlace breve y un discreto sentido de urgencia."
+    },
+    {
+      "n": 356,
+      "t_es": "Correo electrónico de lanzamiento 'Por qué este producto es diferente'",
+      "p_es": "Email que diferencia claramente el producto de la competencia. 3 argumentos poderosos. Destruye las creencias limitantes del mercado."
+    },
+    {
+      "n": 357,
+      "t_es": "Secuencia para vender formación sin hacer un webinar",
+      "p_es": "Secuencia de correo electrónico de 'seminario web automatizado' de 7 días: cada día, un correo electrónico entrega contenido valioso, responde a una objeción y acerca la venta al día 7."
+    },
+    {
+      "n": 358,
+      "t_es": "Correo electrónico para recuperar clientes potenciales que hicieron clic pero no compraron",
+      "p_es": "Se dirige a personas que han hecho clic en el enlace de ventas varias veces sin realizar ninguna compra. Correo electrónico: \"Veo que estás interesado... ¿qué te detiene?\""
+    },
+    {
+      "n": 359,
+      "t_es": "Secuencia de lanzamiento de un producto SaaS",
+      "p_es": "Secuencia de 5 correos electrónicos para el lanzamiento de una nueva función paga. Muestra el valor, el problema resuelto, la vista previa y la oferta de actualización."
+    },
+    {
+      "n": 360,
+      "t_es": "Correo electrónico para anunciar un próximo aumento de precio",
+      "p_es": "Aviso por correo electrónico de aumento de precio en 48 horas. Justifícalo (mejoras, inflación) y te invito a fijar el precio anterior comprando ahora."
+    },
+    {
+      "n": 361,
+      "t_es": "Recordatorio de carrito abandonado con vídeo personalizado",
+      "p_es": "Texto del email de presentación de un minivídeo personalizado: 'Te he preparado un mensaje corto'. Humanizar la recuperación."
+    },
+    {
+      "n": 362,
+      "t_es": "Correo electrónico del fundador explicando por qué creó este producto.",
+      "p_es": "Correo electrónico íntimo donde el fundador cuenta una historia personal que lo llevó a crear el producto. Conéctate emocionalmente ante la oferta."
+    },
+    {
+      "n": 363,
+      "t_es": "Secuencia de crianza para prepararse para un lanzamiento (Semilla)",
+      "p_es": "4 emails de puro contenido, sin ventas, para nutrir la lista antes de un lanzamiento. Temas: educación, inspiración, datos, mitos. Lanzar avances."
+    },
+    {
+      "n": 364,
+      "t_es": "Correo electrónico de carrito abandonado para un producto digital",
+      "p_es": "Correo electrónico destacando el acceso instantáneo y los resultados rápidos. Aborda el miedo a actuar. Testimonio de un cliente que al principio estaba asustado."
+    },
+    {
+      "n": 365,
+      "t_es": "Secuencia de venta cruzada para clientes existentes",
+      "p_es": "3 correos electrónicos para vender un nuevo curso de formación a tus antiguos alumnos. Confianza establecida: 'Ya has hecho X, aquí está el siguiente paso Y'. Oferta de fidelización."
+    },
+    {
+      "n": 366,
+      "t_es": "Seguimiento de cotización/propuesta comercial",
+      "p_es": "Envíe un correo electrónico para realizar un seguimiento con un cliente potencial al que le envió una cotización. Modelo 1: seguimiento cortés. Modelo 2: agregando valor. Modelo 3: rotura de contacto."
+    },
+    {
+      "n": 367,
+      "t_es": "Enviar por correo electrónico 'Anular objeción' en una secuencia",
+      "p_es": "Identifique la objeción número 1 (\"Demasiado caro\", \"No hay tiempo\") y escriba un correo electrónico completo que lo destruya con lógica, testimonios y cálculos de retorno de la inversión."
+    },
+    {
+      "n": 368,
+      "t_es": "Secuencia de ventas para un evento en vivo pago",
+      "p_es": "Correos electrónicos para vender entradas para la conferencia. Anuncio, reserva anticipada, revelación del orador, aterrizaje de última hora y \"ver en el sitio\"."
+    },
+    {
+      "n": 369,
+      "t_es": "Correo electrónico de bienvenida con un 'regalo' no revelado",
+      "p_es": "Primer correo electrónico después del registro: ofrece un bono sorpresa no anunciado en la página de captura. Agradable efecto sorpresa que genera confianza."
+    },
+    {
+      "n": 370,
+      "t_es": "Campaña de correo electrónico para vender acciones.",
+      "p_es": "Serie de 3 correos electrónicos para liquidación de acciones. Emergencia 'Hasta fin de existencias', descuentos progresivos (Día 1: -30%, Día 2: -50%)."
+    },
+    {
+      "n": 371,
+      "t_es": "Correo electrónico después de una prueba gratuita que expira pronto",
+      "p_es": "Alerta 3 días antes del final de una prueba gratuita de SaaS. Recuerda los beneficios utilizados, las funciones premium que perderán, enlace directo."
+    },
+    {
+      "n": 372,
+      "t_es": "Secuencia de ventas de productos de afiliados por correo electrónico",
+      "p_es": "5 correos electrónicos para promocionar un producto afiliado. Cada correo electrónico proporciona un valor único: prueba de producto, comparación, bonificación ofrecida por usted, preguntas frecuentes, última oportunidad."
+    },
+    {
+      "n": 373,
+      "t_es": "Correo electrónico de seguimiento después de abandonar el carrito con un bono",
+      "p_es": "Agrega un bono exclusivo (PDF, lista de verificación) que se ofrece solo si finalizan su pedido dentro de las 24 horas. Destaca el valor del bono."
+    },
+    {
+      "n": 374,
+      "t_es": "Secuencia para vender coaching grupal.",
+      "p_es": "Correos electrónicos que presentan el programa, resultados de exalumnos, una convocatoria de descubrimiento y una oferta limitada a [número] lugares."
+    },
+    {
+      "n": 375,
+      "t_es": "Email para un lanzamiento con sorteo",
+      "p_es": "Fomenta la compra ofreciendo la posibilidad de ganar un premio adicional (consultoría, producto) por cualquier compra antes de una fecha determinada."
+    },
+    {
+      "n": 376,
+      "t_es": "Recordatorio de abandono del formulario de pago",
+      "p_es": "Correo electrónico para quienes han comenzado a llenar el formulario de pago sin validar. 'Su pedido está en espera, ¿algún problema con el pago?' Ofrezca ayuda."
+    },
+    {
+      "n": 377,
+      "t_es": "Secuencia de ventas de un producto muy caro (alto precio)",
+      "p_es": "Enfoque más consultivo: correos electrónicos invitando a una llamada estratégica, estudios de casos, vídeos de presentación, propuesta personalizada. Menos urgencia, más conexión."
+    },
+    {
+      "n": 378,
+      "t_es": "Correo electrónico de 'última oportunidad' para un producto de edición limitada",
+      "p_es": "Anuncia que solo quedan X copias (o que finaliza la oferta). Contador, fotografías de archivo, lista de beneficios. Verdadera emergencia."
+    },
+    {
+      "n": 379,
+      "t_es": "Secuencia de agradecimiento después de un lanzamiento.",
+      "p_es": "3 correos electrónicos después del final del lanzamiento. Agradecimientos, instrucciones para comenzar, creación de una comunidad (grupo privado) y solicitud de comentarios."
+    },
+    {
+      "n": 380,
+      "t_es": "Correo electrónico de disculpa por un problema durante el pago",
+      "p_es": "Si un error impidió la compra, escribe un correo electrónico de disculpa con una oferta exclusiva para compensarte. Asegúrate de que todo esté ordenado."
+    },
+    {
+      "n": 381,
+      "t_es": "Ficha de producto de Amazon optimizada para SEO con viñetas",
+      "p_es": "Escriba el título (máximo 200 caracteres), las 5 viñetas (cada una centrada en un beneficio) y la descripción HTML del producto para [producto] en Amazon. Palabras clave '[palabra clave1]', '[palabra clave2]'."
+    },
+    {
+      "n": 382,
+      "t_es": "Descripción del producto Shopify para una marca de ropa.",
+      "p_es": "Descripción del producto de la tienda Shopify de [marca] para el artículo [artículo]. Estilo: narración de historias sobre inspiración, materiales, consejos de tallas, lookbook."
+    },
+    {
+      "n": 383,
+      "t_es": "Ficha de producto de Etsy con SEO de cola larga",
+      "p_es": "Listado completo de Etsy para un producto hecho a mano [producto]. Título con palabras clave de cola larga, descripción detallada con inspiración, dimensiones, fecha límite, políticas, 13 etiquetas."
+    },
+    {
+      "n": 384,
+      "t_es": "Descripción del producto para un sitio de dropshipping",
+      "p_es": "Descripción atractiva para un producto de dropshipping [producto]. Copywriting emocional para crear deseo. Sección 'Características' y 'Beneficios'. Insignia de \"entrega gratuita\"."
+    },
+    {
+      "n": 385,
+      "t_es": "Optimización de una ficha de producto existente (auditoría)",
+      "p_es": "Audita la ficha de producto [texto] y propone una versión mejorada. Fortalece los beneficios, agrega prueba social, corrige el título SEO y la meta descripción."
+    },
+    {
+      "n": 386,
+      "t_es": "Descripción del producto de un complemento alimenticio.",
+      "p_es": "Ficha de producto para [suplemento] en cumplimiento de las normas de cumplimiento. Ingredientes, beneficios comprobados, dosis, certificaciones. Advertencias y consejos de uso."
+    },
+    {
+      "n": 387,
+      "t_es": "Ficha de producto para software / SaaS (marketplace)",
+      "p_es": "Página de producto para el mercado [por ejemplo: AppSumo]. Título, subtítulo, descripción del problema resuelto, características, casos de uso, testimonios, oferta especial con precio."
+    },
+    {
+      "n": 388,
+      "t_es": "Título y meta descripción de una colección de Shopify",
+      "p_es": "Título SEO y meta descripción para una página de colección de 'Vestidos de verano' en Shopify. Diríjase a '[palabras clave]', le dará ganas de hacer clic. Máximo 60 caracteres. título, 160 caracteres. meta."
+    },
+    {
+      "n": 389,
+      "t_es": "Descripción del producto B2B con hoja de datos",
+      "p_es": "Ficha técnica de producto para un comprador profesional. Resumen ejecutivo, especificaciones técnicas detalladas en tabla, estándares, opciones de personalización, llamado a licitación."
+    },
+    {
+      "n": 390,
+      "t_es": "Ficha de producto para inmobiliarias de lujo",
+      "p_es": "Anuncio inmobiliario para una villa de lujo. Ubicación, estilo arquitectónico, descripción habitación por habitación, servicios de alta gama, vista. Tu exclusiva."
+    },
+    {
+      "n": 391,
+      "t_es": "Descripción del producto eco-responsable y sostenible",
+      "p_es": "Enfatiza la sostenibilidad, los materiales ecológicos y el impacto social/ecológico del producto [producto]. Historia de la fabricación artesanal o ética."
+    },
+    {
+      "n": 392,
+      "t_es": "Contenido de una caja de suscripción (box)",
+      "p_es": "Describe el concepto de la caja mensual de [nombre]: la sorpresa, la temática del mes, el valor total de los productos, las ventajas de la suscripción. Unboxing virtual."
+    },
+    {
+      "n": 393,
+      "t_es": "Ficha de producto con vídeo 360° (guión y texto)",
+      "p_es": "Texto descriptivo acompañando una vista de 360° del producto. Guía al usuario sobre lo que ve, señala detalles clave, sugiere interacción."
+    },
+    {
+      "n": 394,
+      "t_es": "Descripción de un paquete o paquete de productos",
+      "p_es": "Vender un lote de [número] productos complementarios. Sinergia entre productos, precio total versus precio del paquete, por qué ahora es el momento de comprar el paquete completo."
+    },
+    {
+      "n": 395,
+      "t_es": "Producto personalizable: guía de personalización",
+      "p_es": "Instrucciones y descripción de un producto personalizable (grabado, color). Proceso de pedido, campos para completar, resúmenes."
+    },
+    {
+      "n": 396,
+      "t_es": "Ficha de producto de un libro/e-book",
+      "p_es": "Página de ventas de tu libro [título] en una plataforma. Resumen llamativo, biografía del autor, reseñas/reseñas, extracto. Palabras clave de buena categoría."
+    },
+    {
+      "n": 397,
+      "t_es": "Descripción de un producto en preventa",
+      "p_es": "Ficha de producto para un artículo en preventa. Emoción: \"Sé el primero en recibirlo\", por qué el producto es especial, fecha de envío, bonificación por reserva anticipada."
+    },
+    {
+      "n": 398,
+      "t_es": "Ficha de producto para un servicio de limpieza/mantenimiento",
+      "p_es": "Página de servicio para un producto de servicio. Antes/Después, listado de tareas incluidas, zona geográfica, seguro, botón 'Pedir presupuesto'."
+    },
+    {
+      "n": 399,
+      "t_es": "Lista de características transformadas en beneficios",
+      "p_es": "De esta lista de características [lista], reescríbalas como beneficios orientados al cliente. Ejemplo: 'Batería de 5000 mAh' se convierte en 'Disfruta de 2 días de duración de la batería'."
+    },
+    {
+      "n": 400,
+      "t_es": "Descripción del producto para un objeto conectado",
+      "p_es": "Explica simplemente el funcionamiento y la integración del producto [objeto conectado] con los asistentes de voz, la aplicación móvil y los escenarios de uso."
+    },
+    {
+      "n": 401,
+      "t_es": "Ficha de producto navideña de edición limitada",
+      "p_es": "Lámina para producto navideño de edición limitada. Tema festivo, embalaje de regalo, rareza (\"Sólo 500 piezas\"), idea de regalo para quién."
+    },
+    {
+      "n": 402,
+      "t_es": "Comparación de dos variantes de producto",
+      "p_es": "En la misma hoja, ayuda al cliente a elegir entre la versión A y la versión B. Tabla comparativa, '¿Para quién?' asesoramiento, opinión de expertos."
+    },
+    {
+      "n": 403,
+      "t_es": "Ficha de producto 'guía de compras' integrada",
+      "p_es": "Ficha de producto que incluye una mini guía de compra para la categoría (por ejemplo: cómo elegir el tamaño de maleta adecuado). Posiciona la marca como consejo."
+    },
+    {
+      "n": 404,
+      "t_es": "Descripción del producto utilizando la urgencia de la temporada.",
+      "p_es": "Adapta el texto a la temporada actual: verano, vuelta al cole, etc. Producto: [producto]. Oferta estacional y argumentos vinculados al período."
+    },
+    {
+      "n": 405,
+      "t_es": "Producto con prueba social incorporada (reseñas verificadas)",
+      "p_es": "Agrega y formatea 5 reseñas positivas de clientes en una sección 'Lo que dicen nuestros clientes', respetando las estrellas y el nombre."
+    },
+    {
+      "n": 406,
+      "t_es": "Ficha de producto de un artículo deportivo/fitness",
+      "p_es": "Texto motivador para equipamiento deportivo. Habla de rendimiento, superación, comodidad y tecnología. Consejos de entrenamiento."
+    },
+    {
+      "n": 407,
+      "t_es": "Descripción del producto con enfoque en el diseño y la estética.",
+      "p_es": "Para un objeto [objeto] decorativo, céntrese en el estilo, el material, la inspiración del diseñador y cómo encaja en diferentes interiores."
+    },
+    {
+      "n": 408,
+      "t_es": "Ficha de producto para un juego de mesa/juguete",
+      "p_es": "Describe el juego: principio, número de jugadores, duración, edad, habilidades desarrolladas y descripción general del juego. Te dan ganas de divertirte con tu familia."
+    },
+    {
+      "n": 409,
+      "t_es": "Descripción de un artículo de papelería premium",
+      "p_es": "Vendo libreta/bolígrafo de lujo. Evoca el placer de escribir, la calidad del papel, el gesto y la idea de regalo para un profesional."
+    },
+    {
+      "n": 410,
+      "t_es": "Ficha de producto para resolución de problemas",
+      "p_es": "Identifica un problema cotidiano específico ([problema]) y presenta el producto como la solución ideal. Estructura: '¿Estás harto de...?', presentación, fin del problema."
+    },
+    {
+      "n": 411,
+      "t_es": "Guión de cierre telefónico para servicio premium",
+      "p_es": "Marco de una llamada de ventas de 20 minutos para concluir un [servicio]. Pasos: rompehielos, encuadre, descubrimiento de necesidades, presentación/precio, objeciones, cierre."
+    },
+    {
+      "n": 412,
+      "t_es": "Guión de llamada de seguimiento después de la propuesta de venta.",
+      "p_es": "Guión para llamada de seguimiento 3 días después del envío de propuesta. Seguimiento cortés, verificación de recepción, solicitud de comentarios, fijación de fecha."
+    },
+    {
+      "n": 413,
+      "t_es": "Respuestas a las objeciones de precio (guión)",
+      "p_es": "5 respuestas a la objeción \"Es demasiado caro\" adaptadas a un servicio [típico]. Técnicas: embudo de fijación de precios, división de costos, comparación de valores, ROI."
+    },
+    {
+      "n": 414,
+      "t_es": "Necesita un guión de descubrimiento para un vendedor B2B",
+      "p_es": "Diez preguntas poderosas para una llamada de descubrimiento inicial con un prospecto en la industria [industria]. Preguntas abiertas, sobre las consecuencias, objetivos, presupuesto."
+    },
+    {
+      "n": 415,
+      "t_es": "Guión para vender formación por teléfono",
+      "p_es": "Cierre de marco de convocatoria para capacitación en línea. Caso de éxito, explicación de los módulos, descuento especial 'llamada', procesamiento seguro de pago directo."
+    },
+    {
+      "n": 416,
+      "t_es": "Publicidad en Facebook Ads: Texto principal y título (NO)",
+      "p_es": "Texto de un anuncio de Facebook para [producto] usando la fórmula Problema-Agravación-Solución. 3 opciones de encabezado, 2 opciones de texto principal. Optimizado para dispositivos móviles."
+    },
+    {
+      "n": 417,
+      "t_es": "Guión de anuncios de vídeo de Google Ads (descubrimiento)",
+      "p_es": "Guión de 30 segundos para un anuncio de vídeo TrueView. Primeros 5 segundos del gancho, cuerpo del mensaje con beneficios, CTA al final. Superposición de CTA."
+    },
+    {
+      "n": 418,
+      "t_es": "Conjunto de banners de Google Ads (Responsive Search Ads)",
+      "p_es": "15 títulos (máximo 30 caracteres) y 4 descripciones (máximo 90 caracteres) para una campaña RSA orientada a [producto/servicio]. Combinación de beneficios, ofertas y características."
+    },
+    {
+      "n": 419,
+      "t_es": "Guión publicitario de radio/podcast",
+      "p_es": "Anuncio de audio de 60 segundos para [producto]. Gancho sonoro, problema, solución, oferta especial con código promocional, cierre energético."
+    },
+    {
+      "n": 420,
+      "t_es": "Estructura de una campaña completa de Meta Ads (TOFU, MOFU, BOFU)",
+      "p_es": "Estrategia de contenidos para 3 conjuntos de anuncios: TOFU (prospección), MOFU (retargeting), BOFU (conversión). Escribe la copia para cada nivel."
+    },
+    {
+      "n": 421,
+      "t_es": "Guión de Ventas para un Mensaje Directo (DM de Instagram)",
+      "p_es": "Mensaje estándar para contactar a un cliente potencial frío a través de DM de Instagram. Mención de una publicación reciente, cumplido, oferta de ayuda, sugerencia de llamada si está interesado."
+    },
+    {
+      "n": 422,
+      "t_es": "Guión para un anuncio de TikTok Spark Ads",
+      "p_es": "Texto teaser en capas y guión hablado para un anuncio de TikTok de 15 segundos que parece nativo. Utiliza lenguaje de diseñador."
+    },
+    {
+      "n": 423,
+      "t_es": "Marco de ventas para una feria o exposición",
+      "p_es": "Guión para acercarse a un visitante en un stand. Gancho, demostración rápida, toma de contacto (tarjeta de presentación), seguimiento por hacer."
+    },
+    {
+      "n": 424,
+      "t_es": "Publicidad en Pinterest Ads: título y descripción",
+      "p_es": "Título y descripción de un Pin promocionado que promociona una publicación/producto de blog [enlace]. Palabras clave visuales, CTA 'Más información'."
+    },
+    {
+      "n": 425,
+      "t_es": "Guión de ventas adicionales cara a cara",
+      "p_es": "Frase de upsell natural para un vendedor: 'Con esto, también te recomiendo... porque...'. Adecuado para [producto principal] y [venta adicional]."
+    },
+    {
+      "n": 426,
+      "t_es": "Gancho para publicidad nativa (Taboola/Outbrain)",
+      "p_es": "5 títulos de cebo de clics (no engañosos) para un anuncio nativo que enlaza a un artículo patrocinado sobre [tema]. Siga las pautas."
+    },
+    {
+      "n": 427,
+      "t_es": "Guión de llamada en frío B2B (llamada en frío)",
+      "p_es": "Guión de llamada en frío de 90 segundos para vender [software/servicio] a un [puesto]. Gancho basado en noticias, presentación de valores, concertación de citas."
+    },
+    {
+      "n": 428,
+      "t_es": "Respuesta a objeciones 'Lo pensaré'",
+      "p_es": "3 guiones para responder al 'voy a pensar' durante un cierre. Cuestionamiento de los obstáculos, fijación de fecha de seguimiento, resumen de los beneficios."
+    },
+    {
+      "n": 429,
+      "t_es": "Guión de ventas para un mensaje de voz de WhatsApp",
+      "p_es": "Guión para un mensaje de voz de máximo 45 segundos para enviar vía WhatsApp a un prospecto atractivo. Tono personal, entusiasmo, contexto, acción clara."
+    },
+    {
+      "n": 430,
+      "t_es": "Estructura de una página de destino de publicidad local de Google Ads",
+      "p_es": "Contenido para una página de destino de servicios de plomería/calefacción orientada a [ciudad]. Título local, formulario en la parte superior, reseña en Google, área de intervención."
+    },
+    {
+      "n": 431,
+      "t_es": "Contenido patrocinado de publicidad de LinkedIn",
+      "p_es": "Texto de un anuncio de LinkedIn (solo imagen) para promocionar un documento técnico. Introducción llamativa (visión del sector), beneficio, CTA 'Descargar'."
+    },
+    {
+      "n": 432,
+      "t_es": "Script para un chatbot de ventas de Facebook Messenger",
+      "p_es": "Árbol conversacional de un chatbot de Messenger que califica al prospecto, presenta el producto y ofrece una demostración. Mensajes automatizados."
+    },
+    {
+      "n": 433,
+      "t_es": "Marco de ventas para una consulta gratuita.",
+      "p_es": "Guión para una llamada de 30 minutos que finaliza con una propuesta de programa pago. 5 min de conexión, 15 min de diagnóstico, 5 min de oferta, 5 min de preguntas."
+    },
+    {
+      "n": 434,
+      "t_es": "Anuncio en carrusel de Facebook para una colección de productos",
+      "p_es": "Texto del teaser principal del carrusel, y un texto breve de cada tarjeta del carrusel (5 productos) con sus principales beneficios."
+    },
+    {
+      "n": 435,
+      "t_es": "Guión de discurso de ascensor",
+      "p_es": "discurso de ascensor de 30 segundos para [empresa]. A quién ayudas, qué problema resuelves, cómo y tu ventaja única. Memorable e impactante."
+    },
+    {
+      "n": 436,
+      "t_es": "Respuesta a la objeción 'Envíame documentación'",
+      "p_es": "Guión para no perder el prospecto luego de esta solicitud. \"Por supuesto, primero dígame cuál es su principal criterio de selección para que pueda seleccionar la información correcta\"."
+    },
+    {
+      "n": 437,
+      "t_es": "Guión de ventas para una oferta de lanzamiento con bonificación",
+      "p_es": "Marco de llamada para vender una oferta introductoria con bonificaciones válidas solo durante la llamada. Énfasis en urgencia y exclusividad."
+    },
+    {
+      "n": 438,
+      "t_es": "Anuncio bumper de YouTube (6 segundos)",
+      "p_es": "Guión y descripción de lo que debería aparecer en un anuncio bumper de 6 segundos. Marca, eslogan y un único CTA impactante."
+    },
+    {
+      "n": 439,
+      "t_es": "Escenario VSL (Video Sales Letter) para un producto de consumo",
+      "p_es": "Guión completo de un VSL de 15 minutos para un producto de salud/bienestar. Gancho (historia personal), mecanismo único, demostración, testimonios, oferta."
+    },
+    {
+      "n": 440,
+      "t_es": "Guión de ventas para una oferta 'Paga lo que quieras'",
+      "p_es": "Argumento para convencer a la gente de comprar a un precio justo, con una sugerencia de precio y una explicación del valor real para guiar la generosidad."
+    },
+    {
+      "n": 441,
+      "t_es": "Publicidad nativa de Snapchat",
+      "p_es": "Texto de un anuncio de Snapchat (imagen y filtro) de una marca de streetwear. Lenguaje joven, visual dinámico, oferta \"Desliza hacia arriba para comprar\"."
+    },
+    {
+      "n": 442,
+      "t_es": "Marco de negociación de asociaciones (JV)",
+      "p_es": "Guión de llamada para proponer una asociación beneficiosa para todos a un influencer/blogger: presentación, elogio, propuesta de colaboración, beneficios."
+    },
+    {
+      "n": 443,
+      "t_es": "Anuncio de audio de Spotify",
+      "p_es": "Spot de audio de 30 segundos para un anuncio de Spotify. Gancho vinculado al estado de ánimo del oyente, mensaje de marca, oferta con código promocional fácil de recordar."
+    },
+    {
+      "n": 444,
+      "t_es": "Guión de ventas para un cierre online (chat)",
+      "p_es": "Script para chat en vivo en un sitio de comercio electrónico. Enfoque proactivo, respuesta a preguntas frecuentes, oferta de descuento del 5% para compra inmediata."
+    },
+    {
+      "n": 445,
+      "t_es": "Marco para un seminario web de ventas (estructura)",
+      "p_es": "Estructura minuto a minuto de un webinar de ventas de 60 minutos. Intro, contenido de valor, transición a venta, presentación de oferta, bono, preguntas y respuestas, cierre."
+    },
+    {
+      "n": 446,
+      "t_es": "Publicidad para recaudación de fondos (Crowdfunding)",
+      "p_es": "Texto de un anuncio de Facebook para una campaña de Kickstarter en curso. Comunidad, innovación, objetivos ambiciosos desbloqueados, urgencia al final de la campaña."
+    },
+    {
+      "n": 447,
+      "t_es": "Guión de ventas con oferta 'garantizada'",
+      "p_es": "Utiliza una poderosa garantía ('Si no ves resultados en X días, te reembolsaré Y te pagaré 100 €') para acercarte. Guión que incorpora esta garantía."
+    },
+    {
+      "n": 448,
+      "t_es": "Publicidad de retargeting dinámico (productos vistos)",
+      "p_es": "Texto para un anuncio de retargeting de Facebook que muestra dinámicamente el producto visto. '¿Todavía estás interesado?' y 'Entrega gratuita hoy'."
+    },
+    {
+      "n": 449,
+      "t_es": "Guión para un mensaje de ventas en LinkedIn después de la aceptación",
+      "p_es": "Primer mensaje después de aceptar un prospecto. No hay venta directa, sino oferta de ayuda, pregunta interesante, apertura al diálogo."
+    },
+    {
+      "n": 450,
+      "t_es": "Script para anunciar un cambio de precio a un cliente existente",
+      "p_es": "Llame al marco para anunciar un aumento de precio a un cliente leal. Gracias, explique los motivos, proporcione valor, ofrezca fijar el precio anterior."
+    },
+    {
+      "n": 451,
+      "t_es": "Ideas de negocios online en el nicho [nicho]",
+      "p_es": "Genera 10 ideas de negocios online rentables en el nicho para 2025. Para cada idea: problema resuelto, cliente objetivo, ejemplo de producto, modelo de ingresos."
+    },
+    {
+      "n": 452,
+      "t_es": "Encuentre un problema recurrente en Reddit para crear un producto",
+      "p_es": "Analiza los subreddits [r/sub1], [r/sub2] y enumera los 10 problemas más recurrentes. Ofrece un producto digital que podría resolver todos los problemas."
+    },
+    {
+      "n": 453,
+      "t_es": "Generar una marca y un eslogan",
+      "p_es": "15 marcas disponibles para un proyecto de [tipo] sobre el tema [tema]. Para cada nombre, un eslogan contundente y un análisis de memorabilidad."
+    },
+    {
+      "n": 454,
+      "t_es": "Business Model Canvas (BMC) para [idea]",
+      "p_es": "Complete un Business Model Canvas completo para la idea de negocio: [idea]. Detalla los 9 bloques."
+    },
+    {
+      "n": 455,
+      "t_es": "Ideas de infoproductos basadas en la experiencia",
+      "p_es": "Soy un experto en [dominio]. Enumera 5 infoproductos que podría crear. Para cada uno: título, contenido, formato, por qué satisface una necesidad urgente."
+    },
+    {
+      "n": 456,
+      "t_es": "Método para validar una idea de negocio rápidamente",
+      "p_es": "Proceso Lean Startup en 5 pasos para validar la idea con un presupuesto de 100€. Entrevistas con clientes, pruebas de humo, preventa."
+    },
+    {
+      "n": 457,
+      "t_es": "Ideas de micro-SaaS B2B para crear",
+      "p_es": "5 ideas de micro-SaaS para empresas del nicho [nicho]. Funcionalidad principal, mercado direccionable, precio mensual potencial."
+    },
+    {
+      "n": 458,
+      "t_es": "Plan de contenidos para el lanzamiento de un infoproducto en 30 días",
+      "p_es": "Backplanning de 30 días para crear y lanzar un libro electrónico. Semana 1: investigación de mercado. Semana 2: escritura. Semana 3: relectura. Semana 4: lanzamiento."
+    },
+    {
+      "n": 459,
+      "t_es": "Analizar una tendencia de mercado emergente",
+      "p_es": "Identifica 3 tendencias emergentes en el sector [sector] en 2025 a través de Google Trends y redes sociales. Imaginemos un posible negocio para cada uno."
+    },
+    {
+      "n": 460,
+      "t_es": "Lluvia de ideas sobre imanes de clientes potenciales para [empresa]",
+      "p_es": "10 ideas irresistibles de leads magnet para un [tipo] negocio que vende [producto/servicio]. Varía los formatos: lista de verificación, plantilla, miniformación, cuestionario, guía."
+    },
+    {
+      "n": 461,
+      "t_es": "Ideas de negocios pasivos con ChatGPT",
+      "p_es": "5 ideas de negocio que utilizan ChatGPT como tecnología subyacente para automatizar un servicio. Ejemplo: generador de recetas, corrector de CV."
+    },
+    {
+      "n": 462,
+      "t_es": "Crear una oferta de servicio 'productizada'",
+      "p_es": "Transformar mi servicio de [servicio a medida] a una oferta de producto estandarizada y escalable (Servicio Productizado). Definir 3 paquetes con entregables específicos."
+    },
+    {
+      "n": 463,
+      "t_es": "Encontrar un nicho rentable para una tienda de Etsy",
+      "p_es": "Analiza Etsy y sugiere 3 nichos rentables con poca competencia pero alta demanda. Criterios: precio medio > 30€, volumen de búsqueda estable."
+    },
+    {
+      "n": 464,
+      "t_es": "Ideas de desafíos virales para construir una comunidad",
+      "p_es": "Diseñe un desafío gratuito de 5 días sobre [tema] que pueda atraer a más de 1000 participantes. Tema de cada día, entregable, mecanismo de viralidad (compartir)."
+    },
+    {
+      "n": 465,
+      "t_es": "Estrategia de precios para un servicio online",
+      "p_es": "Analiza el mercado y propone una estrategia de precios para el servicio [servicio]. 3 opciones: basado en costos, basado en competencia, basado en valor. Recomendar un precio."
+    },
+    {
+      "n": 466,
+      "t_es": "Ideas derivadas de una audiencia existente",
+      "p_es": "Tengo una audiencia de [tamaño] en el nicho [nicho]. ¿Qué 3 nuevos productos o servicios podría venderles aprovechando la confianza establecida?"
+    },
+    {
+      "n": 467,
+      "t_es": "Plan para crear un curso de video sin cámara.",
+      "p_es": "Cómo crear vídeos de formación de alta calidad utilizando únicamente capturas de pantalla y diapositivas, sin ni siquiera filmar mi cara. Hardware, software, estructura."
+    },
+    {
+      "n": 468,
+      "t_es": "Ideas de contenido premium para un grupo pago",
+      "p_es": "10 ideas de contenido exclusivo (publicaciones, vidas, recursos) que podría ofrecer en un grupo privado pago para retener a mis miembros."
+    },
+    {
+      "n": 469,
+      "t_es": "Detectar productos ganadores para dropshipping",
+      "p_es": "5 categorías de productos que probablemente serán tendencias de dropshipping este mes según criterios de viralidad (Facebook, TikTok). Justificar."
+    },
+    {
+      "n": 470,
+      "t_es": "Transformar una pasión en un negocio: plan de acción",
+      "p_es": "Mi pasión es [pasión]. Plan de acción concreto en 10 pasos para empezar a monetizar online en los próximos 30 días."
+    },
+    {
+      "n": 471,
+      "t_es": "Encontrar ideas para canales de YouTube sin rostro",
+      "p_es": "7 conceptos de canales de YouTube automatizados (sin mostrar la cara) en nichos [niche1], [niche2]. Tipo de contenido, fuentes de inspiración, herramientas de IA."
+    },
+    {
+      "n": 472,
+      "t_es": "Cálculo del mercado direccionable (TAM, SAM, SOM)",
+      "p_es": "Para la [idea] de negocio, se estima el TAM, SAM, SOM. Explica brevemente la metodología de cada estimación. Da cifras realistas."
+    },
+    {
+      "n": 473,
+      "t_es": "Negocio de impresión bajo demanda: ideas de diseño",
+      "p_es": "10 ideas de diseño (temas, frases) para camisetas del nicho [nicho]. Descripción textual o visual. Por qué estos diseños se pueden vender."
+    },
+    {
+      "n": 474,
+      "t_es": "Ideas de negocios locales digitalizadas",
+      "p_es": "Lista de 5 servicios locales tradicionales que podrían digitalizarse y venderse en línea como un paquete (por ejemplo: capacitación remota en jardinería)."
+    },
+    {
+      "n": 475,
+      "t_es": "Marco de encuesta para validar un producto.",
+      "p_es": "Cuestionario de 10 preguntas para enviar a mi lista de correo electrónico para validar el interés en el producto [producto] antes de crearlo. Preguntas sobre precio aceptable."
+    },
+    {
+      "n": 476,
+      "t_es": "Análisis FODA de mi proyecto [proyecto]",
+      "p_es": "Realiza un análisis FODA integral para el proyecto [proyecto]. Argumente cada punto. Sugiere acciones estratégicas."
+    },
+    {
+      "n": 477,
+      "t_es": "Resumen sintético del libro [título]",
+      "p_es": "Resumen de 500 palabras del libro '[título]' extrayendo las 5 ideas principales. Para cada idea, cómo aplicarla prácticamente en los negocios online."
+    },
+    {
+      "n": 478,
+      "t_es": "Análisis de datos de Google Trends para un mercado",
+      "p_es": "Interpreta los datos de Google Trends de los últimos 5 años para '[palabra clave]' en [país]. Estacionalidad, tendencia global, consultas relacionadas. Asesoramiento empresarial."
+    },
+    {
+      "n": 479,
+      "t_es": "Automatizando mi día típico con IA",
+      "p_es": "Rutina matutina de 2 horas optimizada con herramientas de inteligencia artificial para un emprendedor [dominio]. Cada bloque de 30 minutos con herramientas e indicaciones."
+    },
+    {
+      "n": 480,
+      "t_es": "Resumen de un estudio de mercado",
+      "p_es": "Resume el estudio de mercado [texto] en 3 párrafos: tamaño del mercado, principales segmentos, perspectivas de crecimiento. Negrita las cifras clave."
+    },
+    {
+      "n": 481,
+      "t_es": "Las 5 mejores herramientas de IA para [tarea] en 2025",
+      "p_es": "Enumere y describa las 5 mejores herramientas de IA para [tarea] en 2025. Para cada herramienta: precio, ventaja principal, caso de uso concreto para un emprendedor individual."
+    },
+    {
+      "n": 482,
+      "t_es": "Resumen de varios libros en un concepto unificado.",
+      "p_es": "Tome los libros [Libro 1], [Libro 2], [Libro 3] y encuentre el concepto unificador. Síntesis combinando sus lecciones en una nueva metodología."
+    },
+    {
+      "n": 483,
+      "t_es": "Analizando mi tiempo con la Matriz de Eisenhower",
+      "p_es": "Aquí está mi lista de tareas semanales: [tareas]. Clasifícalos en la matriz de Eisenhower. Planee delegar o eliminar tareas no esenciales."
+    },
+    {
+      "n": 484,
+      "t_es": "Trucos de productividad para desarrolladores",
+      "p_es": "7 trucos de productividad poco conocidos para desarrolladores. Consejos sobre el IDE, la gestión profunda del trabajo, las automatizaciones y las herramientas CLI."
+    },
+    {
+      "n": 485,
+      "t_es": "Métricas clave a seguir para un SaaS",
+      "p_es": "Las 10 métricas (KPI) más importantes a seguir para un SaaS B2B en crecimiento. Cómo calcularlos y a qué punto de referencia apuntar."
+    },
+    {
+      "n": 486,
+      "t_es": "Crítica constructiva a mi sitio web.",
+      "p_es": "Aquí está la URL del [sitio]. Analiza rápidamente UX, copywriting y claridad de la oferta. Ofrece 5 mejoras procesables para aumentar las conversiones."
+    },
+    {
+      "n": 487,
+      "t_es": "Resumen de una conferencia/podcast en 10 lecciones",
+      "p_es": "Extractos de 10 lecciones prácticas para un emprendedor del episodio [título] de [podcast]. Formatee en viñetas con una oración explicativa."
+    },
+    {
+      "n": 488,
+      "t_es": "Análisis competitivo de [dominio]",
+      "p_es": "Identifica 3 competidores directos de [mi negocio]. Compare su posicionamiento, oferta, precio, comunicación. Crea una ventaja competitiva."
+    },
+    {
+      "n": 489,
+      "t_es": "Genera una rutina de trabajo profundo a tu medida",
+      "p_es": "Horario de trabajo profundo para un creador de contenido que debe escribir, editar videos y administrar el negocio. Bloquea rangos, duraciones, rituales."
+    },
+    {
+      "n": 490,
+      "t_es": "Convertir los consejos de un libro en acción diaria",
+      "p_es": "El libro '[título]' recomienda '[nombre de un hábito]'. Planea convertir este consejo en un hábito diario concreto con el método de los pequeños pasos."
+    },
+    {
+      "n": 491,
+      "t_es": "Auditoría de la presencia online de una marca.",
+      "p_es": "Auditoría rápida de la presencia online de [marca]: sitio web, redes sociales, SEO. Enumere las inconsistencias y las áreas de mejora."
+    },
+    {
+      "n": 492,
+      "t_es": "Análisis predictivo de una tendencia tecnológica.",
+      "p_es": "Anticipe cómo [la tecnología] afectará la profesión [profesión] en los próximos 2 años. Ofrece habilidades para aprender ahora."
+    },
+    {
+      "n": 493,
+      "t_es": "Resumen de libro para niño/principiante.",
+      "p_es": "Explicar los conceptos principales del libro '[business book]' como si estuviera hablando con un niño de 10 años. Utiliza una metáfora retorcida."
+    },
+    {
+      "n": 494,
+      "t_es": "Interpretación de los datos de ventas de una semana",
+      "p_es": "Datos de ventas de mi tienda [plataforma] esta semana: [números]. Analiza actuaciones, bestsellers, fracasos. Sugiere acción promocional."
+    },
+    {
+      "n": 495,
+      "t_es": "Lista de mensajes de ChatGPT para automatizar [tarea]",
+      "p_es": "Minibiblioteca de 5 mensajes ChatGPT que, ejecutados en secuencia, automatizan la creación de [tarea] de la A a la Z."
+    },
+    {
+      "n": 496,
+      "t_es": "Resumen de las novedades de la semana sobre IA",
+      "p_es": "Selección de las 5 noticias sobre IA más importantes de la semana, con un resumen de dos frases y por qué es importante para los emprendedores."
+    },
+    {
+      "n": 497,
+      "t_es": "Técnicas de memorización para aprender [habilidad]",
+      "p_es": "Basado en neurociencia, 5 técnicas avanzadas de memorización para dominar [habilidad] en 30 días."
+    },
+    {
+      "n": 498,
+      "t_es": "Plan anual de lectura para un emprendedor",
+      "p_es": "Plan de lectura de 12 libros (1 por mes) para un emprendedor de [sector] con ganas de potenciar sus habilidades de liderazgo, marketing y estrategia."
+    },
+    {
+      "n": 499,
+      "t_es": "Calcular el retorno de la inversión en formación",
+      "p_es": "Estoy pensando en adquirir el curso de [formación] a [precio]. Ayúdame a calcular el retorno de la inversión esperado haciendo suposiciones conservadoras sobre [variable]."
+    },
+    {
+      "n": 500,
+      "t_es": "Revisión de fin de año personal y profesional",
+      "p_es": "Guía un ejercicio estructurado de revisión anual para un emprendedor. 10 preguntas de reflexión sobre éxitos, fracasos, aprendizajes, objetivos. Plantilla de respuesta."
+    }
+  ]
+}

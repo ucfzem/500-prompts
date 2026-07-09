@@ -1,0 +1,2504 @@
+{
+  "prompts": [
+    {
+      "n": 1,
+      "t_en": "Generate a REST API with Node.js and Express",
+      "p_en": "Creates a REST API with Node.js and Express to manage [entity]. Includes CRUD routes, validation with Joi, and a MongoDB connection. Uses an MVC architecture. Adds generic error middleware. Provide the complete and explained code."
+    },
+    {
+      "n": 2,
+      "t_en": "Create a React TodoList component with hooks",
+      "p_en": "Write a working React component named [ComponentName] using the useState and useEffect hooks to manage a list of tasks (add, delete, toggle completed). The styling must be done with [CSS Modules / Tailwind]. Make sure the code is typed with TypeScript."
+    },
+    {
+      "n": 3,
+      "t_en": "Dashboard MVP with Next.js and Prisma",
+      "p_en": "Generates the initial code for a dashboard using Next.js 14 (App Router), Prisma for the base [PostgreSQL], NextAuth for authentication. Pages: login, dashboard, profile editing. Uses Tailwind CSS."
+    },
+    {
+      "n": 4,
+      "t_en": "Discord bot in Python for moderation",
+      "p_en": "Write a Discord bot in Python with discord.py capable of kicking/banning a member, mass deleting messages, and sending a custom welcome message in a [channel-name] channel."
+    },
+    {
+      "n": 5,
+      "t_en": "Python script for web scraping of real estate ads",
+      "p_en": "Create a Python script using BeautifulSoup and requests to scrape ads from [real estate-site] according to [criteria]. Extract the title, price, area and link. Save as CSV with pagination."
+    },
+    {
+      "n": 6,
+      "t_en": "AWS Lambda function to resize images",
+      "p_en": "Write an AWS Lambda function in Node.js triggered on upload S3 [my-bucket]. Resize the image to [width]x[height] with Sharp and save to /thumbnails."
+    },
+    {
+      "n": 7,
+      "t_en": "Contact form with vanilla JavaScript validation",
+      "p_en": "HTML, CSS and JS code for a contact form with real-time validation: name, email, message. Shows errors under each field. Send via fetch to endpoint [URL]."
+    },
+    {
+      "n": 8,
+      "t_en": "CLI application for managing notes in Go",
+      "p_en": "Developed a CLI app in Go to manage notes stored in JSON. Uses the [cobra] package for commands (add, list, delete, edit). Robust error handling."
+    },
+    {
+      "n": 9,
+      "t_en": "Chrome extension to block websites",
+      "p_en": "Generates the manifest and code for a Chrome extension (Manifest V3) blocking access to domains [domain-array]. Custom warning page and on/off popup."
+    },
+    {
+      "n": 10,
+      "t_en": "JWT login system with Flask",
+      "p_en": "Write a Flask API with /register and /login. Uses Flask-JWT-Extended for tokens. Stores users in SQLite via SQLAlchemy. Decorator to protect the roads."
+    },
+    {
+      "n": 11,
+      "t_en": "Notification microservice with RabbitMQ",
+      "p_en": "Creates a Node.js microservice consuming a RabbitMQ queue [queue-name] that sends emails via [SendGrid/Mailgun]. Management of dead letters."
+    },
+    {
+      "n": 12,
+      "t_en": "Article reading time counter in JavaScript",
+      "p_en": "JS function that takes a text [content] and returns the estimated reading time based on [words-per-minute]. Displays the result dynamically."
+    },
+    {
+      "n": 13,
+      "t_en": "Real-time chat system with Socket.io",
+      "p_en": "Node.js server code and HTML/JS client for real-time chat with Socket.io. Manages nickname, sending messages, and list of connected people. Bootstrap style."
+    },
+    {
+      "n": 14,
+      "t_en": "Generate a complete .gitignore file for [project-type]",
+      "p_en": "Creates a .gitignore suitable for a project [type: Node, Python, React...] including node_modules, environment files, build artifacts, and sensitive elements."
+    },
+    {
+      "n": 15,
+      "t_en": "Deployment automation Bash script",
+      "p_en": "Bash script to deploy [app-name] to a remote server via SSH: Git pull, dependency installation, build, PM2 restart. Verifications and logs."
+    },
+    {
+      "n": 16,
+      "t_en": "Generic sorting algorithm in TypeScript",
+      "p_en": "Implements a generic sort function in TypeScript capable of sorting an array of objects by [key] in ascending/descending order. Uses the Comparator pattern."
+    },
+    {
+      "n": 17,
+      "t_en": "Create a Discord webhook for monitoring alerts",
+      "p_en": "Python script checking the availability of [URL] every 5 minutes and sending a notification via Discord webhook if the site is down. Embed colored green/red."
+    },
+    {
+      "n": 18,
+      "t_en": "Multi-step form with React Hook Form",
+      "p_en": "React form component in 3 steps (personal info, address, confirmation) with React Hook Form and Zod. Navigation, persistence state, summary before submission."
+    },
+    {
+      "n": 19,
+      "t_en": "Bulk File Renaming Python Script",
+      "p_en": "Python script traversing [folder-path] and renaming all files according to [prefix][counter].extension. Manages conflicts and subfolders."
+    },
+    {
+      "n": 20,
+      "t_en": "Code for a loading CSS animation",
+      "p_en": "Creates CSS code for a loading spinner with [number] bouncing dots, color [color]. Included HTML and animated keyframes."
+    },
+    {
+      "n": 21,
+      "t_en": "Implement OAuth2 authentication with Google",
+      "p_en": "Complete Node.js (Express) example with Passport.js and Google OAuth2 strategy. Retrieves the profile and stores the user in session."
+    },
+    {
+      "n": 22,
+      "t_en": "Generate fake data with Faker.js",
+      "p_en": "Node.js script using @faker-js/faker to generate [number] users with name, email, address, phone. Save in JSON. Configurable local [fr, en]."
+    },
+    {
+      "n": 23,
+      "t_en": "Daily Calorie Calculator in JavaScript",
+      "p_en": "Web calculator asking for age, sex, weight, height, activity. Calculates basal metabolism (Mifflin-St Jeor) and calorie needs. Dynamic display."
+    },
+    {
+      "n": 24,
+      "t_en": "Basic PostgreSQL backup script",
+      "p_en": "Bash script performing a pg_dump of [base-name], gzip compression, naming with date, sending to remote storage [S3/rsync]. Rotation of old backups."
+    },
+    {
+      "n": 25,
+      "t_en": "Markdown note-taking app with Electron",
+      "p_en": "Code for an Electron app with CodeMirror editor and live Markdown preview. Saving the .md file locally."
+    },
+    {
+      "n": 26,
+      "t_en": "Commenting system with Firebase Realtime Database",
+      "p_en": "JavaScript code for a real-time commenting system linked to the article [id-article]. Firebase storage and display. Nickname and message field."
+    },
+    {
+      "n": 27,
+      "t_en": "Convert CSV file to JSON in one Python line",
+      "p_en": "Python script using csv and json to transform [file.csv] into [file.json]. Handles UTF-8 encoding and digital conversion."
+    },
+    {
+      "n": 28,
+      "t_en": "Generate a dynamic sitemap.xml for Next.js",
+      "p_en": "Next.js API route generating a sitemap.xml including all [content-type] pages from an API/database. Prioritization and modification date."
+    },
+    {
+      "n": 29,
+      "t_en": "Example of using Docker Compose for LAMP",
+      "p_en": "docker-compose.yml file for LAMP environment (Apache, MySQL, PHP) with phpMyAdmin. Volume for source code [./src] and custom network."
+    },
+    {
+      "n": 30,
+      "t_en": "Script to send SMS via Twilio",
+      "p_en": "Node.js script using the Twilio library to send an SMS to [number] with personalized message [message]. Handles errors and displays the SID."
+    },
+    {
+      "n": 31,
+      "t_en": "Create a Dark Mode switcher with React and Context",
+      "p_en": "React context to manage dark/light theme with localStorage persistence. Global CSS class [dark] on the body. Provider and Toggle component."
+    },
+    {
+      "n": 32,
+      "t_en": "Parse Apache logs with Python",
+      "p_en": "Python script reading an [access.log] file and extracting the most requested IPs, HTTP codes and URLs. Console report and summary CSV."
+    },
+    {
+      "n": 33,
+      "t_en": "Integrate Stripe Checkout into a web page",
+      "p_en": "HTML/JS frontend and Node.js backend code to integrate a Stripe Checkout payment. Purchase of [product/price]. Server-side session creation."
+    },
+    {
+      "n": 34,
+      "t_en": "PHP string slug function",
+      "p_en": "PHP function slugify(string $str): string transforming a string into a slug URL: lowercase, removal of accents, special characters, spaces in hyphens."
+    },
+    {
+      "n": 35,
+      "t_en": "Generate a Python project template with cookiecutter",
+      "p_en": "cookiecutter.json file and standard Python project structure: Poetry, Pytest, flake8, Makefile for common commands."
+    },
+    {
+      "n": 36,
+      "t_en": "PowerShell script to list large files",
+      "p_en": "PowerShell script scanning [target] and showing 10 largest files with path and size. Depth and extension settings."
+    },
+    {
+      "n": 37,
+      "t_en": "Mini full-text search engine in SQLite",
+      "p_en": "SQL schema and query for an FTS5 full-text search on an articles table. Example of query ranking by relevance."
+    },
+    {
+      "n": 38,
+      "t_en": "Configure an Nginx reverse proxy for a Node backend",
+      "p_en": "Configuring Nginx to serve a static frontend and redirect /api/* to a Node.js server on port [port]. WebSocket and proxy header support."
+    },
+    {
+      "n": 39,
+      "t_en": "React Native Shopping List Mobile App",
+      "p_en": "Code of a React Native app (Expo) with addition of article, list with checkboxes, deletion. Local storage AsyncStorage."
+    },
+    {
+      "n": 40,
+      "t_en": "Analyze the complexity of a given algorithm",
+      "p_en": "Analyzes the time and space complexity of the following algorithm [pseudo-code]. Explain each step and offer an optimized version if possible."
+    },
+    {
+      "n": 41,
+      "t_en": "Debugging an 'undefined is not a function' error",
+      "p_en": "Explain step by step how to diagnose this error in JavaScript. Examples of common causes (typo, timing, scope) and resolution with console.trace."
+    },
+    {
+      "n": 42,
+      "t_en": "Fix a memory leak in a React application",
+      "p_en": "Checklist to identify and fix a memory leak in a React component. Uncleaned listeners, timers, useEffect cleanup. Example of correction."
+    },
+    {
+      "n": 43,
+      "t_en": "Refactor a complex if/else block into a mapping object",
+      "p_en": "Transforms the following code using a long if/else string into a mapping object and lookup function. Explain the benefits."
+    },
+    {
+      "n": 44,
+      "t_en": "Optimize a slow SQL query with EXPLAIN",
+      "p_en": "Explains how to use EXPLAIN ANALYZE on the query [query]. Interprets the results and suggests the indexes to create."
+    },
+    {
+      "n": 45,
+      "t_en": "Convert a Synchronous Function to Asynchronous in Python",
+      "p_en": "Shows how to convert a blocking Python function [function] to an async/await version with aiohttp. Before/after code and pitfalls to avoid."
+    },
+    {
+      "n": 46,
+      "t_en": "Tracking a regression bug with Git bisect",
+      "p_en": "How to use git bisect to find the bugging commit where [feature] no longer works. Commands and test script."
+    },
+    {
+      "n": 47,
+      "t_en": "Refactor a monolithic React component",
+      "p_en": "Refactoring plan for component [ComponentName] of [number] lines. Cutting into presentation components/containers, extraction of hooks."
+    },
+    {
+      "n": 48,
+      "t_en": "Detect and fix NPM audit vulnerabilities",
+      "p_en": "How to use npm audit to identify vulnerabilities in a [Node] project. Remediation strategies: updates, replacement, manual resolution."
+    },
+    {
+      "n": 49,
+      "t_en": "Replace a callback with a promise (promisify)",
+      "p_en": "Generic utility function in Node.js transforming any callback-based function into a promise. Application on fs.readFile."
+    },
+    {
+      "n": 50,
+      "t_en": "Improve Angular performance with ChangeDetectionStrategy",
+      "p_en": "Switching default detection to OnPush in an Angular component. Prerequisites: input immutability, async observables. Concrete example."
+    },
+    {
+      "n": 51,
+      "t_en": "Analyze an Android crash log and propose a fix",
+      "p_en": "Interpret the following crash log [log]. Identifies the root cause (NullPointerException, ANR) and suggests a Java/Kotlin fix."
+    },
+    {
+      "n": 52,
+      "t_en": "Standardize code with ESLint and Prettier",
+      "p_en": "Configuring ESLint and Prettier for a React project. Minimal .eslintrc.js and .prettierrc files. Integration in pre-commit hook."
+    },
+    {
+      "n": 53,
+      "t_en": "Fix an incorrect data flow in Redux",
+      "p_en": "Diagnoses an issue where Redux state is not updating after the [action] action. Checks: action type, immer, accidental mutation. Correction."
+    },
+    {
+      "n": 54,
+      "t_en": "Migrate a JavaScript codebase to TypeScript",
+      "p_en": "5-step plan to migrate a [name] project to TypeScript: tsconfig, renaming, fixing strict errors, gradually adding typings."
+    },
+    {
+      "n": 55,
+      "t_en": "Add structured logs to facilitate debugging",
+      "p_en": "Integration of a structured logging system with [winston/bunyan] in a Node.js app. Log levels, JSON format, file/console transports."
+    },
+    {
+      "n": 56,
+      "t_en": "Fix a database concurrency problem",
+      "p_en": "Resolve a race condition on a base counter. Optimistic lock with version column, or SELECT...FOR UPDATE. SQL code and application."
+    },
+    {
+      "n": 57,
+      "t_en": "Transform a for loop into a functional method",
+      "p_en": "Rewrite the following code [for loop] filtering and transforming an array using filter, map and reduce. Compares readability and performance."
+    },
+    {
+      "n": 58,
+      "t_en": "Remove dead code and unused imports",
+      "p_en": "How to use tools like eslint-plugin-unused-imports and Webpack tree shaking to detect and remove dead code. Configuration examples."
+    },
+    {
+      "n": 59,
+      "t_en": "Adapt the Repository pattern for cleaner code",
+      "p_en": "Refactor a Node.js service [service] mixing DB calls and business logic by introducing a Repository pattern. Before/after code."
+    },
+    {
+      "n": 60,
+      "t_en": "Resolve a complex Git merge conflict",
+      "p_en": "Strategy for resolving a conflict where two branches have heavily modified the same file [file]. Using a visual merge tool."
+    },
+    {
+      "n": 61,
+      "t_en": "Improve naming consistency in a project",
+      "p_en": "Consistent naming convention for variables, functions, classes and constants in a [language] project. Refactoring an inconsistent snippet."
+    },
+    {
+      "n": 62,
+      "t_en": "Detecting anti-patterns in a Pull Request",
+      "p_en": "Checklist to detect common anti-patterns in a PR: God classes, spaghetti code, magic numbers, duplication. Example of constructive feedback."
+    },
+    {
+      "n": 63,
+      "t_en": "Fix a date splitting bug in JavaScript",
+      "p_en": "Analyzes why new Date('2025-02-31') produces an unexpected result and provides robust analysis with date-fns or moment.js. Correction."
+    },
+    {
+      "n": 64,
+      "t_en": "Optimize server-side rendering (SSR) of a Next.js page",
+      "p_en": "Techniques to reduce the TTFB of a Next.js page: getServerSideProps cache, reduction of server dependencies, HTML streaming. Practical example."
+    },
+    {
+      "n": 65,
+      "t_en": "Replace redundant API calls with cache",
+      "p_en": "In the code, the same data is fetched multiple times. Implements an in-memory cache layer with lifetime (Map or node-cache)."
+    },
+    {
+      "n": 66,
+      "t_en": "Simplify a complex regular expression",
+      "p_en": "The regex [regex] is difficult to maintain. Separate it into commented subparts or rewrite with capture names. Explain each part."
+    },
+    {
+      "n": 67,
+      "t_en": "Make a component configurable using props",
+      "p_en": "Refactor a React component [Component] with hardcoded values ​​to make it reusable via props. Define propTypes or TS interface."
+    },
+    {
+      "n": 68,
+      "t_en": "Implement a Circuit Breaker for External Calls",
+      "p_en": "Adds a Circuit Breaker pattern to Node.js to protect an external API call [service]. Use possum. Opens after [number] failures."
+    },
+    {
+      "n": 69,
+      "t_en": "Generate a class diagram from code",
+      "p_en": "From the source code [Java/C# code], generates a UML class diagram in PlantUML. Identifies inheritance, implementation, and composition."
+    },
+    {
+      "n": 70,
+      "t_en": "Fix a component that is not updating the UI",
+      "p_en": "Explains the pitfall of state mutation in React (state push) and shows how to fix [component] using immutability (spread or map)."
+    },
+    {
+      "n": 71,
+      "t_en": "Use profiling tools for a bottleneck",
+      "p_en": "How to use the Chrome DevTools or Node.js profiler (--inspect) to identify a slow function. Capture and analysis steps."
+    },
+    {
+      "n": 72,
+      "t_en": "Reduce technical debt related to testing",
+      "p_en": "Lists the 5 least covered files based on a coverage report. Strategy for writing critical tests first. Example for [function]."
+    },
+    {
+      "n": 73,
+      "t_en": "Transform a spaghetti script into modules",
+      "p_en": "Take this 500-line script [script] and propose a division into distinct modules (config, utils, services, app). Folder structure."
+    },
+    {
+      "n": 74,
+      "t_en": "Detect and prevent SQL injections",
+      "p_en": "Analyzes the code [PHP code] and identifies a SQL injection vulnerability. Fixes with PDO prepared queries. Why simple exhausts are not enough."
+    },
+    {
+      "n": 75,
+      "t_en": "Apply SOLID principles to an existing class",
+      "p_en": "Choose a class [class] that violates the single responsibility principle. Rewrite it using the appropriate SOLID principles, justifying each change."
+    },
+    {
+      "n": 76,
+      "t_en": "Replace 'var' with 'let'/'const' in legacy code",
+      "p_en": "Steps to securely replace all var declarations with let/const in an old JavaScript project. Range and hoisting issues."
+    },
+    {
+      "n": 77,
+      "t_en": "Improve the accessibility of a modal component",
+      "p_en": "Audits the HTML/React code of a modal [code] for accessibility: focus trap, escape key, aria-modal, contrast. Corrections."
+    },
+    {
+      "n": 78,
+      "t_en": "Fix a currency conversion bug with floats",
+      "p_en": "Why currency floats cause rounding errors. Rewrite the code [code] to handle amounts in cents or with decimal.js."
+    },
+    {
+      "n": 79,
+      "t_en": "Refactor a Redux reducer with Redux Toolkit",
+      "p_en": "Migrating a classic Redux reducer with switch/case to createSlice from Redux Toolkit. Simplification and use of immer."
+    },
+    {
+      "n": 80,
+      "t_en": "Remove unnecessary dependencies from a package.json",
+      "p_en": "How to use depcheck to list unused dependencies in a project. Example of secure deletion and impact verification."
+    },
+    {
+      "n": 81,
+      "t_en": "Automate WordPress post publishing via REST API",
+      "p_en": "Python script using WordPress REST API to create a post with title [title], content [content] and categories [categories]. Authentication Basic Auth."
+    },
+    {
+      "n": 82,
+      "t_en": "Scrape Google Maps reviews of an establishment",
+      "p_en": "Puppeteer script (Node.js) to retrieve the latest [number] Google Maps reviews of a location [url]. Extract name, note, text and date. CSV backup."
+    },
+    {
+      "n": 83,
+      "t_en": "OpenAI API integration to respond to emails",
+      "p_en": "Node.js function using the OpenAI API (chat/completions) to generate a response to an email [body] with context [context]. Configurable temperature and model."
+    },
+    {
+      "n": 84,
+      "t_en": "Change detection script on a website",
+      "p_en": "Bash/Python script periodically downloading the page [url], calculates a hash of the content, and sends an email/webhook alert if there is a change."
+    },
+    {
+      "n": 85,
+      "t_en": "Automate Active Directory account creation",
+      "p_en": "PowerShell script reading a CSV with [last name, first name, department] and creating AD users with random password, activation and UPN."
+    },
+    {
+      "n": 86,
+      "t_en": "Scheduling tasks with Celery and RabbitMQ in Django",
+      "p_en": "Configuration to integrate Celery with RabbitMQ in a Django project. Example task of sending a welcome email in the background."
+    },
+    {
+      "n": 87,
+      "t_en": "Extract data from a PDF with Python",
+      "p_en": "Python script using pdfplumber to extract text from each page of a PDF [.pdf file] and search for occurrences of a pattern [regex]. JSON export."
+    },
+    {
+      "n": 88,
+      "t_en": "Mailchimp subscriber management interface via API",
+      "p_en": "PHP class (or Node module) to interact with the Mailchimp Marketing API: add a subscriber to the list [list-id], unsubscribe, retrieve lists."
+    },
+    {
+      "n": 89,
+      "t_en": "Generate an RSS feed from a site without RSS",
+      "p_en": "Node.js script scraping the home page [url] of a news site and generating a valid RSS 2.0 feed with the latest articles."
+    },
+    {
+      "n": 90,
+      "t_en": "Automate Instagram photo backup",
+      "p_en": "Python script with instaloader downloading the latest [number] posts from the account [account] with their captions in a dated folder."
+    },
+    {
+      "n": 91,
+      "t_en": "CI/CD Pipeline GitHub Actions for FTP Deployment",
+      "p_en": ".github/workflows/deploy.yml file which, with each push to main, uses lftp to transfer files from the [build] folder to an FTP server."
+    },
+    {
+      "n": 92,
+      "t_en": "Script to merge multiple CSV files",
+      "p_en": "Python script taking a folder [folder] of CSVs with the same structure and concatenating them into a single file [output.csv] with source column."
+    },
+    {
+      "n": 93,
+      "t_en": "Monitor disk space and send alert",
+      "p_en": "Bash script to place in cron checking disk usage on [mount]. If available space < [threshold]%, send an email to [admin@example.com]."
+    },
+    {
+      "n": 94,
+      "t_en": "Automate web form filling with Playwright",
+      "p_en": "Playwright script (Node.js) connecting to [site] with [email/mdp], filling a form of [type] with data [data], and submitting."
+    },
+    {
+      "n": 95,
+      "t_en": "Twitter bot retweeting tweets with a keyword",
+      "p_en": "Node.js bot using twitter-api-v2 to follow a stream of tweets containing [#word] and retweet them. Anti-duplicate check and daily limit."
+    },
+    {
+      "n": 96,
+      "t_en": "Convert a Markdown document to styled HTML",
+      "p_en": "Node.js script reading [.md file], transforming it into HTML with marked, and applying an HTML/CSS template based on [template]. Backup."
+    },
+    {
+      "n": 97,
+      "t_en": "Google Sheets import script to a MySQL database",
+      "p_en": "Python script using gspread to read a Google Sheets [url] and insert each row into a MySQL table [table] with mapping and upsert."
+    },
+    {
+      "n": 98,
+      "t_en": "Create an inbound webhook for Slack",
+      "p_en": "AWS Lambda / Node.js function receiving an HTTP POST, validating a secret token, and sending a formatted message to Slack via incoming webhook."
+    },
+    {
+      "n": 99,
+      "t_en": "Automate the generation of thumbnails for a site",
+      "p_en": "Python script (Pillow) browsing a folder of images [source] and creating a thumbnail of [width]x[height] in [destination] while maintaining the ratio."
+    },
+    {
+      "n": 100,
+      "t_en": "Implement an asynchronous queuing system in Node.js",
+      "p_en": "In-memory queue with concurrency management: async.queue or bull to process image processing tasks with 3 workers."
+    },
+    {
+      "n": 101,
+      "t_en": "Retrieve the exchange rate from an API and store it",
+      "p_en": "Node.js cron job querying the [exchangerate-api] API every hour for the rate [EUR/USD] and saving it to Redis with TTL 24h. API route."
+    },
+    {
+      "n": 102,
+      "t_en": "Scrape Amazon product details",
+      "p_en": "Python script with Scrapy to scrape the first [number] Amazon results for the keyword [keyword]: title, price, number of reviews, link."
+    },
+    {
+      "n": 103,
+      "t_en": "Automate resizing and uploading to Cloudinary",
+      "p_en": "Script monitoring a [watch-folder], resizing new images to [size] and uploading them to Cloudinary. Deleting the original."
+    },
+    {
+      "n": 104,
+      "t_en": "Integrate a speech recognition API for transcription",
+      "p_en": "Python code to use the OpenAI Whisper API to transcribe an audio file [.mp3 file] to text. Management of large files by cutting."
+    },
+    {
+      "n": 105,
+      "t_en": "Schedule an automatic PDF weekly report",
+      "p_en": "Python script generating a PDF report with ReportLab compiling sales statistics. Sending by email to [recipient] every Monday via cron."
+    },
+    {
+      "n": 106,
+      "t_en": "On-page SEO audit script",
+      "p_en": "Python script (requests, BeautifulSoup) analyzing a URL [url] and checking: title tag, meta description, H1, alt attributes, sitemap presence. Report."
+    },
+    {
+      "n": 107,
+      "t_en": "Automate sending WhatsApp messages via Twilio",
+      "p_en": "Node.js example to send a WhatsApp message to [number] with template [template]. Sandbox configuration and approved template."
+    },
+    {
+      "n": 108,
+      "t_en": "Create a URL Shortener with Netlify Functions",
+      "p_en": "Netlify serverless function redirecting (301) from a [short] slug to the full URL stored in an environment variable or JSON file."
+    },
+    {
+      "n": 109,
+      "t_en": "Monitoring the status of an SSL certificate",
+      "p_en": "Bash/Python script checking the SSL certificate expiration date of a domain [domain] and alerting if < [days]. Uses openssl s_client."
+    },
+    {
+      "n": 110,
+      "t_en": "Aggregate multiple weather API feeds into one",
+      "p_en": "Node.js microservice querying 2 weather APIs ([api1], [api2]) for a city [city], combining the data and returning a unified response."
+    },
+    {
+      "n": 111,
+      "t_en": "Task management CLI tool with deadline",
+      "p_en": "Python script with argparse to manage a CLI todo list: add a task with deadline [DD/MM], list by priority, mark as done. JSON."
+    },
+    {
+      "n": 112,
+      "t_en": "Automatic log archiving script",
+      "p_en": "Bash script compressing (tar.gz) log files older than [number] days into [logs], moving them to an archive and deleting the originals."
+    },
+    {
+      "n": 113,
+      "t_en": "Retrieve YouTube channel statistics",
+      "p_en": "Python script with YouTube Data API v3 to get the number of subscribers, views and last 5 videos for channel [channel-id]. Timestamped CSV."
+    },
+    {
+      "n": 114,
+      "t_en": "Create a web scraper that handles infinite pagination",
+      "p_en": "Puppeteer script automatically scrolls the page [url] until new content is exhausted, then extracts the elements [selector]."
+    },
+    {
+      "n": 115,
+      "t_en": "Automate posts on LinkedIn with the API",
+      "p_en": "Node.js code to publish a post to a LinkedIn profile with the text [content]. OAuth2 authentication prerequisites and necessary scopes."
+    },
+    {
+      "n": 116,
+      "t_en": "Integration of a simple chatbot on a website",
+      "p_en": "HTML/JS code to integrate a chatbot widget based on the OpenAI API. Tone [tone], system prompt knowledge base, conversation history."
+    },
+    {
+      "n": 117,
+      "t_en": "Generate address labels in PDF from CSV",
+      "p_en": "Python script reading a CSV with [name, address, zip code, city] and generating a PDF page of aligned labels ready to print."
+    },
+    {
+      "n": 118,
+      "t_en": "Automate the creation of Asana tasks from emails",
+      "p_en": "Python script reading unread emails from a Gmail box via IMAP, filtering by sender [sender] and creating an Asana task with subject as title."
+    },
+    {
+      "n": 119,
+      "t_en": "Web performance monitoring script with Lighthouse",
+      "p_en": "Node.js script using lighthouse in program mode to audit the URL [url], extract the Performance score and log/send it to Datadog."
+    },
+    {
+      "n": 120,
+      "t_en": "Implement a simple API proxy with cache",
+      "p_en": "Node.js (Express) server acting as proxy for the [target-api] API. Caching GET responses with TTL [ttl] in Redis."
+    },
+    {
+      "n": 121,
+      "t_en": "Generate unit tests with Jest for a function",
+      "p_en": "Write a set of Jest unit tests for function [function] exported from [utils.js]. Covers nominal cases, limits and exceptions. describe/it."
+    },
+    {
+      "n": 122,
+      "t_en": "Write end-to-end tests with Cypress for an auth flow",
+      "p_en": "Code for a Cypress test checking the complete connection path on [url-login]: entry, submission, dashboard redirection, welcome message."
+    },
+    {
+      "n": 123,
+      "t_en": "Document a REST API with Swagger/OpenAPI",
+      "p_en": "From controller code [Express code], add JSDoc comments to generate Swagger documentation with swagger-jsdoc. Diagrams included."
+    },
+    {
+      "n": 124,
+      "t_en": "Simple load test with k6",
+      "p_en": "k6 script (JavaScript) to test GET [api/endpoint] scalability. Scenario: 0 to 50 users in 2 min, hold 3 min. Error <1%."
+    },
+    {
+      "n": 125,
+      "t_en": "Generate a complete README.md file for a GitHub project",
+      "p_en": "Structured README.md template for an open source project [name]: badges, description, installation, use, contribution, license."
+    },
+    {
+      "n": 126,
+      "t_en": "Integration test with Supertest for an Express API",
+      "p_en": "Integration test (Jest + Supertest) for the article creation API. Checks code 201, presence of an id, registration in test database."
+    },
+    {
+      "n": 127,
+      "t_en": "Configuring a test plan for an e-commerce app",
+      "p_en": "Overall test plan for an application [name]: unit tests, integration, end-to-end, performance. Tools and target coverage."
+    },
+    {
+      "n": 128,
+      "t_en": "Document a React component with Storybook",
+      "p_en": "Story for the [Button] component in Storybook, showing the variants: primary, secondary, disabled. Controls for playing with props."
+    },
+    {
+      "n": 129,
+      "t_en": "Unit testing a React hook with React Testing Library",
+      "p_en": "Test code for a custom [useWindowSize] hook returning width/height. Simulates the resize and checks the update."
+    },
+    {
+      "n": 130,
+      "t_en": "Setting up code coverage with Jest",
+      "p_en": "How to configure code coverage in a React project with Jest (jest.config.js) and set an overall threshold of [percentage]%."
+    },
+    {
+      "n": 131,
+      "t_en": "Write a test snapshot for a component",
+      "p_en": "Jest snapshot test for component [Component]. Best practices: avoid excessively large snapshots, when to update them."
+    },
+    {
+      "n": 132,
+      "t_en": "Document the hexagonal architecture of a project",
+      "p_en": "Concise Markdown documentation explaining the hexagonal architecture of the project [project]. Domain, application, infrastructure layers. PlantUML diagram."
+    },
+    {
+      "n": 133,
+      "t_en": "Generate technical documentation for a DB model",
+      "p_en": "From an SQL schema [schema], generates Markdown documentation listing each table, columns with types, constraints and relationships."
+    },
+    {
+      "n": 134,
+      "t_en": "Mutation testing with Stryker for a JavaScript module",
+      "p_en": "How to configure and run Stryker on a JavaScript project to evaluate test quality. Interpretation of a mutation report."
+    },
+    {
+      "n": 135,
+      "t_en": "Write a contribution guide (CONTRIBUTING.md)",
+      "p_en": "Generic CONTRIBUTING.md file for a GitHub project: code of conduct, report a bug, propose a feature, environment, PR."
+    },
+    {
+      "n": 136,
+      "t_en": "Test a GraphQL API with Apollo Server Testing",
+      "p_en": "Integration test with Apollo Server and executeOperation for a createUser mutation. Verifies the creation and the returned token."
+    },
+    {
+      "n": 137,
+      "t_en": "Document architectural decisions (ADR)",
+      "p_en": "Architecture Decision Record template in Markdown to document the choice to use [technology] for [context]. Title, context, decision, consequences."
+    },
+    {
+      "n": 138,
+      "t_en": "Component Testing with Vue Test Utils",
+      "p_en": "Unit test for a Vue 3 component ([MyComponent]) emitting an event on click. @vue/test-utils: mount, click, check."
+    },
+    {
+      "n": 139,
+      "t_en": "Implementation of a semantic versioning strategy",
+      "p_en": "How to configure semantic-release for a Node.js project hosted on GitHub. Automatic generation of versions and CHANGELOG."
+    },
+    {
+      "n": 140,
+      "t_en": "Write property-based tests with Fast-Check",
+      "p_en": "Example of property testing in JavaScript with fast-check for a [sortParInsertion] function. Verifies that the sorted array is still sorted."
+    },
+    {
+      "n": 141,
+      "t_en": "Analyze the security of an authentication function",
+      "p_en": "Audits code [code] for OWASP Top 10 vulnerabilities (injection, session, password storage). Suggests corrections."
+    },
+    {
+      "n": 142,
+      "t_en": "Generate test data with factory_bot",
+      "p_en": "Write a factory (in Ruby/JS) to create instances of the entity [Entity] with realistic and random attributes, ready for testing."
+    },
+    {
+      "n": 143,
+      "t_en": "Set up a linter for documentation (Vale)",
+      "p_en": "How to install and configure Vale, a prose linter, to check Markdown documentation for consistency. Custom style."
+    },
+    {
+      "n": 144,
+      "t_en": "Writing a system architecture document",
+      "p_en": "Template for an architecture document: objectives, constraints, context diagram, view of components, data flow, technological choices, risks."
+    },
+    {
+      "n": 145,
+      "t_en": "Visual non-regression test with Percy or Chromatic",
+      "p_en": "Workflow to integrate visual regression testing on a Storybook project with Chromatic. Interpretation and approval of changes."
+    },
+    {
+      "n": 146,
+      "t_en": "Configure API mocking with MSW (Mock Service Worker)",
+      "p_en": "Configuring MSW to intercept network calls in React tests. Mock a GET [api/user] endpoint and return a dummy user."
+    },
+    {
+      "n": 147,
+      "t_en": "Write a technical feature specification",
+      "p_en": "Technical spec for the feature [feature-name]: scope, user stories, models, API endpoints, data model, error cases."
+    },
+    {
+      "n": 148,
+      "t_en": "Analyze code coverage and identify gaps",
+      "p_en": "How to generate a coverage report with Istanbul/nyc, and interpret uncovered branches to improve testing on [file]."
+    },
+    {
+      "n": 149,
+      "t_en": "Write tests for an XState state machine",
+      "p_en": "Test example for an XState state machine managing a video player (paused, playing, stopped). Checks valid and invalid transitions."
+    },
+    {
+      "n": 150,
+      "t_en": "Generate a technical glossary of the project",
+      "p_en": "Glossary of technical terms used in the project [project] in Markdown. For each term, simple definition and link to documentation."
+    },
+    {
+      "n": 151,
+      "t_en": "Write an SEO blog post on [topic]",
+      "p_en": "Write a 1500 word article on '[subject]'. Uses keywords '[keyword1]', '[keyword2]' and semantic variants. Structure with H2, H3, catchy introduction, conclusion with CTA. Meta description < 160 chars."
+    },
+    {
+      "n": 152,
+      "t_en": "Internal mesh plan for a content cluster",
+      "p_en": "Internal linking strategy for 5 articles: [URL1], [URL2]... on the theme '[theme]'. For each article, 2 inbound and 2 outbound links with anchor text."
+    },
+    {
+      "n": 153,
+      "t_en": "Editorial brief for an editor on [topic]",
+      "p_en": "Complete editorial brief for a freelance writer: persona, search intent, main keyword, search volume, skeleton, sources, tone."
+    },
+    {
+      "n": 154,
+      "t_en": "Optimize an old article for SEO (rewriting)",
+      "p_en": "Parses the article at URL [url] and provides a rewritten version. Improves H1 with '[keyword]', expands by 30%, adds 2 subtitles, FAQ, 2025 statistics."
+    },
+    {
+      "n": 155,
+      "t_en": "Click-worthy article title ideas",
+      "p_en": "Offers 10 ideas for catchy titles on '[thematic]'. Mixture of listicles, 'how to', 'ultimate guide' and questions. Integrates figures and promises."
+    },
+    {
+      "n": 156,
+      "t_en": "Write a guest post for [site]",
+      "p_en": "1000 word guest post for blog [blog-name] on '[subject]'. Audience: [target audience]. Accessible authoritarian tone, 3 tips, anecdote, bio with link."
+    },
+    {
+      "n": 157,
+      "t_en": "Content for a 'What is [concept]' pillar page",
+      "p_en": "Complete pillar page on '[concept]' targeting the keyword '[concept]'. Structure: definition, importance, operation, benefits, case studies, FAQ. 3000 words."
+    },
+    {
+      "n": 158,
+      "t_en": "Generate a monthly editorial calendar",
+      "p_en": "Editorial calendar for [month] [year] in niche [niche]. 8 articles with title, main keyword, search intent, persona, and suggested dates."
+    },
+    {
+      "n": 159,
+      "t_en": "Optimized meta description for an article",
+      "p_en": "3 meta description variations (max 155 char.) for a page targeting '[keyword]'. Each variation includes an incentive to click and reflects the content."
+    },
+    {
+      "n": 160,
+      "t_en": "Transform podcast content into an article",
+      "p_en": "Take the transcript [transcription] and turn it into a 1200 word article. Removes tics, paragraph structure, adds intro and conclusion."
+    },
+    {
+      "n": 161,
+      "t_en": "Brief for a comparative article [Product A] vs [Product B]",
+      "p_en": "Detailed plan of a comparative article between [Product A] and [Product B]. Comparison table, tests, advantages/disadvantages, value for money, recommendation."
+    },
+    {
+      "n": 162,
+      "t_en": "Attractive 'Listicle' article",
+      "p_en": "Write an article 'Top 10 [elements] for [objective] in [year]'. Each element: catchy title, 100 word description, unique tip. Intro and conclusion."
+    },
+    {
+      "n": 163,
+      "t_en": "Write a response to an objection in an article",
+      "p_en": "In an article on [topic], write a section responding to the objection '[objection]'. Reformulation, empathy, supported counterargument, transition to the solution."
+    },
+    {
+      "n": 164,
+      "t_en": "Content for an SEO-oriented 'About' page",
+      "p_en": "Writes content for [brand]'s 'About' page. Mission, history, team, values, achievements. Discreetly integrates the keyword '[keyword]'."
+    },
+    {
+      "n": 165,
+      "t_en": "Turn a case study into a blog post",
+      "p_en": "Based on the case study, write a storytelling article: client story, initial problem, solution provided, quantified results."
+    },
+    {
+      "n": 166,
+      "t_en": "Create a summary with HTML anchors for a long article",
+      "p_en": "HTML code for a clickable summary for an article divided into sections with IDs [section1], [section2]... Ordered list with soft links. CSS to style it."
+    },
+    {
+      "n": 167,
+      "t_en": "Article ideas from 'People Also Ask'",
+      "p_en": "Scans the SERP for '[query]' and extracts 5 questions from the 'People Also Ask' section. Write a detailed answer to each question."
+    },
+    {
+      "n": 168,
+      "t_en": "Generate snippets optimized for position zero",
+      "p_en": "Write a 50-word paragraph that concisely answers '[question]' and can be displayed in position zero. Definition, step or list format."
+    },
+    {
+      "n": 169,
+      "t_en": "Updated evergreen content for [year]",
+      "p_en": "Reread the article [url] and suggest an update for [year]. Updates statistics, removes obsolete, adds recent trends, changes date."
+    },
+    {
+      "n": 170,
+      "t_en": "Write a 'Beginner's Guide' article on [subject]",
+      "p_en": "Complete beginner's guide to [topic]. Simple language, analogies, described screenshots, numbered steps. Tips to avoid common mistakes."
+    },
+    {
+      "n": 171,
+      "t_en": "Create a glossary of [industry] terms",
+      "p_en": "Glossary of 20 essential industry terms [industry]. For each: term, plain language definition, example of use. Optimized for voice search."
+    },
+    {
+      "n": 172,
+      "t_en": "Generate an article from a YouTube video",
+      "p_en": "Transcription of a YouTube video on [topic]. Turn it into a structured 1000 word blog post. Title, intro, intertitles, summary. Maintain the tone."
+    },
+    {
+      "n": 173,
+      "t_en": "Write an FAQ section for an article",
+      "p_en": "For the article on [topic], write a FAQ section of 5 questions and answers based on related research. Concise and informative answers."
+    },
+    {
+      "n": 174,
+      "t_en": "Write a controversial article / position statement",
+      "p_en": "Opinion article on [controversial topic]. Presents both sides, takes a clear position supported by solid arguments. End with an open question."
+    },
+    {
+      "n": 175,
+      "t_en": "Transform key points into a flowing article",
+      "p_en": "From this list of key points [list], develop an 800-word article with fluid transitions, logical thread, introduction and conclusion."
+    },
+    {
+      "n": 176,
+      "t_en": "Write a guest article 'Ultimate guide'",
+      "p_en": "Ultimate guide on [topic] intended for [audience]. Vise 4000 mots. Table of contents, chapters, checklists, downloadable resources, summary."
+    },
+    {
+      "n": 177,
+      "t_en": "Create a data-driven article",
+      "p_en": "Research 5 recent statistics on [theme] and write an article interpreting them. Context, source, concrete implication. Graphics described verbatim."
+    },
+    {
+      "n": 178,
+      "t_en": "Optimize keyword density without over-optimization",
+      "p_en": "On text [text], analyzes keyword density. Rewrite sentences to naturally include variations of '[keyword]' and co-occurrences."
+    },
+    {
+      "n": 179,
+      "t_en": "Generate an article prompt for AI in AIDA framework",
+      "p_en": "Meta-prompt intended to write a blog article on [topic] following the AIDA structure. Incorporates the main keyword, persona and tone."
+    },
+    {
+      "n": 180,
+      "t_en": "Write an article on future trends in [industry]",
+      "p_en": "Prospective article on 5 trends that will mark the industry [industry] in the next 5 years. Based on reports from Gartner, McKinsey, etc."
+    },
+    {
+      "n": 181,
+      "t_en": "Article titles with emotional hook",
+      "p_en": "15 article titles for a blog on [theme] using emotional hooks: fear, curiosity, desire, urgency. Ex: 'Don't make [mistake] before reading this'."
+    },
+    {
+      "n": 182,
+      "t_en": "Brief to create an infographic from an article",
+      "p_en": "Transforms the content of the article [url] into a brief for a graphic designer: 8 key data points, narrative flow, visual elements per section. Size 800x2000 px."
+    },
+    {
+      "n": 183,
+      "t_en": "Article 'Myth vs Reality'",
+      "p_en": "Article demystifying 5 preconceived ideas on [subject]. Structure: each myth in the title, widespread belief, reality explained, scientific proof."
+    },
+    {
+      "n": 184,
+      "t_en": "Content for a local SEO service page",
+      "p_en": "Service page for [business type] in [city]. Target '[service] in [city]'. Catchment area, local testimonials, call to action for quotes."
+    },
+    {
+      "n": 185,
+      "t_en": "Generate content ideas from forums",
+      "p_en": "Explore discussions on [forum/reddit] regarding [topic], and come up with 10 article ideas based on recurring questions and unresolved issues."
+    },
+    {
+      "n": 186,
+      "t_en": "Write a 'Typical day' article from an expert",
+      "p_en": "Article 'A day in the life of [persona]' narratively describing routines, tools and challenges. Discreetly integrates products/services."
+    },
+    {
+      "n": 187,
+      "t_en": "Paraphrase an existing article to avoid duplicate content",
+      "p_en": "Rewrite the entire article [text] retaining the meaning but changing the sentence structure, vocabulary and examples. Single text."
+    },
+    {
+      "n": 188,
+      "t_en": "Create a newsletter summary from the latest articles",
+      "p_en": "Summary of a weekly newsletter for a tech blog. Articles of the week: [titles and summaries]. For each, 2 sentence teaser."
+    },
+    {
+      "n": 189,
+      "t_en": "Brief for an article with storytelling",
+      "p_en": "Outline for an article on [subject] using storytelling: narrative hook (personal/client story), transition to the problem, solution, moral conclusion."
+    },
+    {
+      "n": 190,
+      "t_en": "Write a guest post for a high authority blog",
+      "p_en": "2000 word article for the blog [name] (DR 70+). Sharp and original subject. New angle. Citations from recent studies, expert opinions, formatted according to guidelines."
+    },
+    {
+      "n": 191,
+      "t_en": "Teaser script for YouTube video on [topic]",
+      "p_en": "Write a script for the first 15 seconds of a YouTube video on [topic]. Powerful hook: provocative question, shocking statistic, bold statement."
+    },
+    {
+      "n": 192,
+      "t_en": "Complete script for a 10 minute tutorial video",
+      "p_en": "Minute-by-minute script of a YouTube tutorial on [topic]. Duration 10 min: hook (0-0:30), presentation, steps (1:00-8:30), demonstration, final CTA."
+    },
+    {
+      "n": 193,
+      "t_en": "TikTok video ideas for [niche]",
+      "p_en": "10 original TikTok video concepts for a brand in [niche]. For each concept: 30-second script, trending sound, visual hook idea."
+    },
+    {
+      "n": 194,
+      "t_en": "Storytelling script for a brand video",
+      "p_en": "Script for a short video (60 seconds) telling the story of [brand]. Initial problem, trigger, journey, success. Emotion: inspiration."
+    },
+    {
+      "n": 195,
+      "t_en": "Structure of an Instagram Reel to promote a product",
+      "p_en": "Shot of a 30-second reel to promote [product]. 0-5sec hook, 5-20sec demo, 20-30sec CTA. Trending audio, hashtags."
+    },
+    {
+      "n": 196,
+      "t_en": "Voiceover text for an explanatory video (explainer)",
+      "p_en": "Voiceover for a 90-second animated video explaining [complex concept]. Simple, didactic, enthusiastic tone. Corresponding visual instructions."
+    },
+    {
+      "n": 197,
+      "t_en": "Script of questions for a video interview with an expert",
+      "p_en": "15 questions for a video interview with an expert in [domain]. Alternates in-depth questions, personal anecdotes, practical advice. Possible restarts."
+    },
+    {
+      "n": 198,
+      "t_en": "Callouts for YouTube Shorts/TikTok that Convert",
+      "p_en": "5 teaser scripts of less than 5 seconds for short videos on [theme]. Curiosity or strong promise. Ex: 'Stop doing [action] if you want [result]'."
+    },
+    {
+      "n": 199,
+      "t_en": "Script for a customer testimonial video",
+      "p_en": "Interview guide for collecting a video customer testimonial. 5 questions: situation before, problem, why our solution, results, advice. Framing notes."
+    },
+    {
+      "n": 200,
+      "t_en": "Generate an SEO and clickable YouTube video title",
+      "p_en": "10 YouTube video titles on '[subject]' optimized for SEO and click-through rates. Mixture of numbers, powerful words, promise of immediate benefit. Ex: 'How [result] in [number] steps'."
+    },
+    {
+      "n": 201,
+      "t_en": "Launch script for a live stream",
+      "p_en": "Script for the first 5 minutes of a live on [platform] on [theme]. Home, presentation of the subject, program, reminder to subscribe, icebreaker."
+    },
+    {
+      "n": 202,
+      "t_en": "Structure of a Software Demo Video",
+      "p_en": "Shot of an 8 minute demo video for [name] software. 0-1min problem, 1-7min demo of 3 key features, 7-8min summary and offer."
+    },
+    {
+      "n": 203,
+      "t_en": "Viral Video Ideas for a Physical Product",
+      "p_en": "5 viral video concepts to promote [physical product] without a budget. Resistance test, before/after, unexpected comparison, ASMR unboxing."
+    },
+    {
+      "n": 204,
+      "t_en": "Script for a 15 sec Facebook Ads video ad",
+      "p_en": "15-second video ad script for [product]. 3 sec to capture attention (question/problem), 10 sec solution/benefits, 2 sec clear CTA."
+    },
+    {
+      "n": 205,
+      "t_en": "Generate short video content ideas based on trends",
+      "p_en": "Based on current trends on [TikTok/Instagram] in the niche [niche], suggests 7 short video ideas adaptable to the brand [brand]."
+    },
+    {
+      "n": 206,
+      "t_en": "Script for a comedy sketch on video",
+      "p_en": "45-second mini-script for a humorous sketch about [niche-related situation]. Two characters A and B. Frequent problem, funny fall."
+    },
+    {
+      "n": 207,
+      "t_en": "Write a message for the end of video screen (outro)",
+      "p_en": "Text for the outro of a YouTube video: call to subscribe, watch the suggested video [title], download the free guide [link]. Superimposed text."
+    },
+    {
+      "n": 208,
+      "t_en": "Script for a live event (webinar)",
+      "p_en": "Main thread of a 45-minute webinar on [topic]. 5min welcome, 10min problem, 20min method, 7min testimonials, 3min offer and questions."
+    },
+    {
+      "n": 209,
+      "t_en": "Text for a customer thank you video",
+      "p_en": "Warm message to read in front of the camera to thank customers for participating in [event/purchase]. Note of humor, subtle announcement of the next launch."
+    },
+    {
+      "n": 210,
+      "t_en": "Script for unboxing and first product review",
+      "p_en": "Script for an unboxing video of [product]. Excited intro, packaging discovery, first impression, accessory details, quick test, verdict. 3-5 mins."
+    },
+    {
+      "n": 211,
+      "t_en": "Generate a series of 5 thematic videos",
+      "p_en": "Series of 5 YouTube videos around the theme [main theme]. For each episode: title, educational objective, summary, articulation with others. Free mini-course."
+    },
+    {
+      "n": 212,
+      "t_en": "Adapt a blog post into a video script",
+      "p_en": "Transforms article [url] into a 6 minute video script. Removes textual content, adds visual metaphors, editor instructions (b-roll, animations), punchy hook."
+    },
+    {
+      "n": 213,
+      "t_en": "Script for a reel 'Advice of the day'",
+      "p_en": "Script of a 30-second Reel on expert advice in [domain]. Start: 'If you're doing this, stop right away.' Middle: good advice. Ending: 'Follow me for more tips.'"
+    },
+    {
+      "n": 214,
+      "t_en": "Video Challenge Ideas to Engage the Community",
+      "p_en": "3 video challenges that the brand [brand] could launch on social networks to generate UGC. Concept, rules, hashtags, rewards."
+    },
+    {
+      "n": 215,
+      "t_en": "Text for a team presentation video",
+      "p_en": "Warm voice-over for a 2-minute video introducing the [company] team. Each member has a short sequence. Common culture and passion."
+    },
+    {
+      "n": 216,
+      "t_en": "Generate a title and thumbnail for a YouTube video",
+      "p_en": "Idea for an eye-catching thumbnail and title for a video on [topic]. Face with [surprised/serious] expression, large text, contrasting background."
+    },
+    {
+      "n": 217,
+      "t_en": "Script for a SaaS product launch video",
+      "p_en": "Complete script of a launch video for SaaS [name]. Problem, solution, features, social proof, introductory offer. Duration: 2 minutes."
+    },
+    {
+      "n": 218,
+      "t_en": "ASMR Video Ideas for a Brand",
+      "p_en": "3 ASMR video ideas to promote [product] in an original way. Setup, noises to capture, tone of whispered voiceover."
+    },
+    {
+      "n": 219,
+      "t_en": "Script for a 'before/after' video",
+      "p_en": "Plan for a before/after transformation video: initial problem, process, revealing the result. Testimonials or text on screen."
+    },
+    {
+      "n": 220,
+      "t_en": "Write a prompt for an AI video generator",
+      "p_en": "Detailed prompt for an AI video generation tool (Synthesia) to produce a 60-second video on [topic]. Script, avatar, tone, backgrounds."
+    },
+    {
+      "n": 221,
+      "t_en": "Welcome newsletter for new subscribers",
+      "p_en": "Write a welcome newsletter for new [brand] subscribers. Subject: 'Welcome to [community name]!'. Thanks, presentation, popular content."
+    },
+    {
+      "n": 222,
+      "t_en": "Scenario for a sequence of 5 nurturing emails",
+      "p_en": "5-day email sequence to turn a cold lead into a hot one for the offer [offer]. Email 1: value, 2: storytelling, 3: customer case, 4: objection, 5: offer."
+    },
+    {
+      "n": 223,
+      "t_en": "Weekly newsletter with content curation",
+      "p_en": "Newsletter for the [sector] community. Personal intro, 3 commented external links, 1 practical tip, discreet product promotion. Your [tone]."
+    },
+    {
+      "n": 224,
+      "t_en": "Follow-up email after a webinar",
+      "p_en": "Follow-up email sent 1 hour after a webinar on [topic]. Replay, summary of key points, link to the special offer (24 hours), question of commitment."
+    },
+    {
+      "n": 225,
+      "t_en": "Email to reactivate inactive subscribers",
+      "p_en": "Re-engagement email for subscribers who have been inactive for 3 months. Eye-catching item. Reminder of value, lead magnet offered, unsubscribe link visible."
+    },
+    {
+      "n": 226,
+      "t_en": "Email marketing strategy for a 3-phase product launch",
+      "p_en": "Content strategy for a launch in 3 phases: pre-launch (7 days), launch (3 days), post-launch (2 days). Objective of each email, type of content, CTA."
+    },
+    {
+      "n": 227,
+      "t_en": "Newsletter type 'Personal story'",
+      "p_en": "Newsletter based on a personal story related to [brand theme]. The story teaches a lesson and introduces a resource/product. Narrative writing."
+    },
+    {
+      "n": 228,
+      "t_en": "Email survey to find out subscriber needs",
+      "p_en": "Email asking subscribers their biggest challenge regarding [topic]. Short, personal, encouraging a direct response. Object that arouses curiosity."
+    },
+    {
+      "n": 229,
+      "t_en": "Autoresponder for free training in 7 days",
+      "p_en": "Autoresponder of 7 emails delivering free training on [subject]. Each email: short lesson, practical exercise, teaser for the next day. Last: premium offer."
+    },
+    {
+      "n": 230,
+      "t_en": "Email promoting a blog post",
+      "p_en": "Short email to promote the article '[title]'. Tease the content without revealing it, benefit for the reader, large CTA 'Read the article' button."
+    },
+    {
+      "n": 231,
+      "t_en": "Christmas/holiday email campaign",
+      "p_en": "3 email campaign for Christmas. Email 1: guide to the best gifts. Email 2: last minute special offer. Email 3: wishes and thanks."
+    },
+    {
+      "n": 232,
+      "t_en": "Newsletter 'Behind the Scenes'",
+      "p_en": "Newsletter showing behind the scenes of [company]: highs, lows, monthly figures, current projects. Transparency to strengthen the connection."
+    },
+    {
+      "n": 233,
+      "t_en": "Navigation abandonment email (retargeting)",
+      "p_en": "Email for someone who visited the [product] sales page without purchasing. Profit reminder, objection lifting, social proof, limited discount of [X]%."
+    },
+    {
+      "n": 234,
+      "t_en": "Newsletter to announce an event or challenge",
+      "p_en": "Newsletter announcing a free [number] day challenge on [theme]. What they will win, planning, registration, urgency (limited places)."
+    },
+    {
+      "n": 235,
+      "t_en": "Testimonial / review request email",
+      "p_en": "Email a satisfied customer to request a testimonial or review on [platform]. Makes it easier with a direct link and 2-3 guiding questions. Gratitude."
+    },
+    {
+      "n": 236,
+      "t_en": "Segmentation strategy for a newsletter",
+      "p_en": "Segmentation strategy for [company] email list based on behavior and interests. 4 different segments with the right type of content."
+    },
+    {
+      "n": 237,
+      "t_en": "Email to upgrade free users to paid ones",
+      "p_en": "Email for [SaaS product] free plan users. Limitations encountered, benefits of the premium plan, customer testimonial, trial offer at [price]."
+    },
+    {
+      "n": 238,
+      "t_en": "Write an automated welcome email series",
+      "p_en": "Series of 4 welcome emails for [platform]. Email 1: confirmation and deliverable. 2: history of the brand. 3: best content. 4: first order offer."
+    },
+    {
+      "n": 239,
+      "t_en": "Email apology for technical error",
+      "p_en": "Apology email following a bug (multiple emails sent, access cut). Assumes responsibility, explains, presents corrective measures, commercial gesture."
+    },
+    {
+      "n": 240,
+      "t_en": "Prompt for an email subject with a high opening rate",
+      "p_en": "10 email subject ideas for a newsletter on [subject]. Mixture of personalization, curiosity, urgency, lists. Use emojis in moderation."
+    },
+    {
+      "n": 241,
+      "t_en": "Write the 'Cross-selling' page by email",
+      "p_en": "Post-purchase email recommending complementary products to [product purchased]. Why They Go Together, Bundle."
+    },
+    {
+      "n": 242,
+      "t_en": "Sponsorship email (referral)",
+      "p_en": "Email encouraging customers to refer friends. Program: 'Refer a friend, both receive [reward]'. Unique referral link."
+    },
+    {
+      "n": 243,
+      "t_en": "Transform an email into a newsletter web page",
+      "p_en": "Adapts the content of the email [email] for an online version (newsletter archive page) with the same texts and visuals, formatted in standalone HTML."
+    },
+    {
+      "n": 244,
+      "t_en": "Brief for a graphic designer for the header of a newsletter",
+      "p_en": "Brief for creating a newsletter header image on [theme]. Dimensions 600px wide. Title, subtitle, colors, desired visual style."
+    },
+    {
+      "n": 245,
+      "t_en": "Interactive newsletter with a survey or quiz",
+      "p_en": "Newsletter including a 3-question mini-quiz on [subject] with immediate feedback. Objective: educate while collecting preferences."
+    },
+    {
+      "n": 246,
+      "t_en": "Last chance email before closing an offer",
+      "p_en": "Email sent 2 hours before the end of a promotion. Alarming topic, reminder of what they are losing, social proof, huge action button."
+    },
+    {
+      "n": 247,
+      "t_en": "Email series for an affiliate program",
+      "p_en": "Series of 3 emails to recruit affiliates for [product]. 1: presentation and commissions. 2: resources provided. 3: Affiliate success."
+    },
+    {
+      "n": 248,
+      "t_en": "Social sharing email following a purchase",
+      "p_en": "Post-purchase thank you email encouraging the customer to share their purchase on social media with [#hashtag]. Pre-written message."
+    },
+    {
+      "n": 249,
+      "t_en": "B2B prospecting email for a service",
+      "p_en": "Cold prospecting email to sell [service] to a [position]. Personalized item. Mention of company news. Pitch. Call request 15min."
+    },
+    {
+      "n": 250,
+      "t_en": "Email onboarding series for a mobile app",
+      "p_en": "Onboarding email for the [name] mobile application. 5 emails: installation, first connection, key feature #1, #2, call for feedback. GIFs/captures."
+    },
+    {
+      "n": 251,
+      "t_en": "Write a newsletter with a customer story",
+      "p_en": "Newsletter around a customer success story. Structure: before, solution, after. Call to action to discover the service. Inspirational tone."
+    },
+    {
+      "n": 252,
+      "t_en": "Thank you email after a major purchase",
+      "p_en": "Sincere thank you email after a first purchase from [brand]. Warm tone, reminder of the mission, link to a user guide."
+    },
+    {
+      "n": 253,
+      "t_en": "Subscriber's birthday email with a surprise",
+      "p_en": "Birthday email sent on the big day (via form). Wish a happy birthday, offer a small gift (discount, exclusive content)."
+    },
+    {
+      "n": 254,
+      "t_en": "Teaser email for a new product",
+      "p_en": "Mysterious email announcing a new product in [deadline]. Countdown, visual cues, invitation to register on a VIP list."
+    },
+    {
+      "n": 255,
+      "t_en": "Content strategy for a paid newsletter",
+      "p_en": "Editorial line for a paid newsletter in the niche [niche]. Exclusive content justifying the price: analyses, interviews, tools, case studies."
+    },
+    {
+      "n": 256,
+      "t_en": "Congratulatory email for a customer milestone",
+      "p_en": "Automatic email when the user reaches a usage threshold (eg: 100th task). Congratulate, share an advanced use, ask for a testimony."
+    },
+    {
+      "n": 257,
+      "t_en": "'Did you know?' newsletter",
+      "p_en": "Educational newsletter with 3 surprising facts about [theme]. Each fact explained simply with a source. Ends with a link to an article."
+    },
+    {
+      "n": 258,
+      "t_en": "Email to collect reviews on Trustpilot/Google",
+      "p_en": "Post-purchase email to request a Google review. Explains the importance, makes the task easier, possibly offers a voucher as a thank you."
+    },
+    {
+      "n": 259,
+      "t_en": "Cross-selling email based on purchase history",
+      "p_en": "Email template based on the last [product] purchase to recommend an accessory or additional training. Logical transition sentence."
+    },
+    {
+      "n": 260,
+      "t_en": "Write a 'diary' style newsletter",
+      "p_en": "Very personal style, like a letter to a friend, sharing thoughts, mistakes, learnings. Subtle product links. Vulnerable and authentic tone."
+    },
+    {
+      "n": 261,
+      "t_en": "Email scenario for a crowdfunding campaign",
+      "p_en": "Email sequence for a Kickstarter campaign: 1) pre-campaign, 2) D-day launch, 3) stretch goal, 4) last 48 hours, 5) thank you."
+    },
+    {
+      "n": 262,
+      "t_en": "Email to send when a prospect downloads a lead magnet",
+      "p_en": "Lead magnet delivery email: 'Your guide [title] is ready!'. Download link, what it will learn, suggestion for next step."
+    },
+    {
+      "n": 263,
+      "t_en": "Newsletter to promote a podcast episode",
+      "p_en": "Email announcing the release of a new podcast episode with [guest]. Topics covered, key points, listening link. Powerful quote."
+    },
+    {
+      "n": 264,
+      "t_en": "Retention email after subscription cancellation",
+      "p_en": "Email after subscription cancellation. Ask for the reason, offer a break instead of cancellation, or offer a cheaper plan. Empathetic."
+    },
+    {
+      "n": 265,
+      "t_en": "Flash sale email for a limited offer",
+      "p_en": "Promotional email for a 24-hour flash sale on [products]. Rarity (limited stock), emergency (timer). Clean design, focused on reduction and profit."
+    },
+    {
+      "n": 266,
+      "t_en": "LinkedIn post: lesson learned from failure",
+      "p_en": "LinkedIn post recounting a significant professional failure, what you learned, how it helped you succeed. End with a question. Emojis and line breaks."
+    },
+    {
+      "n": 267,
+      "t_en": "Educational Carousel Instagram Post",
+      "p_en": "Content of an Instagram carousel of 10 slides on '[subject]'. Slide 1: catchy title; slides 2-9: one tip per slide; slide 10: CTA and link in bio."
+    },
+    {
+      "n": 268,
+      "t_en": "Post X (Twitter) striking to launch a debate",
+      "p_en": "280 character X post taking a controversial (but defensible) position in [domain] to elicit responses. Rhetorical question, hashtag."
+    },
+    {
+      "n": 269,
+      "t_en": "AIDA teaser for a Facebook ad",
+      "p_en": "Main text of a Facebook ad using the AIDA structure for [product/service]. Title (Attention), text (Interest, Desire), CTA (Action)."
+    },
+    {
+      "n": 270,
+      "t_en": "Customer success sharing LinkedIn post",
+      "p_en": "LinkedIn storytelling post sharing a customer's success after using [service/product]. Figures, customer quote, conclusion on value."
+    },
+    {
+      "n": 271,
+      "t_en": "Script for a 'Face Camera' TikTok with Tips",
+      "p_en": "Script of an on-camera TikTok giving quick advice on [subject]. Hook: 'Stop making [mistake]'. Tip: 'Do [good practice] instead.' CTA follows."
+    },
+    {
+      "n": 272,
+      "t_en": "Tweet to promote a viral thread",
+      "p_en": "First tweet from a thread on [topic] designed to maximize shares. Crazy value promise, figure, announcement of the content of the following tweets. '⤵️Thread'."
+    },
+    {
+      "n": 273,
+      "t_en": "Facebook post for a group community",
+      "p_en": "Post for a [niche] Facebook group asking an engaging question: 'What is your biggest challenge with [topic] right now?' Encourages comments."
+    },
+    {
+      "n": 274,
+      "t_en": "LinkedIn content ideas for [job] for 30 days",
+      "p_en": "Calendar of 30 LinkedIn post ideas for a [job/consultant]. Mix of case studies, lessons, opinions, tips, behind the scenes. Theme per day."
+    },
+    {
+      "n": 275,
+      "t_en": "Instagram caption with comment bait",
+      "p_en": "Instagram caption for a photo of [description] strongly encouraging engagement. Open question, CTA 'Tell me in the comments...', 5 targeted hashtags."
+    },
+    {
+      "n": 276,
+      "t_en": "LinkedIn post to recruit an employee",
+      "p_en": "LinkedIn post announcing the opening of a position for [title] at [name]. Mission, desired profile, culture, how to apply. Call to like and share."
+    },
+    {
+      "n": 277,
+      "t_en": "Educational Twitter thread on a complex concept",
+      "p_en": "Thread of 8 tweets simply explaining [complex concept]. Broken down into 8 steps with metaphors. First catchy tweet, last visual summary."
+    },
+    {
+      "n": 278,
+      "t_en": "Instagram post before/after transformation",
+      "p_en": "Caption of a before/after post showing the results of [service]. Describe the initial state, the process, the result. Customer testimonial. CTA consultation."
+    },
+    {
+      "n": 279,
+      "t_en": "LinkedIn prospecting message for an appointment",
+      "p_en": "LinkedIn prospecting message (300 characters max) to contact an [ideal prospect]. Personalization, immediate value, 15 minute call suggestion."
+    },
+    {
+      "n": 280,
+      "t_en": "Instagram posts for launching a podcast",
+      "p_en": "Series of 3 Instagram posts announcing the launch of the [name] podcast. Post 1: teaser with question. Post 2: featured guest. Post 3: listening link and subscription CTA."
+    },
+    {
+      "n": 281,
+      "t_en": "Engaging LinkedIn Status on an Industry Statistic",
+      "p_en": "LinkedIn post around a striking statistic: '[statistic]'. Your analysis, what this means for the future of the sector, asks for an opinion."
+    },
+    {
+      "n": 282,
+      "t_en": "Description for a YouTube video (SEO)",
+      "p_en": "Optimized description of a YouTube video on '[topic]'. Summary 2 sentences, resource links, timecodes, subscription, 3 hashtags. Keyword at the beginning."
+    },
+    {
+      "n": 283,
+      "t_en": "Facebook post to sell a physical product",
+      "p_en": "Personal and compelling Facebook post to sell [product]. Your experience, why you like it, purchase link. Your genuine recommendation."
+    },
+    {
+      "n": 284,
+      "t_en": "LinkedIn Carousel 'Mistakes to Avoid'",
+      "p_en": "Content of a LinkedIn PDF carousel of 8 slides: 'The 7 mistakes that [profession] make and how to avoid them'. Each slide: error + correction."
+    },
+    {
+      "n": 285,
+      "t_en": "LinkedIn comment response template",
+      "p_en": "10 personalized response templates for comments on your LinkedIn posts (thanks, agreement, constructive disagreement, question). Your professional."
+    },
+    {
+      "n": 286,
+      "t_en": "Tweet to share a free resource",
+      "p_en": "Tweet sharing a free resource (guide, template). Describe the content, the benefit, provide the link. Adds a visual (described). 'I wish I had that...'"
+    },
+    {
+      "n": 287,
+      "t_en": "Instagram reel idea 'A day in my life'",
+      "p_en": "Script a 30-second Reel showing the productive morning routine of a [profession]. Shot of each clip, overlay text, trendy music."
+    },
+    {
+      "n": 288,
+      "t_en": "LinkedIn post to announce a new service",
+      "p_en": "Post for the official launch of your new service [service]. Why did you create it, what problem it addresses, for whom, how to find out more."
+    },
+    {
+      "n": 289,
+      "t_en": "Hook for the hook of a Reel",
+      "p_en": "15 impactful text hooks for Reels in the niche. Ex: 'The secret that no one tells you about [subject]'."
+    },
+    {
+      "n": 290,
+      "t_en": "Awareness post on a current topic",
+      "p_en": "LinkedIn post on the current theme [subject] related to your industry. Show your expertise with unique, respectful lighting. End with a question."
+    },
+    {
+      "n": 291,
+      "t_en": "Instagram caption for an inspiring quote",
+      "p_en": "Caption for a quote image: '[quote]'. Personal development, why this quote resonates, encourage tagging someone who needs to hear it."
+    },
+    {
+      "n": 292,
+      "t_en": "Viral tweet type 'Unpopular opinion'",
+      "p_en": "Tweet starting with 'Unpopular opinion:' about [topic related to your industry]. Arguable opinion likely to generate debate."
+    },
+    {
+      "n": 293,
+      "t_en": "Facebook post to promote a live event",
+      "p_en": "Facebook post inviting a live on [theme] with date and time. Sense of urgency ('Don't miss this'), request to register for a callback."
+    },
+    {
+      "n": 294,
+      "t_en": "Storytelling LinkedIn post: from 0 to [result] in [duration]",
+      "p_en": "Post recounting [me/client]’s journey from [initial situation] to [success] in [duration]. Steps, difficulties, main lesson, engaging question."
+    },
+    {
+      "n": 295,
+      "t_en": "Instagram hashtag grid by theme",
+      "p_en": "3 groups of 10 hashtags for the niche: broad scope group, specific niche group, local community group. List to copy and paste."
+    },
+    {
+      "n": 296,
+      "t_en": "LinkedIn post on a bitter failure and the lesson",
+      "p_en": "Vulnerable post about a bitter failure experienced in business. Story, emotional impact, powerful lesson that came from it."
+    },
+    {
+      "n": 297,
+      "t_en": "Content for a Pinterest post (Idea Pin)",
+      "p_en": "Pin content Pinterest idea for a blog post on [topic]. 5 slides: cover, 3 advice slides, last CTA slide. Overlay text and keywords."
+    },
+    {
+      "n": 298,
+      "t_en": "Posts for a 'Myth vs Reality' series on LinkedIn",
+      "p_en": "Series of 3 LinkedIn posts, each debunking a common myth in the industry [industry]. Format: 'We often hear that... The reality is...'. Evidence."
+    },
+    {
+      "n": 299,
+      "t_en": "Text for a company anniversary celebration post",
+      "p_en": "Post émouvant pour célébrer le [nombre]ème anniversaire de [entreprise]. Thanks customers, team, shares future vision. CTA comment on a memory."
+    },
+    {
+      "n": 300,
+      "t_en": "TikTok post idea with a duo/stitch",
+      "p_en": "Stitch TikTok script where you react to a popular video saying [false idea]. Provides correction in 30 seconds with an energetic tone."
+    },
+    {
+      "n": 301,
+      "t_en": "Sales page in PAS framework",
+      "p_en": "Complete text structure for a [product] sales page based on the PAS (Problem-Agitation-Solution) framework. Titles, subtitles, powerful CTA."
+    },
+    {
+      "n": 302,
+      "t_en": "AIDA sales page for an infoproduct",
+      "p_en": "Copywriting of a sales page for the [training name] training using AIDA: Attention (shock headline), Interest (statistics), Desire (testimonials), Action (CTA and guarantee)."
+    },
+    {
+      "n": 303,
+      "t_en": "Headline for a sales page (5 variations)",
+      "p_en": "5 catchy headlines for a [product] sales page. Promises of transformation, rhetorical questions, 'How... without...' formulas. Explanation."
+    },
+    {
+      "n": 304,
+      "t_en": "Section 'Who am I?' for a sales page",
+      "p_en": "'About the author' section for a training sales page. Journey in 3 paragraphs: initial failure, discovery of the method, results. Inspirational phrase."
+    },
+    {
+      "n": 305,
+      "t_en": "Sales page based on Storytelling (Brand Story)",
+      "p_en": "Complete story behind the creation of [product/service] for a landing page. Structure of the Hero's Journey. CTA at the end."
+    },
+    {
+      "n": 306,
+      "t_en": "Irresistible lead magnet",
+      "p_en": "Sales hook for a free lead magnet on [subject]. Title promising rapid results, key points, image of the lead magnet (described), simplified form."
+    },
+    {
+      "n": 307,
+      "t_en": "FAQ section for a sales page",
+      "p_en": "6 Q&A FAQ for [product] sales page. Addresses the classic objections: price, time, warranty, prerequisites, target audience. Reassuring tone."
+    },
+    {
+      "n": 308,
+      "t_en": "Customer testimonial transformed into a sales section",
+      "p_en": "Transforms raw testimony into a block of social proof. Before/after, numerical results, powerful quote, name and photo (described)."
+    },
+    {
+      "n": 309,
+      "t_en": "Sales page for a coaching service",
+      "p_en": "Sales page for a coaching program [duration] on [theme]. Promise, detailed modules, bonuses, prices, payment plan, money back guarantee."
+    },
+    {
+      "n": 310,
+      "t_en": "Sales page for a SaaS with free trial",
+      "p_en": "Landing page structure for software [name]: hero with demo video, benefits in 3 columns, 'How it works' in 3 steps, pricing table, FAQ. Free trial CTA."
+    },
+    {
+      "n": 311,
+      "t_en": "Sales page 'Long sales letter' (Sales Letter)",
+      "p_en": "Detailed outline of a long sales letter (10,000 words) for a personal development product. All sections: pre-header, headline, story, evidence, offer, etc."
+    },
+    {
+      "n": 312,
+      "t_en": "Capture page for a webinar",
+      "p_en": "Content of a registration page for a free webinar on [topic]. Title, promise, date/time, short paragraph about the facilitator, form. Emergency 'Limited places'."
+    },
+    {
+      "n": 313,
+      "t_en": "Sales page for a physical product with cross-selling",
+      "p_en": "Product page for [physical product] on Shopify. Description of benefits, specifications, customer reviews, 'Frequently bought together' section at a reduced price."
+    },
+    {
+      "n": 314,
+      "t_en": "'Who am I' page transformed into a soft sales page",
+      "p_en": "'About' page reads like a personal letter but subtly directs to [consultant]'s services. Values, mission, how you can help. Contact form."
+    },
+    {
+      "n": 315,
+      "t_en": "Frame for a sales page with sales video (VSL)",
+      "p_en": "Script of a 5 minute VSL and the landing page around it. Video player at the top, summary of points, testimonials, buy button below the video."
+    },
+    {
+      "n": 316,
+      "t_en": "Landing page for a paid lead magnet (Tripwire)",
+      "p_en": "Sales page of a leader product (tripwire) at [low price] after downloading a free lead magnet. Exceptional value, unique offer, guaranteed."
+    },
+    {
+      "n": 317,
+      "t_en": "Sales page with ROI calculator",
+      "p_en": "Integrate an ROI calculator into the sales page of [B2B service]. Accompanying text: 'Find out how much you can save'. Inputs and promise."
+    },
+    {
+      "n": 318,
+      "t_en": "Minimalist sales page for a unique product",
+      "p_en": "Clean 'One Product Store' type sales page. Hero shot of the product, one powerful title, 3 benefits, buy button, testimonials section. No navigation."
+    },
+    {
+      "n": 319,
+      "t_en": "Introductory offer with countdown",
+      "p_en": "Emergency block for a sales page: 'Offer ends in [timer]'. Text on bonuses offered only during launch, price increase after."
+    },
+    {
+      "n": 320,
+      "t_en": "Sales page with plan comparison",
+      "p_en": "Comparison table of 3 packages for [service]: Basic, Pro, Premium. Features, Price, Recommended Package highlighted. Separate CTA per plan."
+    },
+    {
+      "n": 321,
+      "t_en": "'Squeeze Page' type sales page",
+      "p_en": "Text of an aggressive squeeze page whose sole purpose is to capture the email. Headline promising a gift, no menu or outgoing links, form and button."
+    },
+    {
+      "n": 322,
+      "t_en": "Additional sale (upsell) after shopping cart",
+      "p_en": "Copy for an upsell page (order bump) displayed after adding to cart. Main product: [product]. Upsell: [complement]. Exclusive discount."
+    },
+    {
+      "n": 323,
+      "t_en": "Sales page for an in-person event",
+      "p_en": "Sales page for a conference/mastermind. Theme, date, location, speakers (photos described), program, testimonials from previous editions, early bird."
+    },
+    {
+      "n": 324,
+      "t_en": "'Become an affiliate' page",
+      "p_en": "Sales page to recruit affiliates for your product. Product, commission rate, resources provided, registration process. Why it's easy to sell."
+    },
+    {
+      "n": 325,
+      "t_en": "Thank you page after purchase (upsell 2)",
+      "p_en": "Thank you page confirming the order AND offering a special one-click upsell offer. Thank you message and pitch of the additional offer."
+    },
+    {
+      "n": 326,
+      "t_en": "Sales page with 'Satisfied or Refunded' guarantee",
+      "p_en": "100% money back guarantee certificate for [duration]. Committing text raising the risk. Simple refund procedure."
+    },
+    {
+      "n": 327,
+      "t_en": "Sales page for training with detailed program",
+      "p_en": "For the [name] training, describe each module with a sales title and 3 key points. Table of contents. Bonus section to increase the perceived value."
+    },
+    {
+      "n": 328,
+      "t_en": "Described video testimonials for sales page",
+      "p_en": "Section 'They tested and approved' with 3 fictitious but credible testimonials, quotes with described photos and quantified results. Adapts to the product [product]."
+    },
+    {
+      "n": 329,
+      "t_en": "Call to action (CTA) for different stages of the tunnel",
+      "p_en": "7 CTA button variations for a sales funnel: 'I want my place', 'Yes, send me the guide', 'Add to cart', etc. Context of use."
+    },
+    {
+      "n": 330,
+      "t_en": "Brand Storytelling for an 'Our Story' page",
+      "p_en": "Moving 'Our story' page for [brand] ending with a call to join the adventure (buy). Uses the brand archetype [ex: Explorer]."
+    },
+    {
+      "n": 331,
+      "t_en": "Sales page for a 'Done For You' service",
+      "p_en": "Sales page for turnkey service: 'We do [task] for you'. Pain points, why doing it yourself is wrong, process, CTA call."
+    },
+    {
+      "n": 332,
+      "t_en": "Sales page for a digital template/kit",
+      "p_en": "Sell ​​a template [type, ex: Notion] on a page. Described screenshots, features, organization benefits, video preview. Price and immediate purchase."
+    },
+    {
+      "n": 333,
+      "t_en": "Post-click landing page for a Google Ads campaign",
+      "p_en": "Ultra-targeted landing page for keyword [keyword] and ad [text]. Perfectly aligned message. Trust elements, single CTA, short form."
+    },
+    {
+      "n": 334,
+      "t_en": "Pop-up sales page for a seasonal product",
+      "p_en": "Sales page with a design evoking [season], for example Christmas. Festive title, 'Why it's the perfect gift' section, guaranteed delivery before [date]."
+    },
+    {
+      "n": 335,
+      "t_en": "Recurring subscription sales page",
+      "p_en": "Sell ​​a monthly subscription to [service]. Continuous value, new content every month, flexibility to cancel, annual vs monthly cost comparison."
+    },
+    {
+      "n": 336,
+      "t_en": "Checkout page optimized with reassurance",
+      "p_en": "Reinsurance elements to place next to the payment form: security icons, short testimonial, guarantee, benefit reminder, last minute FAQ."
+    },
+    {
+      "n": 337,
+      "t_en": "Typical B2B 'White Paper' sales page",
+      "p_en": "Landing page to download a white paper on [technical subject]. Company expertise, topics covered, proprietary data. Form (name, email, company)."
+    },
+    {
+      "n": 338,
+      "t_en": "Online training sales page with life access",
+      "p_en": "Page for training with lifetime access. Capitalizes on the fear of missing a future update. Program, bonus, prize with payment in installments."
+    },
+    {
+      "n": 339,
+      "t_en": "Frame for a video sales page only",
+      "p_en": "Sales page containing only a video, a title and a button. The video does all the sales work. Intro text around the video player."
+    },
+    {
+      "n": 340,
+      "t_en": "Sales page for a high-end mastermind",
+      "p_en": "Selling a mastermind at [high price] with a simple page. Letter from the founder, profile of participants sought, application process, testimonials."
+    },
+    {
+      "n": 341,
+      "t_en": "Product Launch Email Sequence (PLF)",
+      "p_en": "Complete sequence of 12 emails for a launch using the Product Launch Formula method. Breakdown pre-launch (4), launch (5), post-launch (3)."
+    },
+    {
+      "n": 342,
+      "t_en": "Cart abandonment email 1 (1 hour later)",
+      "p_en": "First abandoned cart reminder email, sent 1 hour later. Reminder of the product with its image, light and helpful tone, direct link to the basket."
+    },
+    {
+      "n": 343,
+      "t_en": "Cart abandonment email 2 with social proof (24h)",
+      "p_en": "Second follow-up email (24 hours later). Customer testimonial on quality, FAQ section (delivery, returns). Light sense of urgency."
+    },
+    {
+      "n": 344,
+      "t_en": "Cart abandonment email 3 with offer (48h)",
+      "p_en": "Last email (48 hours later) offering a [X]% discount code or free delivery. 'We would really like you to try this product'. Offer duration limit."
+    },
+    {
+      "n": 345,
+      "t_en": "Email sequence for a surprise launch (Flash Launch)",
+      "p_en": "Sequence of 3 emails over 24 hours for a lightning launch. 1: exclusive offer announcement. 2: results from a beta tester. 3: last hours and counter."
+    },
+    {
+      "n": 346,
+      "t_en": "Abandoned cart email for an expensive product",
+      "p_en": "Sequence for a high-end product. Email 1: offers a phone call. Email 2: detailed case study. Email 3: financing plan."
+    },
+    {
+      "n": 347,
+      "t_en": "Sales sequence for a consulting service",
+      "p_en": "5 emails to convert a prospect into a consulting client. 1: customer case. 2: in-depth article. 3: webinar invitation. 4: discovery call. 5: last follow-up."
+    },
+    {
+      "n": 348,
+      "t_en": "Reminder email for a refused payment",
+      "p_en": "Automatic email informing the customer that their payment has been refused (expired card). Polite and helpful text, link to update billing information."
+    },
+    {
+      "n": 349,
+      "t_en": "Post-purchase upsell sequence by email",
+      "p_en": "3 emails in the week following a purchase to offer complementary products. 1: thanks + guide. 2: complementary product. 3: pack with reduction."
+    },
+    {
+      "n": 350,
+      "t_en": "Email for a launch with a list of alerts (waitlist)",
+      "p_en": "Email to people on the waitlist, announcing that doors are open and they have early access. Link with special code. Excitement."
+    },
+    {
+      "n": 351,
+      "t_en": "Reactivation sequence for cart abandoned for 7 days",
+      "p_en": "More aggressive relaunch after 7 days. Reminds you what they are losing, adds social proof ('Join X customers'), direct link to payment."
+    },
+    {
+      "n": 352,
+      "t_en": "Launch email 'The doors are closing'",
+      "p_en": "Last email in a launch sequence, announcing the imminent closure of registrations. Urgent tone, countdown, fear of missing the bonus."
+    },
+    {
+      "n": 353,
+      "t_en": "Sales-oriented welcome sequence for a lead magnet",
+      "p_en": "Mini-sequence of selling a flagship product. Email 1: delivery of the lead magnet. Email 2: story + problem. Email 3: tripwire offer."
+    },
+    {
+      "n": 354,
+      "t_en": "Launch email 'The method behind the product'",
+      "p_en": "Email storytelling for a launch sequence explaining the genesis and unique method behind the product. Shows expertise and research."
+    },
+    {
+      "n": 355,
+      "t_en": "Abandoned cart reminder via SMS (text)",
+      "p_en": "Content of an abandoned cart reminder SMS. Short, with the product name, a short link, and a quiet sense of urgency."
+    },
+    {
+      "n": 356,
+      "t_en": "Launch email 'Why this product is different'",
+      "p_en": "Email that clearly differentiates the product from the competition. 3 powerful arguments. Destroys the limiting beliefs of the market."
+    },
+    {
+      "n": 357,
+      "t_en": "Sequence for selling training without doing a webinar",
+      "p_en": "7-day 'Automated Webinar' email sequence: each day an email delivers valuable content, responds to an objection, and brings the sale closer to day 7."
+    },
+    {
+      "n": 358,
+      "t_en": "Email to retrieve prospects who clicked but not purchased",
+      "p_en": "Targets people who have clicked on the sales link multiple times without purchasing. Email: 'I see you're interested...what's holding you back?'"
+    },
+    {
+      "n": 359,
+      "t_en": "Launch sequence for a SaaS product",
+      "p_en": "Sequence of 5 emails for the launch of a new paid feature. Shows the value, resolved issue, preview, and upgrade offer."
+    },
+    {
+      "n": 360,
+      "t_en": "Email to announce an upcoming price increase",
+      "p_en": "Email warning of a price increase in 48 hours. Justify it (improvements, inflation) and invite you to lock in the old price by buying now."
+    },
+    {
+      "n": 361,
+      "t_en": "Abandoned cart reminder with personalized video",
+      "p_en": "Text of the email introducing a personalized mini-video: 'I have prepared a short message for you'. Humanize the recovery."
+    },
+    {
+      "n": 362,
+      "t_en": "Email from the founder explaining why he created this product",
+      "p_en": "Intimate email where the founder tells a personal story that led him to create the product. Connect emotionally before the offer."
+    },
+    {
+      "n": 363,
+      "t_en": "Nurturing sequence to prepare for a launch (Seed)",
+      "p_en": "4 emails of pure content, without sales, to nourish the list before a launch. Themes: education, inspiration, data, myths. Launch teasers."
+    },
+    {
+      "n": 364,
+      "t_en": "Abandoned cart email for a digital product",
+      "p_en": "Email highlighting instant access and fast results. Addresses the fear of taking action. Testimonial from a client who was scared at the beginning."
+    },
+    {
+      "n": 365,
+      "t_en": "Cross-selling sequence for existing customers",
+      "p_en": "3 emails to sell a new training course to your former students. Trust established: 'You've already done X, here's the next step Y'. Loyalty offer."
+    },
+    {
+      "n": 366,
+      "t_en": "Quotation/commercial proposal follow-up",
+      "p_en": "Email to follow up with a prospect to whom you sent a quote. Model 1: polite follow-up. Model 2: adding value. Model 3: contact breakage."
+    },
+    {
+      "n": 367,
+      "t_en": "Email 'Override objection' in a sequence",
+      "p_en": "Identify objection number 1 ('Too expensive', 'No time') and write an entire email that smashes it with logic, testimonials and ROI calculations."
+    },
+    {
+      "n": 368,
+      "t_en": "Sales sequence for a paid live event",
+      "p_en": "Emails to sell conference tickets. Announcement, early bird, speaker reveal, last minute landing, and 'see on site'."
+    },
+    {
+      "n": 369,
+      "t_en": "Welcome email with an undisclosed 'gift'",
+      "p_en": "First email after registration: offers a surprise bonus not announced on the capture page. Pleasant surprise effect that builds confidence."
+    },
+    {
+      "n": 370,
+      "t_en": "Email campaign to sell stock",
+      "p_en": "Series of 3 emails for stock liquidation. Emergency 'While stocks last', progressive discounts (Day 1: -30%, Day 2: -50%)."
+    },
+    {
+      "n": 371,
+      "t_en": "Email following a free trial that expires soon",
+      "p_en": "Alert 3 days before the end of a free trial for a SaaS. Reminds the benefits used, the premium features they will lose, direct link."
+    },
+    {
+      "n": 372,
+      "t_en": "Email Affiliate Product Sales Sequence",
+      "p_en": "5 emails to promote an affiliate product. Each email provides unique value: product test, comparison, bonus offered by you, FAQ, last chance."
+    },
+    {
+      "n": 373,
+      "t_en": "Follow-up email after abandoned cart with a bonus",
+      "p_en": "Adds an exclusive bonus (PDF, checklist) offered only if they finalize their order within 24 hours. Highlights the value of the bonus."
+    },
+    {
+      "n": 374,
+      "t_en": "Sequence for selling group coaching",
+      "p_en": "Emails presenting the program, alumni results, a discovery call, and an offer limited to [number] places."
+    },
+    {
+      "n": 375,
+      "t_en": "Email for a launch with a draw",
+      "p_en": "Encourages purchasing by offering a chance to win an additional prize (consulting, product) for any purchase before a certain date."
+    },
+    {
+      "n": 376,
+      "t_en": "Reminder of payment form abandonment",
+      "p_en": "Email for those who have started to fill out the payment form without validating. 'Your order is on hold, a problem with payment?' Offer help."
+    },
+    {
+      "n": 377,
+      "t_en": "Sales sequence for a very expensive product (high-ticket)",
+      "p_en": "More consultative approach: emails inviting a strategic call, case studies, presentation videos, personalized proposal. Less urgency, more connection."
+    },
+    {
+      "n": 378,
+      "t_en": "'Last chance' email for a limited edition product",
+      "p_en": "Announces that only X copies remain (or that the offer ends). Counter, stock photos, list of benefits. Real emergency."
+    },
+    {
+      "n": 379,
+      "t_en": "Thank you sequence after a launch",
+      "p_en": "3 emails after the end of the launch. Acknowledgments, instructions to get started, creation of a community (private group), and request for feedback."
+    },
+    {
+      "n": 380,
+      "t_en": "Apology email for a problem during payment",
+      "p_en": "If a bug prevented the purchase, write an apology email with an exclusive offer to make it up to you. Reassure that everything is sorted."
+    },
+    {
+      "n": 381,
+      "t_en": "SEO-optimized Amazon product sheet with bullet points",
+      "p_en": "Write the title (max 200 chars), the 5 bullet points (each focused on a benefit), and the HTML product description for [product] on Amazon. Keywords '[keyword1]', '[keyword2]'."
+    },
+    {
+      "n": 382,
+      "t_en": "Shopify product description for a clothing brand",
+      "p_en": "Product description for [brand]'s Shopify store for item [item]. Style: storytelling around inspiration, materials, sizing advice, lookbook."
+    },
+    {
+      "n": 383,
+      "t_en": "Etsy product sheet with long-tail SEO",
+      "p_en": "Full Etsy listing for a handmade product [product]. Title with long tail keywords, detailed description with inspiration, dimensions, deadline, policies, 13 tags."
+    },
+    {
+      "n": 384,
+      "t_en": "Product description for a dropshipping site",
+      "p_en": "Engaging description for a dropshipping product [product]. Emotional copywriting to create desire. 'Features' and 'Benefits' section. 'Free delivery' badge."
+    },
+    {
+      "n": 385,
+      "t_en": "Optimization of an existing product sheet (audit)",
+      "p_en": "Audits the product sheet [text] and proposes an improved version. Strengthens benefits, adds social proof, corrects SEO title and meta description."
+    },
+    {
+      "n": 386,
+      "t_en": "Product description for a food supplement",
+      "p_en": "Product sheet for [supplement] in compliance with compliance rules. Ingredients, proven benefits, dosage, certifications. Warning and advice for use."
+    },
+    {
+      "n": 387,
+      "t_en": "Product sheet for software / SaaS (marketplace)",
+      "p_en": "Product page for the marketplace [ex: AppSumo]. Title, subtitle, description of the problem solved, features, use cases, testimonials, special offer with price."
+    },
+    {
+      "n": 388,
+      "t_en": "Title and meta description for a Shopify collection",
+      "p_en": "SEO title and meta description for a 'Summer Dresses' collection page on Shopify. Target '[keywords]', makes you want to click. Max 60 chars. title, 160 char. meta."
+    },
+    {
+      "n": 389,
+      "t_en": "B2B product description with datasheet",
+      "p_en": "Technical product sheet for a professional buyer. Executive summary, detailed technical specifications in table, standards, customization options, call for tenders."
+    },
+    {
+      "n": 390,
+      "t_en": "Product sheet for luxury real estate",
+      "p_en": "Real estate ad for a luxury villa. Location, architectural style, room by room description, high-end services, view. Your exclusive."
+    },
+    {
+      "n": 391,
+      "t_en": "Eco-responsible and sustainable product description",
+      "p_en": "Emphasizes sustainability, eco-friendly materials, and social/ecological impact for the product [product]. History of the artisan or ethical manufacturing."
+    },
+    {
+      "n": 392,
+      "t_en": "Content for a subscription box (box)",
+      "p_en": "Describe the concept of the [name] monthly box: the surprise, the theme of the month, the total value of the products, the advantages of the subscription. Virtual unboxing."
+    },
+    {
+      "n": 393,
+      "t_en": "Product sheet with 360° video (script and text)",
+      "p_en": "Descriptive text accompanying a 360° view of the product. Guides the user on what they see, points out key details, suggests interaction."
+    },
+    {
+      "n": 394,
+      "t_en": "Description for a pack or bundle of products",
+      "p_en": "Sell ​​a batch of [number] complementary products. Synergy between products, total price vs. bundle price, why now is the time to buy the full pack."
+    },
+    {
+      "n": 395,
+      "t_en": "Customizable product: personalization guide",
+      "p_en": "Instructions and description of a customizable product (engraving, color). Order process, fields to fill out, overviews."
+    },
+    {
+      "n": 396,
+      "t_en": "Product sheet for a book / e-book",
+      "p_en": "Sales page for your book [title] on a platform. Eye-catching summary, author biography, reviews/reviews, excerpt. Good category keywords."
+    },
+    {
+      "n": 397,
+      "t_en": "Description for a pre-order product",
+      "p_en": "Product sheet for a pre-order item. Excitement: 'Be the first to get it', why the product is special, ship date, early-bird bonus."
+    },
+    {
+      "n": 398,
+      "t_en": "Product sheet for a cleaning/maintenance service",
+      "p_en": "Service page for a service product. Before/After, list of tasks included, geographic area, insurance, 'Get a quote' button."
+    },
+    {
+      "n": 399,
+      "t_en": "List of features transformed into benefits",
+      "p_en": "From this list of characteristics [list], rewrite them as customer-oriented benefits. Example: '5000 mAh battery' becomes 'Enjoy 2 days of battery life'."
+    },
+    {
+      "n": 400,
+      "t_en": "Product description for a connected object",
+      "p_en": "Simply explains the operation and integration of the product [connected object] with voice assistants, the mobile application, and usage scenarios."
+    },
+    {
+      "n": 401,
+      "t_en": "Limited edition Christmas product sheet",
+      "p_en": "Sheet for a limited edition Christmas product. Festive theme, gift packaging, rarity ('Only 500 pieces'), gift idea for whom."
+    },
+    {
+      "n": 402,
+      "t_en": "Comparison of two product variants",
+      "p_en": "On the same sheet, helps the customer choose between version A and version B. Comparison table, 'For whom?' advice, expert opinion."
+    },
+    {
+      "n": 403,
+      "t_en": "Integrated 'purchasing guide' product sheet",
+      "p_en": "Product sheet including a mini-buying guide for the category (eg: how to choose the right size suitcase). Positions the brand as advice."
+    },
+    {
+      "n": 404,
+      "t_en": "Product description using the urgency of the season",
+      "p_en": "Adapts the text for the current season: summer, back to school, etc. Product: [product]. Seasonal offer and arguments linked to the period."
+    },
+    {
+      "n": 405,
+      "t_en": "Product with built-in social proof (verified reviews)",
+      "p_en": "Aggregate and format 5 positive customer reviews in a 'What our customers say' section, respecting the stars and first name."
+    },
+    {
+      "n": 406,
+      "t_en": "Product sheet for a sports/fitness item",
+      "p_en": "Motivating text for sports equipment. Talks about performance, surpassing oneself, comfort, and technology. Conseils d'entraînement."
+    },
+    {
+      "n": 407,
+      "t_en": "Product description with a focus on design and aesthetics",
+      "p_en": "For a decorative object [object], focus on the style, the material, the designer's inspiration, and how it fits into different interiors."
+    },
+    {
+      "n": 408,
+      "t_en": "Product sheet for a board game / toy",
+      "p_en": "Describe the game: principle, number of players, duration, age, skills developed, and an overview of a game. Makes you want to have fun with your family."
+    },
+    {
+      "n": 409,
+      "t_en": "Description for a premium stationery item",
+      "p_en": "Selling a luxury notebook/pen. Evokes the pleasure of writing, the quality of the paper, the gesture, and the idea of ​​a gift for a professional."
+    },
+    {
+      "n": 410,
+      "t_en": "Problem-solving product sheet",
+      "p_en": "Identifies a specific everyday problem ([problem]) and presents the product as the ideal solution. Structure: 'Have you had enough of...?', presentation, end of the problem."
+    },
+    {
+      "n": 411,
+      "t_en": "Telephone closing script for premium service",
+      "p_en": "Frame of a 20-minute sales call to conclude a [service]. Steps: icebreaker, framing, discovery of needs, presentation/price, objections, closing."
+    },
+    {
+      "n": 412,
+      "t_en": "Follow-up call script after sales proposal",
+      "p_en": "Script for a follow-up call 3 days after sending a proposal. Polite follow-up, verification of receipt, request for feedback, setting a date."
+    },
+    {
+      "n": 413,
+      "t_en": "Responses to Price Objections (script)",
+      "p_en": "5 responses to the objection 'It's too expensive' adapted to a [typical] service. Techniques: pricing funnel, cost splitting, value comparison, ROI."
+    },
+    {
+      "n": 414,
+      "t_en": "Needs discovery script for a B2B salesperson",
+      "p_en": "10 powerful questions for an initial discovery call with a prospect in the industry [industry]. Open questions, on the consequences, objectives, budget."
+    },
+    {
+      "n": 415,
+      "t_en": "Script to sell training over the phone",
+      "p_en": "Closing call frame for online training. Success story, explanation of the modules, special 'call' discount, secure direct payment processing."
+    },
+    {
+      "n": 416,
+      "t_en": "Facebook Ads advertising: Main text and title (NOT)",
+      "p_en": "Text from a Facebook ad for [product] using the formula Problem-Aggravation-Solution. 3 heading options, 2 main text options. Mobile optimized."
+    },
+    {
+      "n": 417,
+      "t_en": "Google Ads Video Ad Script (Discovery)",
+      "p_en": "30-second script for a TrueView video ad. First 5 seconds of hook, body of message with benefits, CTA at the end. CTA overlay."
+    },
+    {
+      "n": 418,
+      "t_en": "Set of Google Ads banners (Responsive Search Ads)",
+      "p_en": "15 titles (max 30 chars) and 4 descriptions (max 90 chars) for an RSA campaign targeting [product/service]. Mix of benefits, offers and features."
+    },
+    {
+      "n": 419,
+      "t_en": "Radio/Podcast Advertising Script",
+      "p_en": "60-second audio spot for [product]. Sound hook, problem, solution, special offer with promo code, energetic closing."
+    },
+    {
+      "n": 420,
+      "t_en": "Structure of a complete Meta Ads campaign (TOFU, MOFU, BOFU)",
+      "p_en": "Content strategy for 3 ad sets: TOFU (prospecting), MOFU (retargeting), BOFU (conversion). Write the copy for each level."
+    },
+    {
+      "n": 421,
+      "t_en": "Sales Script for a Direct Message (Instagram DM)",
+      "p_en": "Standard message to contact a cold prospect via Instagram DM. Mention of a recent post, compliment, offer of help, suggestion of a call if interested."
+    },
+    {
+      "n": 422,
+      "t_en": "Script for a TikTok Spark Ads ad",
+      "p_en": "Layered teaser text and spoken script for a 15-second TikTok ad that looks native. Uses designer language."
+    },
+    {
+      "n": 423,
+      "t_en": "Sales framework for a fair or exhibition",
+      "p_en": "Script to approach a visitor at a stand. Hook, quick demonstration, making contact (business card), follow-up to be done."
+    },
+    {
+      "n": 424,
+      "t_en": "Pinterest Ads advertising: title and description",
+      "p_en": "Title and description for a Promoted Pin promoting a blog post/product [link]. Visual keywords, 'Learn more' CTA."
+    },
+    {
+      "n": 425,
+      "t_en": "Face-to-face upsell script",
+      "p_en": "Natural upsell phrase for a seller: 'With this, I also recommend you... because...'. Suitable for [main product] and [upsell]."
+    },
+    {
+      "n": 426,
+      "t_en": "Hook for native advertising (Taboola/Outbrain)",
+      "p_en": "5 click-bait titles (non-misleading) for a native ad linking to a sponsored article on [topic]. Follow the guidelines."
+    },
+    {
+      "n": 427,
+      "t_en": "B2B cold call script (cold call)",
+      "p_en": "90-second cold call script to sell [software/service] to a [position]. Hook based on news, value pitch, appointment making."
+    },
+    {
+      "n": 428,
+      "t_en": "Response to objections 'I'll think about it'",
+      "p_en": "3 scripts to respond to 'I'm going to think' during a closing. Questioning the obstacles, setting a follow-up date, summary of the benefits."
+    },
+    {
+      "n": 429,
+      "t_en": "Sales script for a WhatsApp voice message",
+      "p_en": "Script for a voice message of maximum 45 seconds to send via WhatsApp to a hot prospect. Personal tone, enthusiasm, context, clear action."
+    },
+    {
+      "n": 430,
+      "t_en": "Structure for a local Google Ads advertising landing page",
+      "p_en": "Content for a plumbing/heating service landing page targeting [city]. Local title, form at top, Google review, area of ​​intervention."
+    },
+    {
+      "n": 431,
+      "t_en": "LinkedIn Advertising Sponsored Content",
+      "p_en": "Text of a LinkedIn ad (image only) to promote a white paper. Eye-catching introduction (sector insight), benefit, 'Download' CTA."
+    },
+    {
+      "n": 432,
+      "t_en": "Script for a Facebook Messenger sales chatbot",
+      "p_en": "Conversational tree of a Messenger chatbot which qualifies the prospect, presents the product, and offers a demo. Automated messages."
+    },
+    {
+      "n": 433,
+      "t_en": "Sales framework for a free consultation",
+      "p_en": "Script for a 30-minute call ending with a proposal for a paid program. 5 min connection, 15 min diagnosis, 5 min offer, 5 min questions."
+    },
+    {
+      "n": 434,
+      "t_en": "Facebook carousel ad for a collection of products",
+      "p_en": "Text of the main teaser of the carousel, and a short text for each carousel card (5 products) with their main benefits."
+    },
+    {
+      "n": 435,
+      "t_en": "Elevator Pitch Script",
+      "p_en": "30-second elevator pitch for [company]. Who you help, what problem you solve, how, and your unique advantage. Memorable and impactful."
+    },
+    {
+      "n": 436,
+      "t_en": "Response to 'Send me documentation' objection",
+      "p_en": "Script so as not to lose the prospect after this request. 'Of course, first, tell me your main selection criterion so that I can select the right information.'"
+    },
+    {
+      "n": 437,
+      "t_en": "Sales script for an introductory offer with bonus",
+      "p_en": "Call frame to sell an introductory offer with bonuses valid only during the call. Emphasis on urgency and exclusivity."
+    },
+    {
+      "n": 438,
+      "t_en": "YouTube bumper ad (6 sec)",
+      "p_en": "Script and description of what should appear for a 6-second bumper ad. Brand, slogan, and a single impactful CTA."
+    },
+    {
+      "n": 439,
+      "t_en": "VSL (Video Sales Letter) scenario for a consumer product",
+      "p_en": "Complete script of a 15 minute VSL for a health/wellness product. Hook (personal story), unique mechanism, demonstration, testimonials, offer."
+    },
+    {
+      "n": 440,
+      "t_en": "Sales script for a 'Pay what you want' offer",
+      "p_en": "Argument to convince people to buy at a fair price, with a price suggestion and an explanation of the real value to guide generosity."
+    },
+    {
+      "n": 441,
+      "t_en": "Native Snapchat advertising",
+      "p_en": "Text of a Snapchat ad (image and filter) for a streetwear brand. Young language, dynamic visual, 'Swipe up to buy' offer."
+    },
+    {
+      "n": 442,
+      "t_en": "Partnership negotiation framework (JVs)",
+      "p_en": "Call script to propose a win-win partnership to an influencer/blogger: introduction, compliment, collaboration proposal, benefits."
+    },
+    {
+      "n": 443,
+      "t_en": "Spotify audio ad",
+      "p_en": "30-second audio spot for a Spotify ad. Hook linked to the listener's mood, brand message, offer with easy-to-remember promo code."
+    },
+    {
+      "n": 444,
+      "t_en": "Sales script for an online close (chat)",
+      "p_en": "Script for live chat on an e-commerce site. Proactive approach, response to frequently asked questions, 5% reduction offer for immediate purchase."
+    },
+    {
+      "n": 445,
+      "t_en": "Framework for a sales webinar (structure)",
+      "p_en": "Minute-by-minute structure of a 60-minute sales webinar. Intro, valuable content, transition to sale, offer presentation, bonus, Q&A, close."
+    },
+    {
+      "n": 446,
+      "t_en": "Advertising for fundraising (Crowdfunding)",
+      "p_en": "Text from a Facebook ad for an ongoing Kickstarter campaign. Community, innovation, stretch goals unlocked, urgency at the end of the campaign."
+    },
+    {
+      "n": 447,
+      "t_en": "Sales script with a 'guaranteed' offer",
+      "p_en": "Uses a powerful guarantee ('If you don't see results in X days, I'll refund you AND pay you €100') to get closer. Script incorporating this guarantee."
+    },
+    {
+      "n": 448,
+      "t_en": "Dynamic retargeting advertising (products viewed)",
+      "p_en": "Text for a Facebook retargeting ad that dynamically shows the product viewed. 'Still interested?' and 'Free Delivery Today'."
+    },
+    {
+      "n": 449,
+      "t_en": "Script for a sales message on LinkedIn after acceptance",
+      "p_en": "First message after accepting a prospect. No direct sale, but offer of help, engaging question, openness to dialogue."
+    },
+    {
+      "n": 450,
+      "t_en": "Script to announce a price change to an existing customer",
+      "p_en": "Call frame to announce a price increase to a loyal customer. Thank you, explain the reasons, provide value, offer to lock in the old price."
+    },
+    {
+      "n": 451,
+      "t_en": "Online business ideas in the niche [niche]",
+      "p_en": "Generates 10 profitable online business ideas in the niche for 2025. For each idea: problem solved, target customer, product example, revenue model."
+    },
+    {
+      "n": 452,
+      "t_en": "Find a recurring issue on Reddit to create a product",
+      "p_en": "Analyzes the subreddits [r/sub1], [r/sub2] and lists the 10 most recurring problems. Offers a digital product that could solve every problem."
+    },
+    {
+      "n": 453,
+      "t_en": "Generate a brand name and slogan",
+      "p_en": "15 brand names available for a [type] project on the theme [theme]. For each name, a punchy slogan and a memorability analysis."
+    },
+    {
+      "n": 454,
+      "t_en": "Business Model Canvas (BMC) for [idea]",
+      "p_en": "Complete a complete Business Model Canvas for the business idea: [idea]. Details the 9 blocks."
+    },
+    {
+      "n": 455,
+      "t_en": "Infoproduct ideas based on expertise",
+      "p_en": "I am an expert in [domain]. List 5 infoproducts that I could create. For each: title, content, format, why it meets an urgent need."
+    },
+    {
+      "n": 456,
+      "t_en": "Method to validate a business idea quickly",
+      "p_en": "Lean Startup process in 5 steps to validate the idea [idea] with a budget of €100. Customer interviews, smoke testing, pre-sales."
+    },
+    {
+      "n": 457,
+      "t_en": "B2B micro-SaaS ideas to create",
+      "p_en": "5 micro-SaaS ideas for businesses in the niche [niche]. Main functionality, addressable market, potential monthly price."
+    },
+    {
+      "n": 458,
+      "t_en": "Content plan for an infoproduct launch in 30 days",
+      "p_en": "30-day backplanning to create and launch an ebook. Week 1: market research. Week 2: writing. Week 3: rereading. Week 4: launch."
+    },
+    {
+      "n": 459,
+      "t_en": "Analyze an emerging market trend",
+      "p_en": "Identifies 3 emerging trends in the sector [sector] in 2025 via Google Trends and social networks. Imagine a possible business for each."
+    },
+    {
+      "n": 460,
+      "t_en": "Brainstorming lead magnets for [company]",
+      "p_en": "10 irresistible lead magnet ideas for a [type] business selling [product/service]. Varies the formats: checklist, template, mini-training, quiz, guide."
+    },
+    {
+      "n": 461,
+      "t_en": "Passive business ideas with ChatGPT",
+      "p_en": "5 business ideas using ChatGPT as the underlying technology to automate a service. Example: recipe generator, CV proofreader."
+    },
+    {
+      "n": 462,
+      "t_en": "Create a 'Productized' service offer",
+      "p_en": "Transform my service from [tailor-made service] into a standardized and scalable product offering (Productized Service). Define 3 packages with specific deliverables."
+    },
+    {
+      "n": 463,
+      "t_en": "Finding a profitable niche for an Etsy store",
+      "p_en": "Analyzes Etsy and suggests 3 profitable niches with little competition but high demand. Criteria: average price > €30, stable search volume."
+    },
+    {
+      "n": 464,
+      "t_en": "Viral Challenge Ideas to Build Community",
+      "p_en": "Design a free 5-day challenge on [theme] that can attract 1000+ participants. Each day's theme, deliverable, virality mechanism (sharing)."
+    },
+    {
+      "n": 465,
+      "t_en": "Pricing strategy for an online service",
+      "p_en": "Analyzes the market and proposes a pricing strategy for the service [service]. 3 options: cost-based, competitive-based, value-based. Recommend a price."
+    },
+    {
+      "n": 466,
+      "t_en": "Spin-off ideas from an existing audience",
+      "p_en": "I have an audience of [size] in the niche [niche]. What 3 new products or services could I sell to them by leveraging established trust?"
+    },
+    {
+      "n": 467,
+      "t_en": "Plan for creating a video course without a camera",
+      "p_en": "How to create high-quality video training using only screencasts and slides, without ever filming my face. Hardware, software, structure."
+    },
+    {
+      "n": 468,
+      "t_en": "Premium Content Ideas for a Paid Group",
+      "p_en": "10 ideas for exclusive content (posts, lives, resources) that I could deliver in a paid private group to retain my members."
+    },
+    {
+      "n": 469,
+      "t_en": "Spotting winning products for dropshipping",
+      "p_en": "5 product categories likely to be dropshipping trends this month using virality criteria (Facebook, TikTok). Justify."
+    },
+    {
+      "n": 470,
+      "t_en": "Transforming a passion into a business: action plan",
+      "p_en": "My passion is [passion]. Concrete action plan in 10 steps to start monetizing online in the next 30 days."
+    },
+    {
+      "n": 471,
+      "t_en": "Finding Faceless YouTube Channel Ideas",
+      "p_en": "7 concepts of automated YouTube channels (without showing your face) in niches [niche1], [niche2]. Type of content, sources of inspiration, AI tools."
+    },
+    {
+      "n": 472,
+      "t_en": "Calculation of the addressable market (TAM, SAM, SOM)",
+      "p_en": "For the business [idea], estimates the TAM, SAM, SOM. Briefly explains the methodology for each estimate. Give realistic figures."
+    },
+    {
+      "n": 473,
+      "t_en": "Print on demand business: design ideas",
+      "p_en": "10 design ideas (themes, phrases) for t-shirts in the niche [niche]. Text or visual description. Why these designs can sell."
+    },
+    {
+      "n": 474,
+      "t_en": "Digitalized local business ideas",
+      "p_en": "List of 5 traditional local services that could be digitalized and sold online as a package (e.g.: remote gardening coaching)."
+    },
+    {
+      "n": 475,
+      "t_en": "Survey frame to validate a product",
+      "p_en": "10-question questionnaire to send to my email list to validate interest in the product [product] before creating it. Questions about acceptable price."
+    },
+    {
+      "n": 476,
+      "t_en": "SWOT analysis of my project [project]",
+      "p_en": "Conducts a comprehensive SWOT analysis for the project [project]. Argument each point. Suggests strategic actions."
+    },
+    {
+      "n": 477,
+      "t_en": "Synthetic summary of the book [title]",
+      "p_en": "500 word summary of the book '[title]' extracting the 5 main ideas. For each idea, how to practically apply it in online business."
+    },
+    {
+      "n": 478,
+      "t_en": "Google Trends data analysis for a market",
+      "p_en": "Interprets Google Trends data from the last 5 years for '[keyword]' in [country]. Seasonality, global trend, related queries. Business advice."
+    },
+    {
+      "n": 479,
+      "t_en": "Automating my typical day with AI",
+      "p_en": "2-hour morning routine optimized with AI tools for an entrepreneur [domain]. Each 30 minute block with tools and prompts."
+    },
+    {
+      "n": 480,
+      "t_en": "Summary of a market study",
+      "p_en": "Summarizes the market study [text] in 3 paragraphs: market size, main segments, growth prospects. Bold the key figures."
+    },
+    {
+      "n": 481,
+      "t_en": "Top 5 AI tools for [task] in 2025",
+      "p_en": "List and describe the 5 best AI tools for [task] in 2025. For each tool: price, main advantage, concrete use case for a solopreneur."
+    },
+    {
+      "n": 482,
+      "t_en": "Summary of multiple books into a unified concept",
+      "p_en": "Take the books [Book 1], [Book 2], [Book 3] and find the unifying concept. Synthesis combining their lessons into a new methodology."
+    },
+    {
+      "n": 483,
+      "t_en": "Analyzing my time with the Eisenhower Matrix",
+      "p_en": "Here is my weekly to-do list: [tasks]. Classify them in the Eisenhower matrix. Plan to delegate or eliminate non-essential tasks."
+    },
+    {
+      "n": 484,
+      "t_en": "Productivity Hacks for Developers",
+      "p_en": "7 little-known productivity hacks for developers. Tips on the IDE, deep work management, automations, and CLI tools."
+    },
+    {
+      "n": 485,
+      "t_en": "Key metrics to track for a SaaS",
+      "p_en": "10 most important metrics (KPIs) to track for a growing B2B SaaS. How to calculate them and what benchmark to target."
+    },
+    {
+      "n": 486,
+      "t_en": "Constructive criticism of my website",
+      "p_en": "Here is the [site] URL. Quickly analyzes UX, copywriting and clarity of the offer. Offers 5 actionable improvements to increase conversions."
+    },
+    {
+      "n": 487,
+      "t_en": "Summary of a conference / podcast in 10 lessons",
+      "p_en": "Excerpts 10 actionable lessons for an entrepreneur from the [title] episode of [podcast]. Format in bullet points with an explanatory sentence."
+    },
+    {
+      "n": 488,
+      "t_en": "Competitive analysis of [domain]",
+      "p_en": "Identifies 3 direct competitors of [my business]. Compare their positioning, offer, pricing, communication. Creates a competitive advantage."
+    },
+    {
+      "n": 489,
+      "t_en": "Generate a tailor-made deep work routine",
+      "p_en": "Deep work schedule for a content creator who must write, edit videos, and manage the business. Blocks ranges, durations, rituals."
+    },
+    {
+      "n": 490,
+      "t_en": "Turning book advice into daily action",
+      "p_en": "The book '[title]' recommends '[name a habit]'. Plan to turn this advice into a concrete daily habit with the small steps method."
+    },
+    {
+      "n": 491,
+      "t_en": "Audit of a brand's online presence",
+      "p_en": "Quick audit of [brand]'s online presence: website, social networks, SEO. List inconsistencies and areas for improvement."
+    },
+    {
+      "n": 492,
+      "t_en": "Predictive analysis of a technological trend",
+      "p_en": "Anticipate how [technology] will impact the [profession] profession in the next 2 years. Offers skills to learn now."
+    },
+    {
+      "n": 493,
+      "t_en": "Book summary for a child/beginner",
+      "p_en": "Explain the main concepts of the book '[business book]' as if I were talking to a 10 year old child. Uses a twisted metaphor."
+    },
+    {
+      "n": 494,
+      "t_en": "Interpreting One Week's Sales Data",
+      "p_en": "Sales data from my store [platform] this week: [numbers]. Analyzes performances, bestsellers, flops. Suggests promotional action."
+    },
+    {
+      "n": 495,
+      "t_en": "List of ChatGPT prompts to automate [task]",
+      "p_en": "Mini-library of 5 ChatGPT prompts which, executed in sequence, automate the creation of [task] from A to Z."
+    },
+    {
+      "n": 496,
+      "t_en": "Summary of AI news of the week",
+      "p_en": "Curation of the 5 most important AI news stories of the week, with 2-sentence summary and why it matters for entrepreneurs."
+    },
+    {
+      "n": 497,
+      "t_en": "Memorization techniques to learn [skill]",
+      "p_en": "Based on neuroscience, 5 advanced memorization techniques to master [skill] in 30 days."
+    },
+    {
+      "n": 498,
+      "t_en": "Annual reading plan for an entrepreneur",
+      "p_en": "Reading plan of 12 books (1 per month) for an entrepreneur in [sector] wanting to boost their leadership, marketing and strategy skills."
+    },
+    {
+      "n": 499,
+      "t_en": "Calculating the return on investment of training",
+      "p_en": "I am considering purchasing the [training] course at [price]. Help me calculate the expected ROI by making conservative assumptions about [variable]."
+    },
+    {
+      "n": 500,
+      "t_en": "Personal and professional end-of-year review",
+      "p_en": "Guides a structured annual review exercise for an entrepreneur. 10 reflection questions on successes, failures, learning, objectives. Response template."
+    }
+  ]
+}
