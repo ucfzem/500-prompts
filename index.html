@@ -107,15 +107,12 @@
         [dir="rtl"] .prompt-title { font-family: var(--font-arabic); }
         [dir="rtl"] .header-logo svg { margin-right: 0; margin-left: 12px; }
         [dir="rtl"] .lang-btn { margin-left: 0; margin-right: 6px; }
-        [dir="rtl"] .copy-btn { left: 16px; right: auto; }
-        [dir="rtl"] .prompt-number { right: auto; left: 16px; }
         [dir="rtl"] .pilier-nav { direction: rtl; }
         [dir="rtl"] .hero-badge { direction: rtl; }
         [dir="rtl"] .hero-stats { direction: rtl; }
         [dir="rtl"] .stat-item { direction: rtl; }
         [dir="rtl"] .categorie-title { direction: rtl; }
-        [dir="rtl"] .prompt-card { padding: 20px 56px 20px 20px; }
-        [dir="rtl"] .prompt-title { padding-right: 0; padding-left: 60px; }
+
         [dir="rtl"] .search-input { padding: 14px 48px 14px 24px; }
         [dir="rtl"] .search-icon { left: auto; right: 18px; }
 
@@ -442,7 +439,7 @@
             background: var(--bg-secondary);
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 20px 20px 20px 56px;
+            padding: 56px 20px 20px;
             margin-bottom: 12px;
             transition: all 0.3s;
         }
@@ -454,7 +451,7 @@
         .prompt-number {
             position: absolute;
             top: 16px;
-            right: 16px;
+            inset-inline-start: 16px;
             font-family: var(--font-heading);
             font-size: 0.75rem;
             color: var(--text-muted);
@@ -468,7 +465,6 @@
             font-weight: 600;
             color: var(--text);
             margin-bottom: 8px;
-            padding-right: 60px;
         }
         .prompt-text {
             color: var(--text-secondary);
@@ -486,8 +482,8 @@
         }
         .copy-btn {
             position: absolute;
-            bottom: 16px;
-            right: 16px;
+            top: 16px;
+            inset-inline-end: 16px;
             background: var(--bg-card);
             border: 1px solid var(--border-light);
             color: var(--text-secondary);
@@ -600,7 +596,7 @@
             .pilier-nav-link { padding: 6px 12px; font-size: 0.8rem; }
             main { padding: 24px 16px; }
             .categorie { padding: 16px; }
-            .prompt-card { padding: 16px 16px 16px 48px; }
+            .prompt-card { padding: 48px 16px 16px; }
         }
 
         /* ===== ANIMATIONS ===== */
