@@ -1518,13 +1518,14 @@ const allPrompts = [
 
         // ==================== LANGUAGE SWITCH ====================
         function switchLang(lang) {
+            const scrollY = window.scrollY;
             currentLang = lang;
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.toggle('active', btn.dataset.lang === lang);
             });
             localStorage.setItem('lang', lang);
             renderPage();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            requestAnimationFrame(() => window.scrollTo(0, scrollY));
         }
 
         // ==================== THEME TOGGLE ====================
