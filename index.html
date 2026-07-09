@@ -124,7 +124,7 @@
             border-bottom: 1px solid var(--border);
             backdrop-filter: blur(12px);
             padding: 0 24px;
-            height: 64px;
+            height: 72px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -148,11 +148,10 @@
 
         /* Logo image */
         .logo-img {
-            width: 40px;
-            height: 40px;
+            height: 48px;
+            width: auto;
             flex-shrink: 0;
-            border-radius: 8px;
-            object-fit: cover;
+            border-radius: 6px;
         }
 
         .header-controls {
@@ -309,7 +308,7 @@
         /* ===== NAV PILIERS ===== */
         .pilier-nav {
             position: sticky;
-            top: 64px;
+            top: 72px;
             z-index: 90;
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border);
@@ -563,14 +562,14 @@
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 640px) {
-            header { padding: 0 16px; height: 56px; }
+            header { padding: 0 16px; height: 60px; }
             .header-logo { font-size: 0.9rem; }
-            .logo-img { width: 32px; height: 32px; }
+            .logo-img { height: 36px; }
             .lang-btn { padding: 5px 8px; font-size: 0.7rem; }
             .lang-btn .flag { font-size: 0.9rem; }
             .hero { padding: 60px 16px 40px; }
             .hero-stats { gap: 24px; }
-            .pilier-nav { top: 56px; padding: 8px 16px; }
+            .pilier-nav { top: 60px; padding: 8px 16px; }
             .pilier-nav-link { padding: 6px 12px; font-size: 0.8rem; }
             main { padding: 24px 16px; }
             .categorie { padding: 16px; }
