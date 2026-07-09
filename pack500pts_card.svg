@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+    <defs>
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#c9a84c"/>
+            <stop offset="50%" style="stop-color:#e0c872"/>
+            <stop offset="100%" style="stop-color:#a07828"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="500" rx="20" fill="#1a1410"/>
+    <rect x="2" y="2" width="396" height="496" rx="18" fill="none" stroke="#c9a84c" stroke-width="2"/>
+
+    <!-- Logo area -->
+    <circle cx="200" cy="80" r="40" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+    <path d="M200 50 L210 75 L235 75 L215 90 L222 115 L200 100 L178 115 L185 90 L165 75 L190 75 Z" fill="url(#goldGrad)"/>
+    <text x="200" y="145" text-anchor="middle" font-size="14" fill="#c9a84c" font-family="serif" font-weight="bold">Pack 500 Prompts IA</text>
+
+    <!-- QR Code placeholder -->
+    <rect x="100" y="180" width="200" height="200" rx="10" fill="#2a231c" stroke="#4a4035" stroke-width="1"/>
+
+    <!-- QR corners -->
+    <rect x="115" y="195" width="40" height="40" rx="4" fill="#c9a84c"/>
+    <rect x="125" y="205" width="20" height="20" rx="2" fill="#2a231c"/>
+    <rect x="130" y="210" width="10" height="10" rx="1" fill="#c9a84c"/>
+
+    <rect x="245" y="195" width="40" height="40" rx="4" fill="#c9a84c"/>
+    <rect x="255" y="205" width="20" height="20" rx="2" fill="#2a231c"/>
+    <rect x="260" y="210" width="10" height="10" rx="1" fill="#c9a84c"/>
+
+    <rect x="115" y="325" width="40" height="40" rx="4" fill="#c9a84c"/>
+    <rect x="125" y="335" width="20" height="20" rx="2" fill="#2a231c"/>
+    <rect x="130" y="340" width="10" height="10" rx="1" fill="#c9a84c"/>
+
+    <!-- QR data pattern -->
+    <g fill="#c9a84c">
+        <rect x="170" y="195" width="8" height="8"/>
+        <rect x="190" y="195" width="8" height="8"/>
+        <rect x="210" y="195" width="8" height="8"/>
+        <rect x="170" y="215" width="8" height="8"/>
+        <rect x="200" y="215" width="8" height="8"/>
+        <rect x="170" y="235" width="8" height="8"/>
+        <rect x="190" y="235" width="8" height="8"/>
+        <rect x="210" y="235" width="8" height="8"/>
+        <rect x="230" y="235" width="8" height="8"/>
+        <rect x="170" y="255" width="8" height="8"/>
+        <rect x="200" y="255" width="8" height="8"/>
+        <rect x="220" y="255" width="8" height="8"/>
+        <rect x="170" y="275" width="8" height="8"/>
+        <rect x="190" y="275" width="8" height="8"/>
+        <rect x="210" y="275" width="8" height="8"/>
+        <rect x="230" y="275" width="8" height="8"/>
+        <rect x="170" y="295" width="8" height="8"/>
+        <rect x="200" y="295" width="8" height="8"/>
+        <rect x="220" y="295" width="8" height="8"/>
+        <rect x="170" y="315" width="8" height="8"/>
+        <rect x="190" y="315" width="8" height="8"/>
+        <rect x="210" y="315" width="8" height="8"/>
+        <rect x="230" y="315" width="8" height="8"/>
+        <rect x="170" y="335" width="8" height="8"/>
+        <rect x="200" y="335" width="8" height="8"/>
+        <rect x="220" y="335" width="8" height="8"/>
+        <rect x="170" y="355" width="8" height="8"/>
+        <rect x="190" y="355" width="8" height="8"/>
+        <rect x="210" y="355" width="8" height="8"/>
+        <rect x="230" y="355" width="8" height="8"/>
+
+        <rect x="245" y="250" width="8" height="8"/>
+        <rect x="265" y="250" width="8" height="8"/>
+        <rect x="245" y="270" width="8" height="8"/>
+        <rect x="265" y="270" width="8" height="8"/>
+        <rect x="255" y="290" width="8" height="8"/>
+        <rect x="245" y="310" width="8" height="8"/>
+        <rect x="265" y="310" width="8" height="8"/>
+        <rect x="255" y="330" width="8" height="8"/>
+        <rect x="245" y="350" width="8" height="8"/>
+        <rect x="265" y="350" width="8" height="8"/>
+    </g>
+
+    <!-- Center 500 -->
+    <circle cx="200" cy="280" r="25" fill="#1a1410" stroke="#c9a84c" stroke-width="1"/>
+    <text x="200" y="288" text-anchor="middle" font-size="18" fill="#c9a84c" font-family="serif" font-weight="bold">500</text>
+
+    <!-- URL -->
+    <text x="200" y="420" text-anchor="middle" font-size="16" fill="#e0c872" font-family="monospace">ucfzem.github.io/pack500pts</text>
+
+    <!-- Instructions -->
+    <text x="200" y="450" text-anchor="middle" font-size="11" fill="#8a7e6b" font-family="sans-serif">Scannez ou visitez l'URL</text>
+    <text x="200" y="470" text-anchor="middle" font-size="11" fill="#8a7e6b" font-family="sans-serif">pour télécharger le pack</text>
+</svg>
