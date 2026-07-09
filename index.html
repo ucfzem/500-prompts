@@ -475,45 +475,6 @@
             .copy-btn { opacity: 1; top: 0.5rem; right: 0.5rem; font-size: 0.65rem; padding: 0.2rem 0.5rem; }
         }
     </style>
-    <script>
-        if (localStorage.getItem('500prompts_unlocked') !== 'true') {
-            document.body.innerHTML = `
-                <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:var(--bg,#1a1410);flex-direction:column;gap:20px;font-family:var(--font-body,'Outfit',sans-serif);padding:20px">
-                    <h2 style="font-family:var(--font-heading,'Playfair Display',serif);color:var(--gold,#c9a84c);font-size:1.6rem;margin:0">🔐 Pack 500 Prompts IA</h2>
-                    <p style="color:var(--text-muted,#8a7e6b);margin:0">Entrez le mot de passe</p>
-                    <input type="password" id="pw-input" style="padding:12px 20px;border:1px solid var(--border,#3a3228);border-radius:8px;background:var(--bg-card,#2a231c);color:var(--text,#f5f0e8);font-size:1rem;width:280px;outline:none;text-align:center">
-                    <div id="pw-error" style="color:#e74c3c;font-size:0.85rem;display:none">Mot de passe incorrect</div>
-                    <button id="pw-btn" style="padding:10px 40px;border:none;border-radius:8px;background:linear-gradient(135deg,var(--gold,#c9a84c),var(--gold-light,#e0c872));color:#1a1410;font-weight:600;font-size:1rem;cursor:pointer">Accéder</button>
-                </div>
-            `;
-            const overlay = document.body;
-            const input = document.getElementById('pw-input');
-            const error = document.getElementById('pw-error');
-            const btn = document.getElementById('pw-btn');
-            async function check() {
-                const val = input.value.trim();
-                if (!val) return;
-                try {
-                    const r = await fetch('https://works-validator.azer-tyu199p.workers.dev', {
-                        method:'POST', headers:{'Content-Type':'application/json'},
-                        body: JSON.stringify({password: val})
-                    });
-                    const d = await r.json();
-                    if (d.success) {
-                        localStorage.setItem('500prompts_unlocked','true');
-                        location.reload();
-                    } else {
-                        error.style.display = 'block';
-                        input.value = '';
-                        setTimeout(() => error.style.display = 'none', 2000);
-                    }
-                } catch(e) { error.textContent = '❌ Erreur'; error.style.display = 'block'; }
-            }
-            btn.addEventListener('click', check);
-            input.addEventListener('keydown', e => { if (e.key === 'Enter') check(); });
-            throw new Error('Password required');
-        }
-    </script>
 </head>
 <body>
     <!-- HEADER -->
