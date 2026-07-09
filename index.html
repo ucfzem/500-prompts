@@ -105,7 +105,6 @@
         [dir="rtl"] .hero h1, [dir="rtl"] .hero .subtitle,
         [dir="rtl"] .pilier-title, [dir="rtl"] .categorie-title,
         [dir="rtl"] .prompt-title { font-family: var(--font-arabic); }
-        [dir="rtl"] .header-logo svg { margin-right: 0; margin-left: 12px; }
         [dir="rtl"] .lang-btn { margin-left: 0; margin-right: 6px; }
         [dir="rtl"] .pilier-nav { direction: rtl; }
         [dir="rtl"] .hero-badge { direction: rtl; }
@@ -147,35 +146,14 @@
         }
         .header-logo:hover { opacity: 0.8; }
 
-        /* Animated Logo SVG */
-        .logo-svg {
+        /* Logo image */
+        .logo-img {
             width: 40px;
             height: 40px;
             flex-shrink: 0;
+            border-radius: 8px;
+            object-fit: cover;
         }
-        .logo-svg .logo-ring {
-            fill: none;
-            stroke: var(--gold);
-            stroke-width: 2;
-            stroke-dasharray: 120;
-            stroke-dashoffset: 120;
-            animation: logoDraw 2s ease forwards;
-        }
-        .logo-svg .logo-star {
-            fill: var(--gold);
-            opacity: 0;
-            animation: logoFade 0.5s ease 1.5s forwards;
-        }
-        .logo-svg .logo-text {
-            fill: var(--gold);
-            font-family: var(--font-heading);
-            font-size: 10px;
-            font-weight: 700;
-            opacity: 0;
-            animation: logoFade 0.5s ease 1.8s forwards;
-        }
-        @keyframes logoDraw { to { stroke-dashoffset: 0; } }
-        @keyframes logoFade { to { opacity: 1; } }
 
         .header-controls {
             display: flex;
@@ -587,7 +565,7 @@
         @media (max-width: 640px) {
             header { padding: 0 16px; height: 56px; }
             .header-logo { font-size: 0.9rem; }
-            .logo-svg { width: 32px; height: 32px; }
+            .logo-img { width: 32px; height: 32px; }
             .lang-btn { padding: 5px 8px; font-size: 0.7rem; }
             .lang-btn .flag { font-size: 0.9rem; }
             .hero { padding: 60px 16px 40px; }
@@ -609,11 +587,7 @@
 <body>
     <header>
         <a class="header-logo" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
-            <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle class="logo-ring" cx="20" cy="20" r="16"/>
-                <path class="logo-star" d="M20 6 L22.5 14.5 L31 14.5 L24 19.5 L26.5 28 L20 23 L13.5 28 L16 19.5 L9 14.5 L17.5 14.5 Z"/>
-                <text class="logo-text" x="20" y="34" text-anchor="middle">500</text>
-            </svg>
+            <img src="logo.png" alt="Pack 500 Prompts IA" class="logo-img">
             <span>Pack 500 Prompts IA</span>
         </a>
         <div class="header-controls">
